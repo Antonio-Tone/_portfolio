@@ -1,7 +1,8 @@
 <template>
     <div>
-        <div class="d-flex justify-content-center">
-            <ul>
+        <div>
+            <ul class="d-flex justify-content-center nav">
+                <li id="copyR">©Code by Antonio Tone</li>   
                 <li>About</li>
                 <li>Work</li>
                 <li>Contact</li>
@@ -14,6 +15,10 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
+.nav{
+    z-index: 999 !important;
+}
+
     
 </style>

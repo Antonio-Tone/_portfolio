@@ -1,22 +1,26 @@
 <template>
-  <nav class="d-flex justify-content-center">
-    <ul class="ms-auto">
-      <il><router-link to="/">Home</router-link></il>
-      <il> <router-link to="/about">About</router-link></il>
-    </ul>
-  </nav>
+  <navbarComp/>
   <router-view/>
 </template>
+<script>
+import navbarComp from "./components/navbarComp.vue";
+export default{
+  components: {navbarComp}
+}
+</script>
 
 <style>
-*,#app {
-  background: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 
+#app,html {
+  background: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+overflow: hidden !important;
   color: #2c3e50; 
 }
 
 nav {
   padding: 30px;
+  z-index: 999 !important;
+  padding: 0 !important;
 }
 
 nav a {
