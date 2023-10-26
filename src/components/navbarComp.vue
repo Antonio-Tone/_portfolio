@@ -1,13 +1,13 @@
 <template>
     <div>
-        <div>
+        <nav>
             <ul class="d-flex justify-content-center nav">
-                <li id="copyR">©Code by Antonio Tone</li>   
-                <li>About</li>
+                <li class="copyR mx-start">©Code by Antonio Tone</li>   
+                <li class="ms-auto">About</li>
                 <li>Work</li>
                 <li>Contact</li>
             </ul>
-        </div>
+        </nav>
     </div>
 </template>
 <script>
@@ -16,8 +16,10 @@ export default {
 }
 </script>
 <style scoped>
-.nav{
-    z-index: 999 !important;
+nav{
+    z-index: 5 !important;
+    background-color: transparent !important;
+    top: 0 !important;
 }
 
     

@@ -13,8 +13,10 @@ export default{
 
 #app,html {
   background: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-overflow: hidden !important;
-  color: #2c3e50; 
+  color: #FFFF; 
+}
+html::-webkit-scrollbar{
+  display: none !important;
 }
 
 nav {
@@ -25,7 +27,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
 }
 
 nav a.router-link-exact-active {
