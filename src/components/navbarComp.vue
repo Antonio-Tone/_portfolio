@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav>
+        <nav class="">
             <ul class="d-flex justify-content-center nav">
                 <li class="copyR mx-start">©Code by Antonio Tone</li>   
                 <li class="ms-auto">About</li>
@@ -17,9 +17,15 @@ export default {
 </script>
 <style scoped>
 nav{
+    position:fixed;
     z-index: 5 !important;
     background-color: transparent !important;
     top: 0 !important;
+    min-width: 100%;
+}
+li{
+    list-style: none;
+
 }
 
     

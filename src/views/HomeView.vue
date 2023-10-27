@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="main mb-5">
+    <div class="main">
       <div class="photo">
         <img src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
         <div class="text">
@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-    <div class="row mb-5">
+    <div class="row">
     <div class="col-6 text-center head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptate eius animi odit aliquam corrupti expedita hic cum sit ab optio, esse numquam velit a delectus ratione libero impedit maiores!</div>
     <div class="col-6 text-center sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eius veritatis pariatur officia aperiam possimus, quod dolorum quibusdam velit, corporis voluptate quis quisquam praesentium porro sit illo tempora quas maiores.</div>
    <div class="about d-flex justify-content-center mb-5">
@@ -45,6 +45,9 @@ height: 100% !important;
 }
 .row{
   width:100% !important;
+  top: 900px !important;
+  padding: 100px;
+  
 
 }
 .head{
@@ -64,10 +67,12 @@ hr{
   position: absolute;
   z-index: 3;
   background: black;
-  padding: 20px;
-  border-radius:100px;
+  padding: 40px 20px;
+  border-radius:999px;
   margin-left: 150px !important;
-  box-shadow: blue 0px 3px 3px 3px !important;
+  /* box-shadow: blue 0px 3px 3px 3px !important; */
+bottom: -80% !important;
+left: 55%;
 
 }
   
