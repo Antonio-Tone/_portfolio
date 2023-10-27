@@ -16,7 +16,7 @@
     <button class="btn">About Me</button>
    </div>
     </div>
-    <div class="row">
+    <div class="row prod">
       <div class="col-6">
         <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
       </div>
@@ -26,7 +26,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row prod">
       <div class="col-6">
         <p class="head text-center d-flex justify-content-center mt-5">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
@@ -36,7 +36,7 @@
         <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
       </div>
     </div>
-    <div class="row">
+    <div class="row prod">
       <div class="col-6">
         <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
       </div>
@@ -46,7 +46,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row prod">
       <div class="col-6">
         <p class="head text-center mt-5">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
@@ -117,10 +117,14 @@ bottom: -50% !important;
 left: 50%;
 
 }
-.image{
-  height: 200px;
-  width: 250px;
+.prod{
+  padding: 100px;
 }
+.image{
+  height: 250px;
+  width: 450px;
+  /* left: 50%; */
+  /* transform: translate(50%,-50%);} */
   
-  
+}
 </style>
