@@ -2,21 +2,63 @@
   <div>
     <div class="main">
       <div class="photo">
-        <img src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
+        <img class="header" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
         <div class="text">
           <h1>Antonio Tone</h1>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class=" row intro">
     <div class="col-6 text-center head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptate eius animi odit aliquam corrupti expedita hic cum sit ab optio, esse numquam velit a delectus ratione libero impedit maiores!</div>
     <div class="col-6 text-center sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eius veritatis pariatur officia aperiam possimus, quod dolorum quibusdam velit, corporis voluptate quis quisquam praesentium porro sit illo tempora quas maiores.</div>
    <div class="about d-flex justify-content-center mb-5">
-    <hr class="mx-auto mt-4">
+    <hr class="mx-auto mt-5">
     <button class="btn">About Me</button>
    </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-6">
+        <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
+      </div>
+      <div class="col-6 d-flex justify-content-start">
+        <p class="head text-center mt-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p class="head text-center d-flex justify-content-center mt-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+        </p>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
+      </div>
+      <div class="col-6">
+        <p class="head text-center mt-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p class="head text-center mt-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+        </p>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
+      </div>
+    </div>
+    
+
+    </div>
 </template>
 <script>
 export default {
@@ -28,7 +70,7 @@ export default {
   position: relative;
   min-height: 100vh !important;
 }
-img{
+.header{
   z-index: 0;
   /* border: 5px solid purple !important; */
   position: absolute;
@@ -43,10 +85,10 @@ height: 100% !important;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.row{
+.intro{
   width:100% !important;
   top: 900px !important;
-  padding: 100px;
+  padding: 120px;
   
 
 }
@@ -71,9 +113,13 @@ hr{
   border-radius:999px;
   margin-left: 150px !important;
   /* box-shadow: blue 0px 3px 3px 3px !important; */
-bottom: -80% !important;
-left: 55%;
+bottom: -50% !important;
+left: 50%;
 
+}
+.image{
+  height: 200px;
+  width: 250px;
 }
   
   
