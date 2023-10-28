@@ -16,54 +16,77 @@
     <button class="btn">About Me</button>
    </div>
     </div>
-    <div class="row prod">
+    <button @click="show(2)">2</button>
+    <button @click="show(3)">3</button>
+    <button @click="show(4)">4</button>
+    <button @click="show(5)">5</button>
+    <div class="row prod" v-show="visibleElement === 1">
       <div class="col-6">
         <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
       </div>
-      <div class="col-6 d-flex justify-content-start">
+      <div class="col-6">
         <p class="head text-center mt-5">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+          1
         </p>
       </div>
     </div>
-    <div class="row prod">
+     <div class="row prod" v-show="visibleElement === 2">
+       <div class="col-6 d-flex justify-content-start">
+         <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
+       </div>
       <div class="col-6">
         <p class="head text-center d-flex justify-content-center mt-5">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+          2
         </p>
       </div>
-      <div class="col-6 d-flex justify-content-end">
-        <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
-      </div>
-    </div>
-    <div class="row prod">
+    </div> 
+    <div class="row prod" v-show="visibleElement === 3">
       <div class="col-6">
         <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
       </div>
       <div class="col-6">
         <p class="head text-center mt-5">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+         3
         </p>
       </div>
     </div>
-    <div class="row prod">
+    <div class="row prod" v-show="visibleElement === 4">
       <div class="col-6">
-        <p class="head text-center mt-5">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
-        </p>
-      </div>
-      <div class="col-6 d-flex justify-content-end">
         <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
       </div>
+      <div class="col-6">
+        <p class="head text-center mt-5">
+          4
+        </p>
+      </div>
     </div>
+    <div class="row prod" v-show="visibleElement === 5">
+      <div class="col-6 d-flex justify-content-start">
+        <img class="image" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
+      </div>
+      <div class="col-6">
+        <p class="head text-center mt-5">
+          5
+        </p>
+      </div>
+     </div>
     
 
     </div>
 </template>
 <script>
 export default {
-  
-}
+  data() {
+    return {
+      visibleElement: 1,
+    };
+  },
+  methods: {
+    show(elementNumber) {
+      this.visibleElement = elementNumber;
+    }
+  },
+};
 </script>
 <style scoped>
 .main{
