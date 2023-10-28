@@ -16,6 +16,7 @@
     <button class="btn">About Me</button>
    </div>
     </div>
+    <button @click="show(1)">1</button>
     <button @click="show(2)">2</button>
     <button @click="show(3)">3</button>
     <button @click="show(4)">4</button>
