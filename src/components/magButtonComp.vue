@@ -1,7 +1,7 @@
 <template>
     <div>
 
-<button class="hover-effect"><h5>Hover</h5></button>
+<button class="hover-effect text-center"><h5>About</h5></button>
     </div>
   </template>
   
@@ -99,13 +99,13 @@ hoverMouse($("h5, button"));
   
   <style scoped>
   .hover-effect {
-    display: inline-block;
-    position: relative;
-    width: 150px; /* Adjust to your preference */
-    height: 100px; /* Adjust to your preference */
-    background-color: black;
+    /* display: inline-block; */
+    /* position: relative; */
+    padding: 40px 20px; 
+    height: 100px;
+    background-color: burlywood;
     border-radius: 999px;
-    margin-left: 150px !important;
+    /* margin-left: 150px !important; */
     color: white;
     text-align: center;
     line-height: 100px;

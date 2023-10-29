@@ -13,7 +13,7 @@
     <div class="col-6 text-center sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eius veritatis pariatur officia aperiam possimus, quod dolorum quibusdam velit, corporis voluptate quis quisquam praesentium porro sit illo tempora quas maiores.</div>
    <div class="about d-flex justify-content-center mb-5">
     <hr class="mx-auto mt-5">
-    <magnetic/>
+    <magnetic class="btn text-center"/>
    </div>
     </div>
     <button @click="show(1)">1</button>
@@ -225,13 +225,9 @@ hr{
 .btn{
   position: absolute;
   z-index: 3;
-  background: black;
-  padding: 40px 20px;
-  border-radius:999px;
-  margin-left: 150px !important;
-  /* box-shadow: blue 0px 3px 3px 3px !important; */
-bottom: -50% !important;
-left: 50%;
+/* margin-left: 150px !important;  */
+bottom: -60% !important;
+left: 60%;
 
 }
 .prod{
