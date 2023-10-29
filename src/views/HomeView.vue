@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="main">
+    <div class="boss">
+      <div class="main">
       <div class="photo">
         <img class="header" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
         <div class="text">
@@ -161,10 +162,12 @@
       </div>
     </div>
      </div>
+    </div>
 
     </div>
 </template>
 <script>
+import Lenis from '@studio-freight/lenis'
 import magnetic from "../components/magButtonComp.vue"
 export default {
   components: {
@@ -173,14 +176,38 @@ export default {
   data() {
     return {
       visibleElement: 1,
+      Lenis:null,
     };
+  },
+  mounted() {
+    this.lenis = new Lenis(); // Create a new Lenis instance
+    this.lenis.on('scroll', (e) => {
+      // Handle scroll events
+      console.log(e);
+    })
+    this.smoothScroll();
   },
   methods: {
     show(elementNumber) {
       this.visibleElement = elementNumber;
-    }
+    },
+    show(elementNumber) {
+      this.visibleElement = elementNumber;
+    },
+    smoothScroll() {
+      const lenis = this.lenis;
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    },
   },
+  
 };
+
 </script>
 <style scoped>
 .main{
