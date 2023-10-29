@@ -13,7 +13,7 @@
     <div class="col-6 text-center sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eius veritatis pariatur officia aperiam possimus, quod dolorum quibusdam velit, corporis voluptate quis quisquam praesentium porro sit illo tempora quas maiores.</div>
    <div class="about d-flex justify-content-center mb-5">
     <hr class="mx-auto mt-5">
-    <button class="btn">About Me</button>
+    <magnetic/>
    </div>
     </div>
     <button @click="show(1)">1</button>
@@ -165,7 +165,11 @@
     </div>
 </template>
 <script>
+import magnetic from "../components/magButtonComp.vue"
 export default {
+  components: {
+    magnetic
+  },
   data() {
     return {
       visibleElement: 1,
