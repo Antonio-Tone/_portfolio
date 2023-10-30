@@ -12,8 +12,9 @@ export default{
 <style>
 
 #app,html {
-  background: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
   color: #FFFF; 
+  overflow-x: hidden;
+  background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); 
 }
 html::-webkit-scrollbar{
   display: none !important;
