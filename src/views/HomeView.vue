@@ -1,6 +1,6 @@
-<!-- <template>
+<template>
   <div>
-    <div class="scroll-wrapper">
+    <div class="boss">
       <div class="main">
         <div class="photo">
           <img
@@ -291,14 +291,14 @@ export default {
     };
   },
   mounted() {
-<<<<<<< HEAD
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-       // Create the ScrollSmoother instance
-       const smoother = ScrollSmoother.create({
-      smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
-      effects: true, // looks for data-speed and data-lag attributes on elements
-      smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-    });
+    this.autoType();
+    
+    gsap.registerPlugin(ScrollTrigger);
+    const container = this.$el.querySelector('.horizontal_item');
+    const itemsRow1 = gsap.utils.toArray('.row-1 .col-3');
+    const itemsRow2 = gsap.utils.toArray('.row-2 .col-3');
+    const totalWidth = (itemsRow1.length + itemsRow2.length) * 100;
+
     gsap.to(itemsRow1, {
       xPercent: 100 * (itemsRow1.length - 1),
       ease: 'sine.out',
@@ -325,7 +325,6 @@ export default {
         end: `+=${totalWidth}`,
       },
     });
->>>>>>> be0d50f5c51ee3095b58493f7d9f5a1dc25a5afe
 
   },
 
@@ -333,6 +332,7 @@ export default {
     show(elementNumber) {
       this.visibleElement = elementNumber;
     },
+    autoType() {
       const text = document.querySelector('.autotype');
       const originalText = text.textContent;
       
