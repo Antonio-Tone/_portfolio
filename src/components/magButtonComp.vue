@@ -1,12 +1,15 @@
 <template>
     <div>
 
-<button class="hover-effect text-center"><h5>About</h5></button>
+<button class="hover-effect text-center"><h5>{{ buttonText }}</h5></button>
     </div>
   </template>
   
   <script>
   export default {
+    props: {
+    buttonText: String, // Define a prop for the button text
+  },
     mounted() {
       this.initializeHoverEffect();
     },

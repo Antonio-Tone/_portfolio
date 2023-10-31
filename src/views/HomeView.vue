@@ -23,7 +23,8 @@
         </div>
         <div class="about d-flex justify-content-center mb-5">
           <hr class="mx-auto mt-5" />
-          <magnetic class="btn text-center" />
+          <magnetic class="btn text-center" buttonText="ABOUT" />
+          <!-- <magnetic class="btn  text-center" buttonText="send"/> -->
         </div>
       </div>
       <div class=" d-flex justify-content-center">
@@ -528,6 +529,8 @@ color: aliceblue;
 .card:hover {
   transform: scale(1.04);
 }
-
+.con::after{
+  content: "" !important;
+}
 
 </style>
