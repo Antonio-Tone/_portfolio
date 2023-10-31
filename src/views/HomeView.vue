@@ -420,10 +420,20 @@ color: aliceblue;
  
 }
 .profile {
-  height: 90px;
-  width: 90px;
+  height: 45px;
+  width: 45px;
   border-radius: 999px;
+  animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
 }
+@keyframes outerglow {
+  0% {
+    box-shadow: 0px 0px 0px blue;
+  }
+  100% {
+    box-shadow: 0px 0px 15px blue;
+  }
+}
+
 .test {
   font-size: small;
 }
