@@ -135,11 +135,10 @@
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
+                  <p class="name mx-auto">Luke Evertson</p>
+                  <p class="test luke">
+                    Antonio is a very fun person to work with and has a great sense of humour.He Is hardworking and disciplined.He could be a role model for many
+                    
                   </p>
                 </div>
               </div>
@@ -154,11 +153,9 @@
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
+                  <p class="test asiphe">
+                    Asiphe 
+                    Antonio is very independent. Whenever he struggles with something he would rather first try and figure it out himself before asking for help. He is extremely kind and friendly and turns every person he meets for the first time into his friend.
                   </p>
                 </div>
               </div>
@@ -173,11 +170,9 @@
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
+                  <p class="test hirah">
+                    taahirah Ismail
+                    He may be a man of few words, but Antonio's hard work and dedication always shine through in whatever he does. You can easily tell he appreciates every opportunity he is given and takes nothing for granted
                   </p>
                 </div>
               </div>
@@ -192,11 +187,9 @@
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
+                  <p class="test oil">
+                    Ethan Olive Oil
+                    I am thrilled to share my positive testimonial about my experience with Antonio. From the moment I first met him I was impressed. His dedication to excellence and drive to achieve was evident in every interaction I had with him.
                   </p>
                 </div>
               </div>
@@ -213,11 +206,9 @@
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
+                  <p class="test deno">
+                    deno Rautenbach
+                    Antonio is a very hardworking individual.He has improved a lot in both his coding aswell as in his problem solving skills. He is an extremely nice person to work with as he is very friendly
                   </p>
                 </div>
               </div>
@@ -232,11 +223,9 @@
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
+                  <p class="test max">
+                    maxwill Isaacs
+                    Antonio is an exceptionally hard worker and always making time to assist anyone who is in need. Also goes the extra-mile when doing anything that has to be done. He is also very confident in his capabilities and never fails to get the Job done.
                   </p>
                 </div>
               </div>
@@ -300,44 +289,58 @@ export default {
     };
   },
   mounted() {
-     // Create a new Lenis instance
-    //  this.lenis = new Lenis();
-    // this.lenis.on("scroll", (e) => {
-    //   console.log(e);
-    // });
-    // this.debouncedSmoothScroll = _.debounce(this.smoothScroll, 100);
-    // window.addEventListener("scroll", this.debouncedSmoothScroll);
-    // this.smoothScroll();
+    this.autoType();
+
 
   },
-  // beforeDestroy() {
-  //   // Remove the event listener when the component is destroyed
-  //   window.removeEventListener("scroll", this.debouncedSmoothScroll);
-  // },
+
   methods: {
     show(elementNumber) {
       this.visibleElement = elementNumber;
     },
-    //lenis smooth scroll setup
-    smoothScroll() {
-      // Use the 'lenis' instance created in 'mounted'
-      this.lenis.options.duration =0.5;
-      this.lenis.options.easing = (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t));
-
-      const raf = (time) => {
-        this.lenis.raf(time);
-        requestAnimationFrame(raf);
+    autoType() {
+      const text = document.querySelector('.luke');
+      const originalText = text.textContent;
+      
+      const textLoad = () => {
+        let i = 0;
+        const intervalId = setInterval(() => {
+          text.textContent = originalText.slice(0, i);
+          i+=2;
+          if (i > originalText.length) {
+            clearInterval(intervalId);
+          }
+        }, 100); // Adjust the interval to control the typing speed
       };
+      setTimeout(() => {
+        
+      }, 2000);
+
+      textLoad();
+      setInterval(textLoad, 12000);
+    },
+  },
+   
+    //lenis smooth scroll setup
+    // smoothScroll() {
+      // Use the 'lenis' instance created in 'mounted'
+      // this.lenis.options.duration =0.5;
+      // this.lenis.options.easing = (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t));
+
+      // const raf = (time) => {
+      //   this.lenis.raf(time);
+      //   requestAnimationFrame(raf);
+      // };
 
       // function raf(time) {
       //   this.lenis.raf(time);
       //   requestAnimationFrame(raf);
       // }
 
-      requestAnimationFrame(raf);
-    },
-  },
-};
+      // requestAnimationFrame(raf);
+    // },
+  };
+
 </script>
 <style scoped>
 .main {
@@ -424,6 +427,25 @@ color: aliceblue;
 .test {
   font-size: small;
 }
+.luke::after{
+  /* content:""; */
+  /* width:100%;
+  height:100%;
+  background-color:#010718;
+  position:absolute;
+  left: 0;
+  top:0;
+  border-left:3px solid #73EEDC; */
+  /* animation:animate; */
+}
+/* @keyframes animate{
+  40%,60%{
+    left:calc(100% + 4px);
+  }
+  100%{
+    left:-13px;
+  }
+} */
 .container {
   min-width: 100% !important;
   background-color: lightcoral;
