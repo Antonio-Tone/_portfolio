@@ -1,12 +1,15 @@
 <template>
     <div>
 
-<button class="hover-effect text-center"><h5>About</h5></button>
+<button class="hover-effect text-center"><h5>{{ buttonText }}</h5></button>
     </div>
   </template>
   
   <script>
   export default {
+    props: {
+    buttonText: String, // Define a prop for the button text
+  },
     mounted() {
       this.initializeHoverEffect();
     },
@@ -70,8 +73,8 @@
 
     var onHover = function (x, y) {
       TweenMax.to($self, 0.4, {
-        x: x * 0.8,
-        y: y * 0.8,
+        x: x * 0.3,
+        y: y * 0.4,
         //scale: .9,
         rotation: x * 0.05,
         ease: Power2.easeOut
@@ -103,21 +106,22 @@ hoverMouse($("h5, button"));
     /* position: relative; */
     padding: 40px 20px; 
     height: 100px;
-    background-color: burlywood;
-    border-radius: 999px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+      border-radius: 999px;
     /* margin-left: 150px !important; */
     color: white;
     text-align: center;
     line-height: 100px;
     text-decoration: none;
+    /* border: none; */
+    color: white;
+    cursor: pointer !important;
   }
   
   .btn {
     /* Add styles for the button inside the anchor element if needed */
     background: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
+   
   }
   </style>
   
