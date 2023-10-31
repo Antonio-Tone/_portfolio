@@ -1,6 +1,6 @@
-<template>
+<!-- <template>
   <div>
-    <div class="boss">
+    <div class="scroll-wrapper">
       <div class="main">
       <div class="photo">
         <img class="header" src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg">
@@ -168,6 +168,9 @@
 </template>
 <script>
 import Lenis from '@studio-freight/lenis'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import magnetic from "../components/magButtonComp.vue"
 export default {
   components: {
@@ -180,12 +183,52 @@ export default {
     };
   },
   mounted() {
-    this.lenis = new Lenis(); // Create a new Lenis instance
-    this.lenis.on('scroll', (e) => {
-      // Handle scroll events
-      console.log(e);
-    })
-    this.smoothScroll();
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+       // Create the ScrollSmoother instance
+       const smoother = ScrollSmoother.create({
+      smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
+      effects: true, // looks for data-speed and data-lag attributes on elements
+      smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+    });
+
+    // Create a ScrollTrigger animation
+    gsap.to(this.$refs.box, {
+      y: 200,
+      scrollTrigger: {
+        trigger: "scroll-wrapper",
+        start: 'top center',
+        end: 'center center',
+        markers: true, // For debugging, you can remove this in production
+      },
+    });
+  },
+};
+</script>
+
+<style scoped>
+.spacer {
+  height: 500px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+}
+</style>
+Save to grepper
+In this example, we've created a simple Vue component that uses GSAP to create a smooth scrolling effect on the "box" element. We import GSAP plugins, register them, and create a ScrollSmoother instance. The "box" element will animate when it enters the viewport.
+
+Make sure to adjust the elements and animations to fit your specific use case.
+
+
+
+
+Is this conversation helpful so far?
+
+
+
+
   },
   methods: {
     show(elementNumber) {
@@ -295,4 +338,4 @@ background-color: greenyellow;
  
 }
 
-</style>
+</style> -->
