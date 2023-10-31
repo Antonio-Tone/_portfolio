@@ -122,9 +122,9 @@
       </div>
      </div>
 
-      <section class="container mb-5 m-0">
-        <div class="wrapper horizontal_content">
-          <div class="row row-1 mb-3 horizontal_item">
+      <section class="holder">
+        <div class="horizontal_item">
+          <div class="row row-1 m-0 container">
             <div class="col-3" >
               <div class="flex-col">
                 <div class="d-flex justify-content-center">
@@ -194,8 +194,8 @@
               </div>
             </div>
           </div>
-          <!-- <div class="row row-2">
-            <div class="col-3">
+          <div class="row row-2 second">
+            <div class="col-3 reverse">
               <div class="flex-col">
                 <div class="d-flex justify-content-center">
                   <img
@@ -212,7 +212,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 reverse">
               <div class="flex-col">
                 <div class="d-flex justify-content-center">
                   <img
@@ -229,7 +229,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 reverse">
               <div class="flex-col">
                 <div class="d-flex justify-content-center">
                   <img
@@ -248,7 +248,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 reverse">
               <div class="flex-col">
                 <div class="d-flex justify-content-center">
                   <img
@@ -267,17 +267,17 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
-      </section>
+    </section>
     </div>
   </div>
 </template>
 <script>
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import _ from "lodash";
 // import Lenis from "@studio-freight/lenis";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import magnetic from "../components/magButtonComp.vue";
 export default {
   components: {
@@ -292,17 +292,37 @@ export default {
   },
   mounted() {
     this.autoType();
+    
     gsap.registerPlugin(ScrollTrigger);
-    this.box_items = gsap.utils.toArray(".col-3");
-    gsap.to(this.box_items, {
-      xPercent: -100 * (this.box_items.length - 1),
-      ease: "sine.out",
+    const container = this.$el.querySelector('.horizontal_item');
+    const itemsRow1 = gsap.utils.toArray('.row-1 .col-3');
+    const itemsRow2 = gsap.utils.toArray('.row-2 .col-3');
+    const totalWidth = (itemsRow1.length + itemsRow2.length) * 100;
+
+    gsap.to(itemsRow1, {
+      xPercent: 100 * (itemsRow1.length - 1),
+      ease: 'sine.out',
       scrollTrigger: {
-        trigger: ".container",
+        trigger: container,
         pin: true,
-        scrub: 3,
-        snap: 1 / (this.box_items.length - 1),
-        end: "+=" + document.querySelector(".container").offsetWidth,
+        pinSpacing: false,
+        scrub: 1,
+        snap: 1 / (itemsRow1.length - 1),
+        end: `+=${totalWidth}`,
+      },
+    });
+    // scrollTrigger.progress(0.5);
+
+    gsap.to(itemsRow2, {
+      xPercent: -100 * (itemsRow2.length - 1),
+      ease: 'sine.out',
+      scrollTrigger: {
+        trigger: container,
+        pin: true,
+        pinSpacing: false,
+        scrub: 1,
+        snap: 1 / (itemsRow2.length - 1),
+        end: `+=${totalWidth}`,
       },
     });
 
@@ -470,12 +490,12 @@ color: aliceblue;
 } */
 .container {
   min-width: 100% !important;
-  background-color: lightcoral;
-  padding: 100px 0;
+  /* background-color: lightcoral; */
+  /* padding: 100px 0; */
 }
 .wrapper {
   padding: 20px;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 .flex-col {
   background-color: burlywood;
@@ -573,18 +593,14 @@ color: aliceblue;
 .card:hover {
   transform: scale(1.04);
 }
-.con::after{
-  content: "" !important;
-}
 
 .horizontal_content{
   display: flex;
 }
 .col-3{
-  padding: 100px 150px;
+  padding:100px;
+ 
 }
-.col-3:not(:last-child){
 
-}
 
 </style>
