@@ -122,24 +122,23 @@
       </div>
      </div>
 
-      <div class="container mb-5 m-0">
-        <div class="wrapper">
-          <div class="row row-1 mb-3">
-            <div class="col-3">
+      <section class="container mb-5 m-0">
+        <div class="wrapper horizontal_content">
+          <div class="row row-1 mb-3 horizontal_item">
+            <div class="col-3" >
               <div class="flex-col">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                    src="https://i.postimg.cc/VL53dhfv/C12-Luke-Evertson-1.jpg"
                     alt="picture"
                   />
                 </div>
                 <div class="text-center">
                   <p class="name mx-auto">Luke Evertson</p>
-                  <p class="test luke">
+                  <p class="test autotype">
                     Antonio is a very fun person to work with and has a great sense of humour.He Is hardworking and disciplined.He could be a role model for many
-                    
-                  </p>
+                    </p>
                 </div>
               </div>
             </div>
@@ -148,13 +147,13 @@
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                    src="https://i.postimg.cc/7P5FLcY6/C12-Asiphe-Ndimlana-1.jpg"
                     alt="picture"
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test asiphe">
-                    Asiphe 
+                  <p class="name mx-auto">Asiphe Ndimlana</p>
+                  <p class="test autotype">                  
                     Antonio is very independent. Whenever he struggles with something he would rather first try and figure it out himself before asking for help. He is extremely kind and friendly and turns every person he meets for the first time into his friend.
                   </p>
                 </div>
@@ -165,13 +164,13 @@
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                    src="https://i.postimg.cc/dVNRDW0s/C12-Taahirah-Ismail-1.jpg"
                     alt="picture"
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test hirah">
-                    taahirah Ismail
+                  <p class="name mx-auto">Taahirah Ismail</p>                    
+                  <p class="test autotype">
                     He may be a man of few words, but Antonio's hard work and dedication always shine through in whatever he does. You can easily tell he appreciates every opportunity he is given and takes nothing for granted
                   </p>
                 </div>
@@ -182,32 +181,32 @@
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                    src="https://i.postimg.cc/DyHztfG2/IMG-9863-1.jpg"
                     alt="picture"
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test oil">
-                    Ethan Olive Oil
+                  <p class="name mx-auto">Ethan Oliver</p>
+                  <p class="test autotype">
                     I am thrilled to share my positive testimonial about my experience with Antonio. From the moment I first met him I was impressed. His dedication to excellence and drive to achieve was evident in every interaction I had with him.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row row-2">
+          <!-- <div class="row row-2">
             <div class="col-3">
               <div class="flex-col">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                    src="https://i.postimg.cc/7YYT7gdf/Screenshot-2023-05-11-111514.png"
                     alt="picture"
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test deno">
-                    deno Rautenbach
+                  <p class="name mx-auto">Deno Rautenbach</p>
+                  <p class="test autotype">                   
                     Antonio is a very hardworking individual.He has improved a lot in both his coding aswell as in his problem solving skills. He is an extremely nice person to work with as he is very friendly
                   </p>
                 </div>
@@ -218,13 +217,13 @@
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                    src="https://i.postimg.cc/mk1J6c6M/Screenshot-2023-07-05-161952.png"
                     alt="picture"
                   />
                 </div>
                 <div class="text-center">
-                  <p class="test max">
-                    maxwill Isaacs
+                  <p class="name mx-auto">Maxwill Isaacs</p>
+                  <p class="test autotype">                    
                     Antonio is an exceptionally hard worker and always making time to assist anyone who is in need. Also goes the extra-mile when doing anything that has to be done. He is also very confident in his capabilities and never fails to get the Job done.
                   </p>
                 </div>
@@ -268,13 +267,15 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </template>
 <script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import _ from "lodash";
 // import Lenis from "@studio-freight/lenis";
 import magnetic from "../components/magButtonComp.vue";
@@ -284,13 +285,26 @@ export default {
   },
   data() {
     return {
+      box_items: [],
       visibleElement: 1,
       lenis: null,
     };
   },
   mounted() {
     this.autoType();
-
+    gsap.registerPlugin(ScrollTrigger);
+    this.box_items = gsap.utils.toArray(".col-3");
+    gsap.to(this.box_items, {
+      xPercent: -100 * (this.box_items.length - 1),
+      ease: "sine.out",
+      scrollTrigger: {
+        trigger: ".container",
+        pin: true,
+        scrub: 3,
+        snap: 1 / (this.box_items.length - 1),
+        end: "+=" + document.querySelector(".container").offsetWidth,
+      },
+    });
 
   },
 
@@ -299,7 +313,7 @@ export default {
       this.visibleElement = elementNumber;
     },
     autoType() {
-      const text = document.querySelector('.luke');
+      const text = document.querySelector('.autotype');
       const originalText = text.textContent;
       
       const textLoad = () => {
@@ -349,7 +363,6 @@ export default {
 }
 .header {
   z-index: 0;
-  /* border: 5px solid purple !important; */
   position: absolute;
   min-width: 100% !important;
   height: 100% !important;
@@ -396,7 +409,6 @@ hr {
 .btn {
   position: absolute;
   z-index: 3;
-  /* margin-left: 150px !important;  */
   bottom: -60% !important;
   left: 65%;
 }
@@ -459,7 +471,7 @@ color: aliceblue;
 .container {
   min-width: 100% !important;
   background-color: lightcoral;
-  padding: 23px;
+  padding: 100px 0;
 }
 .wrapper {
   padding: 20px;
@@ -563,6 +575,16 @@ color: aliceblue;
 }
 .con::after{
   content: "" !important;
+}
+
+.horizontal_content{
+  display: flex;
+}
+.col-3{
+  padding: 100px 150px;
+}
+.col-3:not(:last-child){
+
 }
 
 </style>
