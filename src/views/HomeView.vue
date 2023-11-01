@@ -23,7 +23,7 @@
         </div>
         <div class="about d-flex justify-content-center mb-5">
           <hr class="mx-auto mt-5" />
-          <magnetic class="btn text-center" buttonText="ABOUT" />
+          <magnetic class="btn text-center" buttonText="About" />
           <!-- <magnetic class="btn  text-center" buttonText="send"/> -->
         </div>
       </div>
