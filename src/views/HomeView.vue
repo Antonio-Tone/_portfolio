@@ -122,11 +122,11 @@
       </div>
      </div>
 
-      <section class="holder">
-        <div class="horizontal_item">
-          <div class="row row-1 m-0 container">
-            <div class="col-3" >
-              <div class="flex-col">
+      <section class="holder mb-5 mx-auto">
+        <div class="horizontal_item container p-5">
+          <div class="row row-1">
+            <div class="flex-col m-2" >
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -142,8 +142,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="flex-col">
+            <div class="flex-col m-2">
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -159,8 +159,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="flex-col">
+            <div class="flex-col m-2">
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -176,8 +176,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="flex-col">
+            <div class="flex-col m-2">
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -195,8 +195,8 @@
             </div>
           </div>
           <div class="row row-2 second">
-            <div class="col-3 reverse">
-              <div class="flex-col">
+            <div class="flex-col m-2">
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -212,8 +212,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 reverse">
-              <div class="flex-col">
+            <div class="flex-col m-2">
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -229,8 +229,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 reverse">
-              <div class="flex-col">
+            <div class="flex-col m-2">
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -248,8 +248,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 reverse">
-              <div class="flex-col">
+            <div class="flex-col m-2">
+              <div class="horizontal-single-item">
                 <div class="d-flex justify-content-center">
                   <img
                     class="profile"
@@ -294,34 +294,36 @@ export default {
     this.autoType();
     
     gsap.registerPlugin(ScrollTrigger);
-    const container = this.$el.querySelector('.horizontal_item');
-    const itemsRow1 = gsap.utils.toArray('.row-1 .col-3');
-    const itemsRow2 = gsap.utils.toArray('.row-2 .col-3');
-    const totalWidth = (itemsRow1.length + itemsRow2.length) * 100;
+    const container = this.$el.querySelector('.holder');
+    const row2 = this.$el.querySelector('.row-1');
+    const itemsRow1 = gsap.utils.toArray('.row-1 .flex-col');
+    const itemsRow2 = gsap.utils.toArray('.row-2 .flex-col');
+    const totalWidth = (itemsRow1.length + itemsRow2.length) * 500;
 
     gsap.to(itemsRow1, {
-      xPercent: 100 * (itemsRow1.length - 1),
+      xPercent: -100 * (itemsRow1.length - 1),
       ease: 'sine.out',
       scrollTrigger: {
         trigger: container,
-        pin: true,
+        markers:true,
+        pin: false,
         pinSpacing: false,
-        scrub: 1,
-        snap: 1 / (itemsRow1.length - 1),
+        scrub: 4,
+        snap: 0.5 / (itemsRow1.length - 1),
         end: `+=${totalWidth}`,
       },
     });
-    // scrollTrigger.progress(0.5);
+    // scrollTrigger.progress(1);
 
     gsap.to(itemsRow2, {
-      xPercent: -100 * (itemsRow2.length - 1),
+      xPercent: 100 * (itemsRow2.length - 1),
       ease: 'sine.out',
       scrollTrigger: {
-        trigger: container,
-        pin: true,
+        trigger: row2,
+        pin: false,
         pinSpacing: false,
-        scrub: 1,
-        snap: 1 / (itemsRow2.length - 1),
+        scrub: 4,
+        snap: 0.5 / (itemsRow2.length - 1),
         end: `+=${totalWidth}`,
       },
     });
@@ -489,9 +491,9 @@ color: aliceblue;
   }
 } */
 .container {
-  min-width: 100% !important;
-  /* background-color: lightcoral; */
-  /* padding: 100px 0; */
+  max-width: 100em;
+  background-color: black;
+ 
 }
 .wrapper {
   padding: 20px;
@@ -524,6 +526,31 @@ color: aliceblue;
   justify-content: center;
   color: white;
   transition: 0.2s ease-in-out;
+}
+.holder{
+ background-color: yellowgreen;
+ /* width: 300%; */
+ /* right: 50%; */
+ height: 700px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 0;
+  margin-bottom: 900px !important;
+}
+.row-1{
+  background-color: blueviolet;
+  /* width: 300% !important; */
+  width: 120vw;
+    right: 10vw;
+
+}
+.row-2{
+  background-color: paleturquoise;
+  width: 120vw;
+    right: 120vw;
+
+  /* width: 300% !important; */
 }
 
 .img {
@@ -597,10 +624,7 @@ color: aliceblue;
 .horizontal_content{
   display: flex;
 }
-.col-3{
-  padding:100px;
- 
-}
+
 
 
 </style>
