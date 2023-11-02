@@ -453,7 +453,7 @@ export default {
     gsap.to(itemsRow1, {
       xPercent: -100 * (itemsRow1.length - 1),
       ease: "linear",
-      duration: 4,
+      duration: 3,
       scrollTrigger: {
         start:"center center",
         trigger: container,
@@ -468,9 +468,9 @@ export default {
     // scrollTrigger.progress(1);
 
     gsap.to(itemsRow2, {
-      xPercent:80 * (itemsRow2.length +1),
+      xPercent:100 * (itemsRow2.length +1),
       ease: "linear",
-      duration: 4,
+      duration: 3,
       scrollTrigger: {
         start:"center center",
         trigger: row2,
