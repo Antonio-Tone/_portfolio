@@ -444,23 +444,23 @@ export default {
     this.autoType();
 
     gsap.registerPlugin(ScrollTrigger);
-    const container = this.$el.querySelector(".container");
+    const container = this.$el.querySelector(".holder");
     const row2 = this.$el.querySelector(".holder");
     const itemsRow1 = gsap.utils.toArray(".row-1 .flex-col");
     const itemsRow2 = gsap.utils.toArray(".row-2 .flex-col");
-    const totalWidth = (itemsRow1.length + itemsRow2.length) * 500;
+    const totalWidth = (itemsRow1.length + itemsRow2.length) * 300;
 
     gsap.to(itemsRow1, {
       xPercent: -100 * (itemsRow1.length - 1),
-      ease: "sine.out",
-      duration: 1,
+      ease: "linear",
+      duration: 4,
       scrollTrigger: {
         start:"center center",
         trigger: container,
         // markers: true,
         pin: false,
         pinSpacing: false,
-        scrub: 3,
+        scrub: 5,
         snap: 0.5 / (itemsRow1.length - 1),
         end: `+=${totalWidth}`,
       },
@@ -468,16 +468,16 @@ export default {
     // scrollTrigger.progress(1);
 
     gsap.to(itemsRow2, {
-      xPercent: -80 * (itemsRow2.length - 1),
-      ease: "sine.out",
-      duration: 1,
+      xPercent:80 * (itemsRow2.length +1),
+      ease: "linear",
+      duration: 4,
       scrollTrigger: {
         start:"center center",
         trigger: row2,
         pin: false,
         pinSpacing: false,
-        scrub: 3,
-        snap: 0.5 / (itemsRow2.length - 1),
+        scrub: 5,
+        snap: 0.5 / (itemsRow2.length + 1),
         end: `+=${totalWidth}`,
       },
     });
@@ -642,12 +642,10 @@ hr {
 } */
 .container {
   max-width: 100em;
-  /* background-color: black; */
-  right:50%;
 }
 .wrapper {
   padding: 20px;
-  /* background-color: greenyellow; */
+  
 }
 .flex-col {
   background-color: burlywood;
@@ -682,22 +680,17 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 0;
-  /* margin-bottom: 900px !important; */
+  margin-bottom: 900px !important;
   
 }
 .row-1 {
-  /* background-color: blueviolet; */
-  /* width: 300% !important; */
   width: 200vw;
 }
 .row-2 {
-  /* background-color: paleturquoise; */
   width: 200vw;
-  /* align-items: center; */
-  /* right:70%; */
-
-  /* width: 300% !important; */
+ transform: translateX(-12%);
 }
+
 
 .img {
   border-radius: 20px;
