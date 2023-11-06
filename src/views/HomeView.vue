@@ -1,6 +1,8 @@
 <template>
   <div>
     <div class="boss">
+      <!-- hero section -->
+
       <div class="main">
         <div class="photo">
           <img
@@ -12,6 +14,8 @@
           </div>
         </div>
       </div>
+      <!--introduction -->
+
       <div class="row intro">
         <div class="col-6 text-center d-flex justify-content-start">
           <div class="head">
@@ -31,190 +35,194 @@
         <div class="about d-flex justify-content-center mb-5">
           <hr class="mx-auto mt-5" />
           <magnetic class="btn text-center" buttonText="About" />
-          <!-- <magnetic class="btn  text-center" buttonText="send"/> -->
         </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <button class="toggle" @click="show(1)">Portfolio</button>
-        <button class="toggle" @click="show(2)">E-commerce</button>
-        <button class="toggle" @click="show(3)">Appliance store</button>
-        <button class="toggle" @click="show(4)">BMI</button>
-        <button class="toggle" @click="show(5)">Rental</button>
-      </div>
-      <div class="">
-        <div class="row prod" v-show="visibleElement === 1">
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <p class="text-center">my first Portfolio</p>
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 2">
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <p class="text-center">first e-commerce site</p>
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 3">
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png  "
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <p class="text-center">group project</p>
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 4">
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <p class="text-center">Fun little project i did</p>
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 5">
-          <div class="col-6 d-flex justify-content-start">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href=""
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <p class="text-center">Capstone project</p>
-          </div>
-        </div>
-      </div>
+      <!--projects section -->
 
-      <section class="holder mb-5 mx-auto">
+      <div class="projects">
+        <div class="d-flex justify-content-center">
+          <button class="toggle" @click="show(1)">Portfolio</button>
+          <button class="toggle" @click="show(2)">E-commerce</button>
+          <button class="toggle" @click="show(3)">Appliance store</button>
+          <button class="toggle" @click="show(4)">BMI</button>
+          <button class="toggle" @click="show(5)">Rental</button>
+        </div>
+        <div class="">
+          <div class="row prod" v-show="visibleElement === 1">
+            <div class="col-6">
+              <div class="card">
+                <img
+                  class="img"
+                  src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png"
+                  alt=""
+                />
+                <div class="textBox">
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 work">
+              <p class="text-center">my first Portfolio</p>
+            </div>
+          </div>
+          <div class="row prod" v-show="visibleElement === 2">
+            <div class="col-6">
+              <div class="card">
+                <img
+                  class="img"
+                  src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png"
+                  alt=""
+                />
+                <div class="textBox">
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 work">
+              <p class="text-center">first e-commerce site</p>
+            </div>
+          </div>
+          <div class="row prod" v-show="visibleElement === 3">
+            <div class="col-6">
+              <div class="card">
+                <img
+                  class="img"
+                  src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png  "
+                  alt=""
+                />
+                <div class="textBox">
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 work">
+              <p class="text-center">group project</p>
+            </div>
+          </div>
+          <div class="row prod" v-show="visibleElement === 4">
+            <div class="col-6">
+              <div class="card">
+                <img
+                  class="img"
+                  src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png"
+                  alt=""
+                />
+                <div class="textBox">
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 work">
+              <p class="text-center">Fun little project i did</p>
+            </div>
+          </div>
+          <div class="row prod" v-show="visibleElement === 5">
+            <div class="col-6 d-flex justify-content-start">
+              <div class="card">
+                <img
+                  class="img"
+                  src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png"
+                  alt=""
+                />
+                <div class="textBox">
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                    <a href=""
+                      ><button class="toggle linkBg">
+                        <img
+                          class="links"
+                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                          alt=""
+                        /></button
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 work">
+              <p class="text-center">Capstone project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- testimonials -->
+
+      <section class="holder  mx-auto">
         <div class="horizontal_item container">
           <div class="row row-1">
             <div class="flex-col m-2">
@@ -420,6 +428,37 @@
           </div>
         </div>
       </section>
+      <!-- contact section -->
+
+      <section class="contact">
+        <div class="d-flex justify-content-center heading">
+            <img class="profile" src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png" alt="">
+            <h1  class="connect">Let's get in<br><span class="shift">touch</span><span class="">...</span></h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <hr class="hr">
+          <magnetic class="switch" buttonText="Contact"/>
+        </div>
+        <div class="d-flex justify-content-center">
+          <span class="info">Antoniotone815@gmail.com</span><span class="info">065 851 3653</span>
+        </div>
+        <div class="row footer">
+         <div class="col-6">
+          <div class="general">
+            <div class=""><span>Version:</span></div>
+            <div class="">2023© Edition</div>
+          </div>
+         </div>
+          <div class="col-6">
+            <div class="socials">
+            <div class=""><span>Socials:</span></div>
+            <div class="wrapper d-flex justify-content-center">
+              <a href=""><button><img class="link" src="https://i.postimg.cc/XqFWyL2G/icons8-linkedin-50.png" alt=""></button></a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -455,9 +494,8 @@ export default {
       ease: "linear",
       duration: 3,
       scrollTrigger: {
-        start:"center center",
+        start: "center center",
         trigger: container,
-        // markers: true,
         pin: false,
         pinSpacing: false,
         scrub: 5,
@@ -465,14 +503,13 @@ export default {
         end: `+=${totalWidth}`,
       },
     });
-    // scrollTrigger.progress(1);
 
     gsap.to(itemsRow2, {
-      xPercent:100 * (itemsRow2.length +1),
+      xPercent: 100 * (itemsRow2.length + 1),
       ease: "linear",
       duration: 3,
       scrollTrigger: {
-        start:"center center",
+        start: "center center",
         trigger: row2,
         pin: false,
         pinSpacing: false,
@@ -621,31 +658,13 @@ hr {
 .test {
   font-size: small;
 }
-.luke::after {
-  /* content:""; */
-  /* width:100%;
-  height:100%;
-  background-color:#010718;
-  position:absolute;
-  left: 0;
-  top:0;
-  border-left:3px solid #73EEDC; */
-  /* animation:animate; */
-}
-/* @keyframes animate{
-  40%,60%{
-    left:calc(100% + 4px);
-  }
-  100%{
-    left:-13px;
-  }
-} */
+
+
 .container {
   max-width: 100em;
 }
 .wrapper {
   padding: 20px;
-  
 }
 .flex-col {
   background-color: burlywood;
@@ -673,24 +692,20 @@ hr {
   transition: 0.2s ease-in-out;
 }
 .holder {
-  /* background-color: yellowgreen; */
-  
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin-bottom: 900px !important;
-  
+  /* margin-bottom: 900px !important;A */
 }
 .row-1 {
   width: 200vw;
 }
 .row-2 {
   width: 200vw;
- transform: translateX(-12%);
+  transform: translateX(-12%);
 }
-
 
 .img {
   border-radius: 20px;
@@ -760,5 +775,112 @@ hr {
   transform: scale(1.04);
 }
 
+.contact{
+  background: rgb(28,29,32);
+  height: 730px;
+}
+.heading{
+  transform:translateX(-350px) translateY(120px);
+}
+.connect{
+  font-size: 4rem;
+  margin-left: 10px !important;
+}
+.heading > .profile{
+  height: 75px;
+  width: 75px;
+  border-radius: 999px;
+  transform: translateY(75px) translateX(85px);
+}
+.shift{
+ margin-left: 90px;
+}
 
+.hr{
+
+  transform: translateY(200px);
+  width: 65% !important;
+}
+.switch{
+  transform: translateY(160px) translateX(-290px);
+  z-index: 3;
+  
+ 
+}
+.info{
+  transform: translateY(160px) translateX(-290px);
+  margin-right: 2rem;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 30px;
+}
+.info:hover{
+  background-color: red;
+}
+.footer{
+  transform: translateY(300px);
+
+}
+.general{
+  transform: translateY(300px) translateX(150px) ;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.socials{
+  transform: translateY(300px) translateX(-150px) ;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.link{
+ height: 5px;
+ border: none !important;
+ background-color: transparent;
+}
+
+
+@keyframes animate{
+  40%,60%{
+    left:calc(100% + 4px);
+  }
+  100%{
+    left:-13px;
+  }
+}
+
+/* .animate-dot {
+   opacity: 0;
+   animation: animateDot1 2s linear infinite;
+}
+
+.animate-dot:nth-child(2) {
+   animation: animateDot2 2s linear infinite;
+}
+
+.animate-dot:nth-child(3) {
+   animation: animateDot3 2s linear infinite;
+}
+
+@keyframes animateDot1 {
+   0%   {opacity: 0; }
+   20%  {opacity: 0;}
+   30%  {opacity: 1;}
+   90% {opacity: 1;}
+}
+
+@keyframes animateDot2 {
+   0%   {opacity: 0; }
+   35%  {opacity: 0;}
+   45%  {opacity: 1;}
+   90% {opacity: 1;}
+}
+
+@keyframes animateDot3 {
+   0%   {opacity: 0; }
+   50%  {opacity: 0;}
+   60%  {opacity: 1;}
+   90% {opacity: 1;}
+} */
 </style>

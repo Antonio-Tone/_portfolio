@@ -106,7 +106,7 @@ hoverMouse($("h5, button"));
     /* position: relative; */
     padding: 40px 20px; 
     height: 100px;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background:red;
       border-radius: 999px;
     /* margin-left: 150px !important; */
     color: white;
@@ -116,12 +116,24 @@ hoverMouse($("h5, button"));
     /* border: none; */
     color: white;
     cursor: pointer !important;
+    border: none;
+
   }
-  
-  .btn {
-    /* Add styles for the button inside the anchor element if needed */
-    background: transparent;
-   
+  .hover-effect:hover{
+    animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+
   }
+  div{
+    border: none !important;
+  }
+  @keyframes outerglow {
+  0% {
+    box-shadow: 0px 0px 0px blue;
+  }
+  100% {
+    box-shadow: 0px 0px 15px blue;
+  }
+}
+
   </style>
   
