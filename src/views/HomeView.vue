@@ -663,19 +663,17 @@ hr {
 
 .container {
   max-width: 100em;
-  background-color: snow;
 
 }
 .horizontal-single-item{
-  background-color: grey;
-  height: 210px;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);  height: 210px;
 }
 .wrapper {
   padding: 20px;
 }
 .flex-col {
-  background-color: lightgrey;
-  color: white;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);  
+  color:lightgray;
   padding: 20px;
   height: 250px;
   width: 360px;
