@@ -452,7 +452,7 @@
             <div class="">
             <div class=""><span>Socials:</span></div>
             <div class="wrapper d-flex justify-content-center p-0">
-              <a href="" class="link">Linkdin</a>
+              <a href="https://www.linkedin.com/in/antonio-tone-220925281" target="_blank" class="link">Linkdin</a>
               <a href="" class="link">Facebook</a>
               <a href="" class="link">Instagram</a>
             </div>
@@ -641,6 +641,7 @@ hr {
   width: 450px;
 }
 .profile {
+  margin-top: 4px;
   height: 45px;
   width: 45px;
   border-radius: 999px;
@@ -662,15 +663,23 @@ hr {
 
 .container {
   max-width: 100em;
+  background-color: snow;
+
+}
+.horizontal-single-item{
+  background-color: grey;
+  height: 210px;
 }
 .wrapper {
   padding: 20px;
 }
 .flex-col {
-  background-color: burlywood;
+  background-color: lightgrey;
+  color: white;
   padding: 20px;
   height: 250px;
   width: 360px;
+  text-align: center !important;
 }
 .links {
   height: 30px;
@@ -841,11 +850,13 @@ hr {
  color: white;
  margin-right: 5px;
  transition: 1s ease-in-out;
+ padding: 5px;
 }
 
 .link:hover{
   border-right: 1px solid white;
  border-left: 1px solid white;
+ background-color: lightblue;
 
 }
 

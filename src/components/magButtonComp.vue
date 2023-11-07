@@ -104,7 +104,7 @@ hoverMouse($("h5, button"));
   .hover-effect {
     /* display: inline-block; */
     /* position: relative; */
-    padding: 60px 30px; 
+    padding: 40px 20px; 
     height: 100px;
     background:red;
       border-radius: 999px;
