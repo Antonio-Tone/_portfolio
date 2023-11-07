@@ -73,8 +73,8 @@
 
     var onHover = function (x, y) {
       TweenMax.to($self, 0.4, {
-        x: x * 0.8,
-        y: y * 0.8,
+        x: x * 0.4,
+        y: y * 0.4,
         //scale: .9,
         rotation: x * 0.05,
         ease: Power2.easeOut
@@ -104,7 +104,7 @@ hoverMouse($("h5, button"));
   .hover-effect {
     /* display: inline-block; */
     /* position: relative; */
-    padding: 40px 20px; 
+    padding: 60px 30px; 
     height: 100px;
     background:red;
       border-radius: 999px;

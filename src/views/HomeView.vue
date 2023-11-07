@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div class="boss">
+ <div class="boss">
       <!-- hero section -->
 
       <div class="main">
@@ -443,24 +442,25 @@
           <span class="info">Antoniotone815@gmail.com</span><span class="info">065 851 3653</span>
         </div>
         <div class="row footer">
-         <div class="col-6">
-          <div class="general">
+         <div class="col-6 general">
+          <div class="">
             <div class=""><span>Version:</span></div>
             <div class="">2023© Edition</div>
           </div>
          </div>
-          <div class="col-6">
-            <div class="socials">
+          <div class="col-6 socials">
+            <div class="">
             <div class=""><span>Socials:</span></div>
-            <div class="wrapper d-flex justify-content-center">
-              <a href=""><button><img class="link" src="https://i.postimg.cc/XqFWyL2G/icons8-linkedin-50.png" alt=""></button></a>
+            <div class="wrapper d-flex justify-content-center p-0">
+              <a href="" class="link">Linkdin</a>
+              <a href="" class="link">Facebook</a>
+              <a href="" class="link">Instagram</a>
             </div>
           </div>
           </div>
         </div>
       </section>
     </div>
-  </div>
 </template>
 <script>
 // import _ from "lodash";
@@ -813,32 +813,42 @@ hr {
   border: 1px solid white;
   padding: 15px;
   border-radius: 30px;
+  transition: 2s ease-in-out;
 }
 .info:hover{
   background-color: red;
+  cursor:pointer !important;
 }
 .footer{
-  transform: translateY(300px);
+  transform: translateY(300px) !important;
 
 }
 .general{
-  transform: translateY(300px) translateX(150px) ;
+ transform:   translateX(150px);
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 .socials{
-  transform: translateY(300px) translateX(-150px) ;
+   transform: translateX(-150px) ; 
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: end;
 }
 .link{
- height: 5px;
- border: none !important;
- background-color: transparent;
+ text-decoration: none;
+ color: white;
+ margin-right: 5px;
+ transition: 1s ease-in-out;
 }
+
+.link:hover{
+  border-right: 1px solid white;
+ border-left: 1px solid white;
+
+}
+
 
 
 @keyframes animate{
