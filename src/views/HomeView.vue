@@ -1,466 +1,532 @@
 <template>
- <div class="boss">
-      <!-- hero section -->
+  <div class="boss">
+    <!-- hero section -->
 
-      <div class="main">
-        <div class="photo">
-          <img
-            class="header"
-            src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg"
-          />
-          <div class="text">
-            <h1>Antonio Tone</h1>
+    <div class="main">
+      <div class="photo">
+        <img
+          class="header"
+          src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg"
+        />
+        <div class="text">
+          <h1>Antonio Tone</h1>
+        </div>
+      </div>
+    </div>
+    <!--introduction -->
+
+    <div class="row intro">
+      <div class="col-6 text-center d-flex justify-content-start">
+        <div class="head">
+          Welcome to my digital playground, where pixels meet purpose and
+          creativity knows no bounds. Explore the digital tapestry of my work,
+          where innovation, design, and passion converge to craft extraordinary
+          experiences
+        </div>
+      </div>
+      <div class="col-6 text-center d-flex justify-content-center">
+        <p class="sub">
+          In the world of web design, my passion for design,<br />
+          code, and interaction sets me apart and fuels my <br />
+          creative edge.
+        </p>
+      </div>
+      <div class="about d-flex justify-content-center mb-5">
+        <hr class="mx-auto mt-5" />
+        <a href="/about"
+          ><magnetic class="btn text-center" buttonText="About"
+        /></a>
+      </div>
+    </div>
+    <!--projects section -->
+
+    <div class="projects">
+      <div class="d-flex justify-content-center">
+        <button class="toggle" @click="show(1)">Portfolio</button>
+        <button class="toggle" @click="show(2)">E-commerce</button>
+        <button class="toggle" @click="show(3)">Appliance store</button>
+        <button class="toggle" @click="show(4)">BMI</button>
+        <button class="toggle" @click="show(5)">Rental</button>
+      </div>
+      <div class="">
+        <div class="row prod" v-show="visibleElement === 1">
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://lighthearted-marshmallow-2d6528.netlify.app"
+                  taget="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/Profile"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <div>
+              <h2 class="">MY FIRST PORTFOLIO</h2>
+            </div>
+            <p class="text-center">
+              My very first website, created using HTML, Bootstrap, and CSS.
+              This portfolio reflects my early foray into web development,
+              showcasing my initial projects, skills, and aspirations. It's a
+              simple yet meaningful step in my journey towards mastering web
+              development.
+            </p>
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 2">
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://arsites.netlify.app"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/e-commerce_pg"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="">MY FIRST E-COMMERCE</h2>
+            <p class="text-center">
+              I used CSS to make it look good, Bootstrap to keep it simple, and
+              a bit of JavaScript to add some fun. You can browse properties,
+              search with ease, and even click around interactive images. It's a
+              bit rough around the edges, but I'm proud of what I've created.
+              Give it a go and see if you find your dream place
+            </p>
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 3">
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png  "
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://appliance-cartel-node.web.app/"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/cheslynherman/node-fullstack-eomp"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="">GROUP PROJECT</h2>
+
+            <p class="text-center">
+              Collaboratively, my classmate and I teamed up to create an
+              appliance store webpage using Node.js. This project involved
+              designing and implementing a comprehensive online platform for
+              customers to browse and purchase appliances. We meticulously
+              crafted features such as product listings and an efficient
+              checkout system, reflecting our dedication to delivering a
+              seamless shopping experience.
+            </p>
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 4">
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://willowy-druid-f2607c.netlify.app"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/bmi"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="">My BMI Calculator Journey</h2>
+            <p class="text-center">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immediate results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 5">
+          <div class="col-6 d-flex justify-content-start">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://capstonepj-3a7db.web.app/"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/capstone_pj"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="">CAPSTONE</h2>
+
+            <p class="text-center">
+              My capstone project was a transformative journey where I designed
+              and developed a luxury car rental website using Node.js and
+              JavaScript. Throughout the process, I not only created a visually
+              stunning and functional website but also discovered valuable
+              insights about my strengths and weaknesses. This project allowed
+              me to hone my skills in web development, particularly in the
+              realms of server-side scripting and client-side interactivity. I
+              gained a deep understanding of website architecture, database
+              management, and user experience design. Overall, my capstone
+              project was an enriching experience that enabled me to evolve as a
+              developer and tackle the challenges of creating a sophisticated
+              online platform for luxury car enthusiasts.
+            </p>
           </div>
         </div>
       </div>
-      <!--introduction -->
+    </div>
+    <!-- testimonials -->
 
-      <div class="row intro">
-        <div class="col-6 text-center d-flex justify-content-start">
-          <div class="head">
-            Welcome to my digital playground, where pixels meet purpose and
-            creativity knows no bounds. Explore the digital tapestry of my work,
-            where innovation, design, and passion converge to craft
-            extraordinary experiences
+    <section class="holder mx-auto">
+      <div class="horizontal_item container">
+        <div class="row row-1">
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/VL53dhfv/C12-Luke-Evertson-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Luke Evertson</p>
+                <p class="test autotype">
+                  Antonio is a very fun person to work with and has a great
+                  sense of humour.He Is hardworking and disciplined.He could be
+                  a role model for many
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/VL53dhfv/C12-Luke-Evertson-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Luke Evertson</p>
+                <p class="test autotype">
+                  Antonio is a very fun person to work with and has a great
+                  sense of humour.He Is hardworking and disciplined.He could be
+                  a role model for many
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/7P5FLcY6/C12-Asiphe-Ndimlana-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Asiphe Ndimlana</p>
+                <p class="test autotype">
+                  Antonio is very independent. Whenever he struggles with
+                  something he would rather first try and figure it out himself
+                  before asking for help. He is extremely kind and friendly and
+                  turns every person he meets for the first time into his
+                  friend.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/dVNRDW0s/C12-Taahirah-Ismail-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Taahirah Ismail</p>
+                <p class="test autotype">
+                  He may be a man of few words, but Antonio's hard work and
+                  dedication always shine through in whatever he does. You can
+                  easily tell he appreciates every opportunity he is given and
+                  takes nothing for granted
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/DyHztfG2/IMG-9863-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Ethan Oliver</p>
+                <p class="test autotype">
+                  I am thrilled to share my positive testimonial about my
+                  experience with Antonio. From the moment I first met him I was
+                  impressed. His dedication to excellence and drive to achieve
+                  was evident in every interaction I had with him.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-6 text-center d-flex justify-content-center">
-          <p class="sub">
-            In the world of web design, my passion for design,<br />
-            code, and interaction sets me apart and fuels my <br />
-            creative edge.
-          </p>
-        </div>
-        <div class="about d-flex justify-content-center mb-5">
-          <hr class="mx-auto mt-5" />
-          <magnetic class="btn text-center" buttonText="About" />
+        <div class="row row-2 second">
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/7YYT7gdf/Screenshot-2023-05-11-111514.png"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Deno Rautenbach</p>
+                <p class="test autotype">
+                  Antonio is a very hardworking individual.He has improved a lot
+                  in both his coding aswell as in his problem solving skills. He
+                  is an extremely nice person to work with as he is very
+                  friendly
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/7YYT7gdf/Screenshot-2023-05-11-111514.png"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Deno Rautenbach</p>
+                <p class="test autotype">
+                  Antonio is a very hardworking individual.He has improved a lot
+                  in both his coding aswell as in his problem solving skills. He
+                  is an extremely nice person to work with as he is very
+                  friendly
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/mk1J6c6M/Screenshot-2023-07-05-161952.png"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Maxwill Isaacs</p>
+                <p class="test autotype">
+                  Antonio is an exceptionally hard worker and always making time
+                  to assist anyone who is in need. Also goes the extra-mile when
+                  doing anything that has to be done. He is also very confident
+                  in his capabilities and never fails to get the Job done.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="test">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
+                  dignissimos tempore dolorum ipsam deleniti optio mollitia
+                  minima aspernatur porro quis error sit veniam unde?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="test">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
+                  dignissimos tempore dolorum ipsam deleniti optio mollitia
+                  minima aspernatur porro quis error sit veniam unde?
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!--projects section -->
+    </section>
+    <!-- contact section -->
 
-      <div class="projects">
-        <div class="d-flex justify-content-center">
-          <button class="toggle" @click="show(1)">Portfolio</button>
-          <button class="toggle" @click="show(2)">E-commerce</button>
-          <button class="toggle" @click="show(3)">Appliance store</button>
-          <button class="toggle" @click="show(4)">BMI</button>
-          <button class="toggle" @click="show(5)">Rental</button>
-        </div>
-        <div class="">
-          <div class="row prod" v-show="visibleElement === 1">
-            <div class="col-6">
-              <div class="card">
-                <img
-                  class="img"
-                  src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png"
-                  alt=""
-                />
-                <div class="textBox">
-                  <div class="d-flex justify-content-center">
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 work">
-              <p class="text-center">my first Portfolio</p>
-            </div>
-          </div>
-          <div class="row prod" v-show="visibleElement === 2">
-            <div class="col-6">
-              <div class="card">
-                <img
-                  class="img"
-                  src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png"
-                  alt=""
-                />
-                <div class="textBox">
-                  <div class="d-flex justify-content-center">
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 work">
-              <p class="text-center">first e-commerce site</p>
-            </div>
-          </div>
-          <div class="row prod" v-show="visibleElement === 3">
-            <div class="col-6">
-              <div class="card">
-                <img
-                  class="img"
-                  src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png  "
-                  alt=""
-                />
-                <div class="textBox">
-                  <div class="d-flex justify-content-center">
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 work">
-              <p class="text-center">group project</p>
-            </div>
-          </div>
-          <div class="row prod" v-show="visibleElement === 4">
-            <div class="col-6">
-              <div class="card">
-                <img
-                  class="img"
-                  src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png"
-                  alt=""
-                />
-                <div class="textBox">
-                  <div class="d-flex justify-content-center">
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 work">
-              <p class="text-center">Fun little project i did</p>
-            </div>
-          </div>
-          <div class="row prod" v-show="visibleElement === 5">
-            <div class="col-6 d-flex justify-content-start">
-              <div class="card">
-                <img
-                  class="img"
-                  src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png"
-                  alt=""
-                />
-                <div class="textBox">
-                  <div class="d-flex justify-content-center">
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                    <a href=""
-                      ><button class="toggle linkBg">
-                        <img
-                          class="links"
-                          src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                          alt=""
-                        /></button
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 work">
-              <p class="text-center">Capstone project</p>
-            </div>
-          </div>
-        </div>
+    <section class="contact">
+      <div class="d-flex justify-content-center heading">
+        <img
+          class="profile"
+          src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png"
+          alt=""
+        />
+        <h1 class="connect">
+          Let's get in<br /><span class="shift">touch</span
+          ><span class="">...</span>
+        </h1>
       </div>
-      <!-- testimonials -->
-
-      <section class="holder  mx-auto">
-        <div class="horizontal_item container">
-          <div class="row row-1">
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/VL53dhfv/C12-Luke-Evertson-1.jpg"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Luke Evertson</p>
-                  <p class="test autotype">
-                    Antonio is a very fun person to work with and has a great
-                    sense of humour.He Is hardworking and disciplined.He could
-                    be a role model for many
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/VL53dhfv/C12-Luke-Evertson-1.jpg"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Luke Evertson</p>
-                  <p class="test autotype">
-                    Antonio is a very fun person to work with and has a great
-                    sense of humour.He Is hardworking and disciplined.He could
-                    be a role model for many
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/7P5FLcY6/C12-Asiphe-Ndimlana-1.jpg"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Asiphe Ndimlana</p>
-                  <p class="test autotype">
-                    Antonio is very independent. Whenever he struggles with
-                    something he would rather first try and figure it out
-                    himself before asking for help. He is extremely kind and
-                    friendly and turns every person he meets for the first time
-                    into his friend.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/dVNRDW0s/C12-Taahirah-Ismail-1.jpg"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Taahirah Ismail</p>
-                  <p class="test autotype">
-                    He may be a man of few words, but Antonio's hard work and
-                    dedication always shine through in whatever he does. You can
-                    easily tell he appreciates every opportunity he is given and
-                    takes nothing for granted
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/DyHztfG2/IMG-9863-1.jpg"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Ethan Oliver</p>
-                  <p class="test autotype">
-                    I am thrilled to share my positive testimonial about my
-                    experience with Antonio. From the moment I first met him I
-                    was impressed. His dedication to excellence and drive to
-                    achieve was evident in every interaction I had with him.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row row-2 second">
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/7YYT7gdf/Screenshot-2023-05-11-111514.png"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Deno Rautenbach</p>
-                  <p class="test autotype">
-                    Antonio is a very hardworking individual.He has improved a
-                    lot in both his coding aswell as in his problem solving
-                    skills. He is an extremely nice person to work with as he is
-                    very friendly
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/7YYT7gdf/Screenshot-2023-05-11-111514.png"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Deno Rautenbach</p>
-                  <p class="test autotype">
-                    Antonio is a very hardworking individual.He has improved a
-                    lot in both his coding aswell as in his problem solving
-                    skills. He is an extremely nice person to work with as he is
-                    very friendly
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/mk1J6c6M/Screenshot-2023-07-05-161952.png"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="name mx-auto">Maxwill Isaacs</p>
-                  <p class="test autotype">
-                    Antonio is an exceptionally hard worker and always making
-                    time to assist anyone who is in need. Also goes the
-                    extra-mile when doing anything that has to be done. He is
-                    also very confident in his capabilities and never fails to
-                    get the Job done.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-col m-2">
-              <div class="horizontal-single-item">
-                <div class="d-flex justify-content-center">
-                  <img
-                    class="profile"
-                    src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
-                    alt="picture"
-                  />
-                </div>
-                <div class="text-center">
-                  <p class="test">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                    dignissimos tempore dolorum ipsam deleniti optio mollitia
-                    minima aspernatur porro quis error sit veniam unde?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- contact section -->
-
-      <section class="contact">
-        <div class="d-flex justify-content-center heading">
-            <img class="profile" src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png" alt="">
-            <h1  class="connect">Let's get in<br><span class="shift">touch</span><span class="">...</span></h1>
-        </div>
-        <div class="d-flex justify-content-center">
-          <hr class="hr">
-          <magnetic class="switch" buttonText="Contact"/>
-        </div>
-        <div class="d-flex justify-content-center">
-          <span class="info">Antoniotone815@gmail.com</span><span class="info">065 851 3653</span>
-        </div>
-        <div class="row footer">
-         <div class="col-6 general">
+      <div class="d-flex justify-content-center">
+        <hr class="hr" />
+        <a href="/contact"><magnetic class="switch" buttonText="Contact" /></a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="info">Antoniotone815@gmail.com</span
+        ><span class="info">065 851 3653</span>
+      </div>
+      <div class="row footer">
+        <div class="col-6 general">
           <div class="">
             <div class=""><span>Version:</span></div>
             <div class="">2023© Edition</div>
           </div>
-         </div>
-          <div class="col-6 socials">
-            <div class="">
+        </div>
+        <div class="col-6 socials">
+          <div class="">
             <div class=""><span>Socials:</span></div>
             <div class="wrapper d-flex justify-content-center p-0">
-              <a href="https://www.linkedin.com/in/antonio-tone-220925281" target="_blank" class="link">Linkdin</a>
+              <a
+                href="https://www.linkedin.com/in/antonio-tone-220925281"
+                target="_blank"
+                class="link"
+                >Linkdin</a
+              >
               <a href="" class="link">Facebook</a>
               <a href="" class="link">Instagram</a>
             </div>
           </div>
-          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 </template>
 <script>
 // import _ from "lodash";
@@ -660,20 +726,27 @@ hr {
   font-size: small;
 }
 
-
 .container {
   max-width: 100em;
-
 }
-.horizontal-single-item{
-  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);  height: 210px;
+.horizontal-single-item {
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  height: 210px;
 }
 .wrapper {
   padding: 20px;
 }
 .flex-col {
-  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);  
-  color:lightgray;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  color: lightgray;
   padding: 20px;
   height: 250px;
   width: 360px;
@@ -782,39 +855,36 @@ hr {
   transform: scale(1.04);
 }
 
-.contact{
-  background: rgb(28,29,32);
+.contact {
+  background: rgb(28, 29, 32);
   height: 730px;
 }
-.heading{
-  transform:translateX(-350px) translateY(120px);
+.heading {
+  transform: translateX(-350px) translateY(120px);
 }
-.connect{
+.connect {
   font-size: 4rem;
   margin-left: 10px !important;
 }
-.heading > .profile{
+.heading > .profile {
   height: 75px;
   width: 75px;
   border-radius: 999px;
   transform: translateY(75px) translateX(85px);
 }
-.shift{
- margin-left: 90px;
+.shift {
+  margin-left: 90px;
 }
 
-.hr{
-
+.hr {
   transform: translateY(200px);
   width: 65% !important;
 }
-.switch{
+.switch {
   transform: translateY(160px) translateX(-290px);
   z-index: 3;
-  
- 
 }
-.info{
+.info {
   transform: translateY(160px) translateX(-290px);
   margin-right: 2rem;
   border: 1px solid white;
@@ -822,50 +892,47 @@ hr {
   border-radius: 30px;
   transition: 2s ease-in-out;
 }
-.info:hover{
+.info:hover {
   background-color: red;
-  cursor:pointer !important;
+  cursor: pointer !important;
 }
-.footer{
+.footer {
   transform: translateY(300px) !important;
-
 }
-.general{
- transform:   translateX(150px);
+.general {
+  transform: translateX(150px);
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-.socials{
-   transform: translateX(-150px) ; 
+.socials {
+  transform: translateX(-150px);
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: end;
 }
-.link{
- text-decoration: none;
- color: white;
- margin-right: 5px;
- transition: 1s ease-in-out;
- padding: 5px;
+.link {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  transition: 1s ease-in-out;
+  padding: 5px;
 }
 
-.link:hover{
+.link:hover {
   border-right: 1px solid white;
- border-left: 1px solid white;
- background-color: lightblue;
-
+  border-left: 1px solid white;
+  background-color: lightblue;
 }
 
-
-
-@keyframes animate{
-  40%,60%{
-    left:calc(100% + 4px);
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
   }
-  100%{
-    left:-13px;
+  100% {
+    left: -13px;
   }
 }
 

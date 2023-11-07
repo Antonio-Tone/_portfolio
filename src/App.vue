@@ -11,8 +11,10 @@ export default{
 </script>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Cormorant:ital,wght@1,300&display=swap');
 #app,html {
+  font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Cormorant', serif;
   color: #FFFF; 
   overflow-x: hidden;
   background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); 

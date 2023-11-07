@@ -106,7 +106,7 @@ hoverMouse($("h5, button"));
     /* position: relative; */
     padding: 40px 20px; 
     height: 100px;
-    background:red;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);  
       border-radius: 999px;
     /* margin-left: 150px !important; */
     color: white;
