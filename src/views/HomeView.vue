@@ -628,14 +628,14 @@ export default {
       function typeText() {
         const intervalId = setInterval(() => {
           textElement.textContent = originalText.slice(0, i);
-          i += 2;
+          i += 3;
           if (i > originalText.length) {
             clearInterval(intervalId);
             setTimeout(() => {
               // Reset the text and call typeText again after a delay
-              textElement.textContent = "";
+              
               i = 0;
-              setTimeout(typeText, 1000); // Adjust the delay as needed
+              setTimeout(typeText, 20000); // Adjust the delay as needed
             }, 10000); // Adjust the delay between loops as needed
           }
         }, 100); // Adjust the interval to control the typing speed
