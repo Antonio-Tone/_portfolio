@@ -85,7 +85,7 @@
             <div>
               <h2 class="">MY FIRST PORTFOLIO</h2>
             </div>
-            <p class="text-center">
+            <p class="text-center disc">
               My very first website, created using HTML, Bootstrap, and CSS.
               This portfolio reflects my early foray into web development,
               showcasing my initial projects, skills, and aspirations. It's a
@@ -134,7 +134,7 @@
           </div>
           <div class="col-6 work">
             <h2 class="">MY FIRST E-COMMERCE</h2>
-            <p class="text-center">
+            <p class="text-center disc">
               I used CSS to make it look good, Bootstrap to keep it simple, and
               a bit of JavaScript to add some fun. You can browse properties,
               search with ease, and even click around interactive images. It's a
@@ -185,7 +185,7 @@
           <div class="col-6 work">
             <h2 class="">GROUP PROJECT</h2>
 
-            <p class="text-center">
+            <p class="text-center disc">
               Collaboratively, my classmate and I teamed up to create an
               appliance store webpage using Node.js. This project involved
               designing and implementing a comprehensive online platform for
@@ -238,7 +238,7 @@
           </div>
           <div class="col-6 work">
             <h2 class="">My BMI Calculator Journey</h2>
-            <p class="text-center">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immediate results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
+            <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immediate results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
             <div class="d-flex justify-content-center">
               <ul>
                 <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
@@ -283,7 +283,7 @@
           <div class="col-6 work">
             <h2 class="">CAPSTONE</h2>
 
-            <p class="text-center">
+            <p class="text-center disc">
               My capstone project was a transformative journey where I designed
               and developed a luxury car rental website using Node.js and
               JavaScript. Throughout the process, I not only created a visually
@@ -319,16 +319,14 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/VL53dhfv/C12-Luke-Evertson-1.jpg"
+                  src="https://i.postimg.cc/PfcVqj5K/Screenshot-2023-11-08-130937.png"
                   alt="picture"
                 />
               </div>
               <div class="text-center">
-                <p class="name mx-auto">Luke Evertson</p>
+                <p class="name mx-auto">Tara Snell</p>
                 <p class="test autotype">
-                  Antonio is a very fun person to work with and has a great
-                  sense of humour.He Is hardworking and disciplined.He could be
-                  a role model for many
+                  "Antonio is one determined ,dedicated team member to have on any team, he gets the job done and always to lend a hand to make sure the whole team are on the same page."
                 </p>
               </div>
             </div>
@@ -348,6 +346,26 @@
                   Antonio is a very fun person to work with and has a great
                   sense of humour.He Is hardworking and disciplined.He could be
                   a role model for many
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col m-2">
+            <div class="horizontal-single-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="profile"
+                  src="https://i.postimg.cc/dVNRDW0s/C12-Taahirah-Ismail-1.jpg"
+                  alt="picture"
+                />
+              </div>
+              <div class="text-center">
+                <p class="name mx-auto">Taahirah Ismail</p>
+                <p class="test autotype">
+                  He may be a man of few words, but Antonio's hard work and
+                  dedication always shine through in whatever he does. You can
+                  easily tell he appreciates every opportunity he is given and
+                  takes nothing for granted
                 </p>
               </div>
             </div>
@@ -369,26 +387,6 @@
                   before asking for help. He is extremely kind and friendly and
                   turns every person he meets for the first time into his
                   friend.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-col m-2">
-            <div class="horizontal-single-item">
-              <div class="d-flex justify-content-center">
-                <img
-                  class="profile"
-                  src="https://i.postimg.cc/dVNRDW0s/C12-Taahirah-Ismail-1.jpg"
-                  alt="picture"
-                />
-              </div>
-              <div class="text-center">
-                <p class="name mx-auto">Taahirah Ismail</p>
-                <p class="test autotype">
-                  He may be a man of few words, but Antonio's hard work and
-                  dedication always shine through in whatever he does. You can
-                  easily tell he appreciates every opportunity he is given and
-                  takes nothing for granted
                 </p>
               </div>
             </div>
@@ -440,17 +438,14 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/7YYT7gdf/Screenshot-2023-05-11-111514.png"
+                  src="https://i.postimg.cc/d0K2cczD/C12-Ayesha-Galant-Class1-1.jpg"
                   alt="picture"
                 />
               </div>
               <div class="text-center">
-                <p class="name mx-auto">Deno Rautenbach</p>
+                <p class="name mx-auto">Ayesha Galant</p>
                 <p class="test autotype">
-                  Antonio is a very hardworking individual.He has improved a lot
-                  in both his coding aswell as in his problem solving skills. He
-                  is an extremely nice person to work with as he is very
-                  friendly
+                  Working alongside Antonio on several IT ventures has been an absolute pleasure. His precision-oriented approach coupled with his knack for troubleshooting is highly commendable. He unequivocally embodies talent and commitment in his work ethic.
                 </p>
               </div>
             </div>
@@ -480,16 +475,14 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                  src="https://i.postimg.cc/rpZQXwLc/C12-Laiquah-Cotie-2.jpg"
                   alt="picture"
                 />
               </div>
               <div class="text-center">
+                <p class="name mx-auto">Laiquah Cotie</p>
                 <p class="test">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                  dignissimos tempore dolorum ipsam deleniti optio mollitia
-                  minima aspernatur porro quis error sit veniam unde?
+                Antonio  is an exceptional professional, with deep expertise, dedication, and strong problem-solving skills. His work ethic, clear communication, and collaborative nature make him a remarkable team player. I wholeheartedly recommend him.
                 </p>
               </div>
             </div>
@@ -499,16 +492,14 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/XqFnBDX2/IMG-1478-1.jpg"
+                  src="https://i.postimg.cc/3R6GxMds/Screenshot-2023-10-04-154441.png"
                   alt="picture"
                 />
               </div>
               <div class="text-center">
+                <p class="name mx-auto">Ganiefah Majiet</p>
                 <p class="test">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eveniet reiciendis et facilis fugit repellat! Voluptatibus,
-                  dignissimos tempore dolorum ipsam deleniti optio mollitia
-                  minima aspernatur porro quis error sit veniam unde?
+                  Antonio one, someone who Id definitely recommend. His always positive and willing to help the next person although he himself is busy, his an intelligent and very hardworking person. He is always positive and he always provides everyone with help and motivation.
                 </p>
               </div>
             </div>
@@ -526,8 +517,8 @@
           alt=""
         />
         <h1 class="connect">
-          Let's get in<br /><span class="shift">touch</span
-          ><span class="">...</span>
+          Let's <br /><span class="shift">Connect</span
+          ><span class="animate-dot">.</span><span class="animate-dot">.</span>
         </h1>
       </div>
       <div class="d-flex justify-content-center">
@@ -691,11 +682,11 @@ export default {
   padding: 120px;
 }
 .head {
-  font-size: x-large !important;
+  font-size: 1.7em !important;
   display: block !important;
 }
 .sub {
-  font-size: medium;
+  font-size: 1em;
   display: block !important;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -731,9 +722,18 @@ hr {
     circle at 24.1% 68.8%,
     rgb(50, 50, 50) 0%,
     rgb(0, 0, 0) 99.4%
+    
   );
+  transition: 1s ease-in-out;
   cursor: pointer !important;
   border: none !important;
+}
+.toggle:focus{
+  background: #6190E8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .lang{
   height: 25px;
@@ -769,24 +769,25 @@ hr {
 .container {
   max-width: 100em;
 }
+.autotype{
+  font-size: 14px;
+}
 .horizontal-single-item {
-  background: radial-gradient(
-    circle at 24.1% 68.8%,
-    rgb(50, 50, 50) 0%,
-    rgb(0, 0, 0) 99.4%
-  );
   height: 210px;
+
+}
+.disc{
+  font-size: 1.2em;
 }
 .wrapper {
   padding: 20px;
 }
 .flex-col {
-  background: radial-gradient(
-    circle at 24.1% 68.8%,
-    rgb(50, 50, 50) 0%,
-    rgb(0, 0, 0) 99.4%
-  );
-  color: lightgray;
+  /* background-image: linear-gradient( 90.2deg,  rgba(61,156,161,1) -2.4%, rgba(122,212,217,1) 52.7%, rgba(61,156,161,1) 100.8% ); */
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 20px;
   height: 250px;
   width: 360px;
@@ -903,14 +904,14 @@ hr {
   transform: translateX(-350px) translateY(120px);
 }
 .connect {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-left: 10px !important;
 }
 .heading > .profile {
   height: 75px;
   width: 75px;
   border-radius: 999px;
-  transform: translateY(75px) translateX(85px);
+  transform: translateY(100px) translateX(75px);
 }
 .shift {
   margin-left: 90px;
@@ -976,17 +977,17 @@ hr {
   }
 }
 
-/* .animate-dot {
+.animate-dot {
    opacity: 0;
-   animation: animateDot1 2s linear infinite;
+   animation: animateDot1 1s linear infinite;
+}
+.animate-dot:nth-child(2) {
+   animation: animateDot2 1s linear infinite;
 }
 
-.animate-dot:nth-child(2) {
-   animation: animateDot2 2s linear infinite;
-}
 
 .animate-dot:nth-child(3) {
-   animation: animateDot3 2s linear infinite;
+   animation: animateDot3 1s linear infinite;
 }
 
 @keyframes animateDot1 {
@@ -1008,5 +1009,5 @@ hr {
    50%  {opacity: 0;}
    60%  {opacity: 1;}
    90% {opacity: 1;}
-} */
+}
 </style>

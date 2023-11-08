@@ -73,7 +73,7 @@
 
     var onHover = function (x, y) {
       TweenMax.to($self, 0.4, {
-        x: x * 0.4,
+        x: x * 0.7,
         y: y * 0.4,
         //scale: .9,
         rotation: x * 0.05,
@@ -104,7 +104,7 @@ hoverMouse($("h5, button"));
   .hover-effect {
     /* display: inline-block; */
     /* position: relative; */
-    padding: 40px 20px; 
+    padding: 50px 30px; 
     height: 100px;
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);  
       border-radius: 999px;
@@ -118,6 +118,9 @@ hoverMouse($("h5, button"));
     cursor: pointer !important;
     border: none;
 
+  }
+  h5{
+    transform: translateY(-15px);
   }
   .hover-effect:hover{
     animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
