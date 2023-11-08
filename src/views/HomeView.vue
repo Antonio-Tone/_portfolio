@@ -481,7 +481,7 @@
               </div>
               <div class="text-center">
                 <p class="name mx-auto">Laiquah Cotie</p>
-                <p class="test">
+                <p class="test autotype">
                 Antonio  is an exceptional professional, with deep expertise, dedication, and strong problem-solving skills. His work ethic, clear communication, and collaborative nature make him a remarkable team player. I wholeheartedly recommend him.
                 </p>
               </div>
@@ -498,7 +498,7 @@
               </div>
               <div class="text-center">
                 <p class="name mx-auto">Ganiefah Majiet</p>
-                <p class="test">
+                <p class="test autotype">
                   Antonio one, someone who Id definitely recommend. His always positive and willing to help the next person although he himself is busy, his an intelligent and very hardworking person. He is always positive and he always provides everyone with help and motivation.
                 </p>
               </div>
@@ -567,7 +567,7 @@ export default {
   },
   data() {
     return {
-      box_items: [],
+    
       visibleElement: 1,
       lenis: null,
     };
@@ -618,24 +618,33 @@ export default {
       this.visibleElement = elementNumber;
     },
     autoType() {
-      const text = document.querySelector(".autotype");
-      const originalText = text.textContent;
+  this.$nextTick(() => {
+    const textElements = document.querySelectorAll(".autotype");
 
-      const textLoad = () => {
-        let i = 0;
+    textElements.forEach((textElement) => {
+      const originalText = textElement.textContent;
+      let i = 0;
+      
+      function typeText() {
         const intervalId = setInterval(() => {
-          text.textContent = originalText.slice(0, i);
+          textElement.textContent = originalText.slice(0, i);
           i += 2;
           if (i > originalText.length) {
             clearInterval(intervalId);
+            setTimeout(() => {
+              // Reset the text and call typeText again after a delay
+              textElement.textContent = "";
+              i = 0;
+              setTimeout(typeText, 1000); // Adjust the delay as needed
+            }, 10000); // Adjust the delay between loops as needed
           }
         }, 100); // Adjust the interval to control the typing speed
-      };
-      setTimeout(() => {}, 2000);
-
-      textLoad();
-      setInterval(textLoad, 12000);
-    },
+      }
+      
+      typeText(); // Start the typing animation
+    });
+  });
+},
   },
 
   //lenis smooth scroll setup
@@ -729,9 +738,9 @@ hr {
   border: none !important;
 }
 .toggle:focus{
-  background: #6190E8;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #6190E8;  
+background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8); 
+background: linear-gradient(to right, #A7BFE8, #6190E8);
   color: white;
   animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -783,10 +792,9 @@ background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, F
   padding: 20px;
 }
 .flex-col {
-  /* background-image: linear-gradient( 90.2deg,  rgba(61,156,161,1) -2.4%, rgba(122,212,217,1) 52.7%, rgba(61,156,161,1) 100.8% ); */
-  background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526;  
+background: -webkit-linear-gradient(to right, #414345, #232526); 
+background: linear-gradient(to right, #414345, #232526); 
 
   padding: 20px;
   height: 250px;
@@ -818,7 +826,6 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   justify-content: center;
   align-items: center;
   padding: 0;
-  /* margin-bottom: 900px !important;A */
 }
 .row-1 {
   width: 200vw;
@@ -872,7 +879,6 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .card:hover > .img {
   height: 100%;
   filter: blur(7px);
-  /* animation: anim 3s infinite; */
 }
 .card:hover {
   animation: anim 3s infinite;
