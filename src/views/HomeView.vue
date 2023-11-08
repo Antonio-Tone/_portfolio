@@ -92,6 +92,12 @@
               simple yet meaningful step in my journey towards mastering web
               development.
             </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 2">
@@ -135,6 +141,13 @@
               bit rough around the edges, but I'm proud of what I've created.
               Give it a go and see if you find your dream place
             </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 3">
@@ -181,6 +194,14 @@
               checkout system, reflecting our dedication to delivering a
               seamless shopping experience.
             </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
+              </ul>
+            </div>
+
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 4">
@@ -218,6 +239,13 @@
           <div class="col-6 work">
             <h2 class="">My BMI Calculator Journey</h2>
             <p class="text-center">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immediate results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 5">
@@ -269,6 +297,14 @@
               developer and tackle the challenges of creating a sophisticated
               online platform for luxury car enthusiasts.
             </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -698,6 +734,10 @@ hr {
   );
   cursor: pointer !important;
   border: none !important;
+}
+.lang{
+  height: 25px;
+  margin-right: 3px;
 }
 .prod {
   padding: 100px;
