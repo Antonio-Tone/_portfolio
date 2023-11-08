@@ -1,8 +1,6 @@
 <template>
-  <div >
-    <div class="">
-      <h1>this is my about</h1>
-    </div>
+  <div>
+    <h1 class="text-dark">this is my abut page</h1>
   </div>
 </template>
 <script>
