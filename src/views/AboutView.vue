@@ -20,14 +20,15 @@
  </div>
 <!-- image with brief discription -->
 
-<div class="row mt-5">
-  <div class="col-6 text-center">
+<div class="row mt-5 intro">
+  <div class="col-6 first text-center">
     <h1>brief discription</h1>
   </div>
-  <div class="col-6">
-    <div class="image__overlay"></div>
+  <div class="col-6 sec">
+    <div class="image__overlay">
     <img class="image" src="https://i.postimg.cc/FR6pwSJS/IMG-1478.jpg" alt="">
   </div>
+</div>
 </div>
 
   </div>
@@ -64,5 +65,32 @@ i {
 transform: translateX(100px);
 }
 
+.intro{
+margin-top: 10em !important;
+}
+.first{
+  width: 40%;
+}
+.image{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  
+}
+.image__overlay{
+  width: 100%;
+  height: 50%;
+  padding-top: 50%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 1 ;
+  overflow: hidden;
+  margin-bottom: 900px;
+}
 
 </style>
