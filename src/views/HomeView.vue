@@ -647,24 +647,10 @@ export default {
 },
   },
 
-  //lenis smooth scroll setup
-  // smoothScroll() {
-  // Use the 'lenis' instance created in 'mounted'
-  // this.lenis.options.duration =0.5;
-  // this.lenis.options.easing = (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t));
+  
 
-  // const raf = (time) => {
-  //   this.lenis.raf(time);
-  //   requestAnimationFrame(raf);
-  // };
 
-  // function raf(time) {
-  //   this.lenis.raf(time);
-  //   requestAnimationFrame(raf);
-  // }
-
-  // requestAnimationFrame(raf);
-  // },
+ 
 };
 </script>
 <style scoped>
