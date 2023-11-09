@@ -38,7 +38,53 @@ import magnetic from "../components/magButtonComp.vue";
 export default {
   components:{
     magnetic 
+  },
+  mounted(){
+    this.initialize();
+
+  },
+  methods: {
+   initialize(){
+    this.setInitialStates();
+    this.overlay();
+
+   },
+   setInitialStates(){
+    gsap.set('.image__overlay img', {
+        opacity: 0.5,
+        scale:1.1,
+      });
+      gsap.set("image__overlay",{
+
+      })
+      this.layers = [...document.querySelectorAll("image__overlay")];
+      this.images = [...document.querySelectorAll(".image")];
+   },
+   overlay(){
+    
+const tl = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".intro",
+    scrub:true,
   }
+})
+this.layers.forEach(layer => {
+  tl.to(layer,{
+    ease:'linear',
+    yPercent:-20
+  })
+});
+this.images.forEach(image => {
+  tl.to(image,{
+    ease:'linear',
+    yPercent:-15,
+    scale:1,
+  })
+});
+
+   }
+   
+  },
 };
 </script>
 <style scoped>
@@ -73,7 +119,7 @@ margin-top: 10em !important;
 }
 .image{
   width: 100%;
-  height:100%;
+  height:130%;
   position: absolute;
   left: 0;
   top: 0;
