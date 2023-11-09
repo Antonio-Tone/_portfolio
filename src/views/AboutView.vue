@@ -51,7 +51,7 @@ export default {
    },
    setInitialStates(){
     gsap.set('.image__overlay img', {
-        opacity: 0.5,
+        opacity: 0,
         scale:1.1,
       });
       gsap.set("image__overlay",{
@@ -66,6 +66,8 @@ const tl = gsap.timeline({
   scrollTrigger:{
     trigger: ".intro",
     scrub:true,
+    end:'center center',
+    markers:true
   }
 })
 this.layers.forEach(layer => {
@@ -79,6 +81,8 @@ this.images.forEach(image => {
     ease:'linear',
     yPercent:-15,
     scale:1,
+    opacity: 0.7,
+
   })
 });
 
