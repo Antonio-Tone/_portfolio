@@ -3,12 +3,19 @@
   <router-view/>
 </template>
 <script>
-
+import smoothScroller from "../public/smoothScroll.js";
 import navbarComp from "./components/navbarComp.vue";
 export default{
-  components: {navbarComp}
+  components: {navbarComp},
+  methods: {
+    call(){
+      smoothScroller();
+    }
+   
+  },
 }
 </script>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Cormorant:ital,wght@1,300&display=swap');

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- intro quote -->
     <div class="qoute mb-5">
       <h1 class="text-center quote mt-5">
       <span
@@ -9,12 +10,25 @@
         <i class="fa-solid fa-quote-right fa-flip-vertical"></i> </span>
     </h1>
     </div>
-
-    <p class="d-flex justify-content-end w-75 cv">download CV below:</p>
+<!-- CV button download -->
+ <div>
+  <p class="d-flex justify-content-end w-75 cv">download CV below:</p>
     <div class="d-flex justify-content-center mt-5">
       <hr class="hr">
       <a href="\files\CV of Antonio Tone.pdf" download><magnetic class="switch" buttonText="CV" /></a>
  </div>
+ </div>
+<!-- image with brief discription -->
+
+<div class="row mt-5">
+  <div class="col-6 text-center">
+    <h1>brief discription</h1>
+  </div>
+  <div class="col-6">
+    <div class="image__overlay"></div>
+    <img class="image" src="https://i.postimg.cc/FR6pwSJS/IMG-1478.jpg" alt="">
+  </div>
+</div>
 
   </div>
 </template>
