@@ -104,8 +104,9 @@ hoverMouse($("h5, button"));
   .hover-effect {
     /* display: inline-block; */
     /* position: relative; */
-    padding: 50px 30px; 
-    height: 100px;
+    width:7em ;
+    height: 7em;
+    
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);  
       border-radius: 999px;
     /* margin-left: 150px !important; */

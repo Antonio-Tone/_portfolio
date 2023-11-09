@@ -10,10 +10,11 @@
     </h1>
     </div>
 
-    <div class="d-flex justify-content-center">
+    <p class="d-flex justify-content-end w-75 cv">download CV below:</p>
+    <div class="d-flex justify-content-center mt-5">
       <hr class="hr">
-      <a href="/contact"><magnetic class="switch" buttonText="Contact" /></a>
-    </div>
+      <a href="\files\CV of Antonio Tone.pdf" download><magnetic class="switch" buttonText="CV" /></a>
+ </div>
 
   </div>
 </template>
@@ -25,9 +26,10 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 h1 {
-  color: white !important  ;
+  color: white !important;
+  font-size: 60px;
 }
 i {
   font-size: 20px;
@@ -37,12 +39,15 @@ i {
   position: relative;
   background-color: white !important;
   /* height: 1px; */
-  width: 50%;
+  width: 70%;
 }
 .switch{
   position: absolute;
-  transform: translateY(-35px) translateX(-130px);
+  transform: translateY(-35px) translateX(-160px);
   z-index: 3;
+}
+.cv{
+transform: translateX(100px);
 }
 
 
