@@ -31,9 +31,10 @@
   </div>
 </div>
 </div>
+</div>
       <!-- skills section -->
 
-      <div class="flex-container p-4 w-100">
+      <div class="flex-container p-4">
       <h2 class="mx-auto d-flex justify-content-center my-5 offer capable">
         WHAT I BRING TO THE TABLE...
       </h2>
@@ -90,7 +91,52 @@
     </div>
 </div>
 </div>
-</div>
+<!-- contact section -->
+<section class="contact">
+      <div class="d-flex justify-content-center heading">
+        <img
+          class="profile"
+          src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png"
+          alt=""
+        />
+        <h1 class="connect">
+          Let's <br /><span class="shift">Connect</span
+          ><span class="animate-dot">.</span><span class="animate-dot">.</span>
+        </h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <hr class="HR" />
+        <a href="/contact"><magnetic class="con" buttonText="Contact" /></a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="info">Antoniotone815@gmail.com</span
+        ><span class="info">065 851 3653</span>
+      </div>
+      <div class="row footer">
+        <div class="col-6 general">
+          <div class="">
+            <div class=""><span>Version:</span></div>
+            <div class="">2023© Edition</div>
+          </div>
+        </div>
+        <div class="col-6 socials">
+          <div class="">
+            <div class=""><span>Socials:</span></div>
+            <div class="wrapper d-flex justify-content-center p-0">
+              <a
+                href="https://www.linkedin.com/in/antonio-tone-220925281"
+                target="_blank"
+                class="link"
+                >Linkdin</a
+              >
+              <a href="" class="link">Facebook</a>
+              <a href="" class="link">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </div>
 </template>
@@ -141,7 +187,7 @@ this.images.forEach(image => {
     ease:'linear',
     yPercent:-15,
     scale:1,
-    opacity: 0.7,
+    opacity: 0.5,
 
   })
 });
@@ -183,10 +229,10 @@ margin-top: 10em !important;
 }
 .image{
   width: 100%;
-  height:150%;
+  height:170%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2%;
   right: 0;
   bottom: 0;
   object-fit: cover;
@@ -204,5 +250,138 @@ margin-top: 10em !important;
 }
 .sec{
   height: 50rem;
+}
+
+.flex-container{
+ 
+min-width:100% !important;
+}
+.vl {
+  border-left: 2px solid #646464;
+  height: 200px;
+}
+
+.contact {
+  background: rgb(28, 29, 32);
+  height: 760px;
+}
+.heading {
+  transform: translateX(-350px) translateY(120px);
+}
+.connect {
+  font-size: 5rem;
+  margin-left: 10px !important;}
+ .profile {
+  height: 75px;
+  width: 75px;
+  border-radius: 999px;
+  transform: translateY(100px) translateX(75px);
+  animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+
+}
+.shift {
+  margin-left: 90px;
+}
+
+.HR {
+  transform: translateY(200px);
+  width: 65% !important;
+}
+.con{
+  transform: translateY(160px) translateX(-290px);
+  z-index: 3;
+}
+.info {
+  transform: translateY(120px) translateX(-290px);
+  margin-right: 2rem;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+}
+.info:hover {
+  background-color: red;
+  cursor: pointer !important;
+}
+.footer {
+  transform: translateY(300px) !important;
+}
+.general {
+  transform: translateX(150px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.socials {
+  transform: translateX(-150px);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  transition: 1s ease-in-out;
+  padding: 5px;
+}
+
+.link:hover {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  background-color: lightblue;
+}
+@keyframes outerglow {
+  0% {
+    box-shadow: 0px 0px 0px blue;
+  }
+  100% {
+    box-shadow: 0px 0px 15px blue;
+  }
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: -13px;
+  }
+}
+
+.animate-dot {
+   opacity: 0;
+   animation: animateDot1 1s linear infinite;
+}
+.animate-dot:nth-child(2) {
+   animation: animateDot2 1s linear infinite;
+}
+
+
+.animate-dot:nth-child(3) {
+   animation: animateDot3 1s linear infinite;
+}
+
+@keyframes animateDot1 {
+   0%   {opacity: 0; }
+   20%  {opacity: 0;}
+   30%  {opacity: 1;}
+   90% {opacity: 1;}
+}
+
+@keyframes animateDot2 {
+   0%   {opacity: 0; }
+   35%  {opacity: 0;}
+   45%  {opacity: 1;}
+   90% {opacity: 1;}
+}
+
+@keyframes animateDot3 {
+   0%   {opacity: 0; }
+   50%  {opacity: 0;}
+   60%  {opacity: 1;}
+   90% {opacity: 1;}
 }
 </style>

@@ -890,7 +890,7 @@ background: linear-gradient(to right, #414345, #232526);
 
 .contact {
   background: rgb(28, 29, 32);
-  height: 730px;
+  height: 760px;
 }
 .heading {
   transform: translateX(-350px) translateY(120px);
