@@ -67,7 +67,6 @@ const tl = gsap.timeline({
     trigger: ".intro",
     scrub:true,
     end:'center center',
-    markers:true
   }
 })
 this.layers.forEach(layer => {
