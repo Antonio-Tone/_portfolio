@@ -35,25 +35,24 @@
       <!-- skills section -->
 
       <div class="flex-container p-4">
-      <h2 class="mx-auto d-flex justify-content-center my-5 offer capable">
+      <h2 class=" m-5 offer capable">
         WHAT I BRING TO THE TABLE...
       </h2>
     
   
-  <div class="row mx-auto mt-5 text-center">
+  <div class="row mx-auto  text-center">
     <div class="col-12 col-md-4 intro text-center">
       <div>
         <div>
           <h2 class="lead mb-5">DESIGN</h2>
         </div>
-          <div class="animated animate__bounceInLeft mb-5" style="animation-delay: 2s;">
+          <div class="animated animate__bounceInLeft " style="animation-delay: 2s;">
             <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: #8b8e92;"></i>
             </div>
       </div>
       <div>
-        <p class="styling my-5">
-          As a developer I love designing, my website look modern and I have a
-          creative mind.
+        <p class="styling ps-4">
+          As a developer, I love designing, ensuring my websites have a modern look while incorporating my creative flair. I enjoy crafting intuitive user experiences that merge functionality with aesthetic appeal. My passion for innovation drives me to constantly explore new design trends and technologies,cause that is what excites me.
         </p>
       </div>
     </div>
@@ -67,10 +66,10 @@
         </div>
      
       </div>
-      <div class="vl">
-        <p class="styling my-5">
-          I build scalable websites from scratch that fit seamlessly with
-          design. My focus is on micro animations, transitions and interaction.
+      <div class="holder">
+      <div class="vl"></div>
+        <p class="style ps-4">
+          I specialize in constructing scalable websites from the ground up that seamlessly integrate with captivating design. My primary focus lies in the intricate details of micro animations, seamless transitions, and engaging user interactions. I am passionate about creating digital experiences that not only function flawlessly but also delight and engage users at every click.
         </p>
       </div>
     </div>
@@ -82,10 +81,10 @@
       <div class="animated animate__bounceInRight" style="animation-delay: 2s;">
         <i class="fa-solid fa-globe fa-beat-fade" style="color: #75777a;"></i>
       </div>
-      <div class="vl">
-        <p class="styling my-5 ps-4">
-          I host websites on secure domains and have your site running fast and
-          efficiently.
+      <div class="holder">
+      <div class="vl"></div>
+        <p class=" ps-4 style">
+          My expertise lies in hosting websites on secure domains while optimizing their performance for swift and efficient operation. Ensuring both security and speed, I take pride in crafting an online presence that not only operates safely but also runs with optimal speed and efficiency, providing visitors with a seamless and secure browsing experience.
         </p>
       </div>
     </div>
@@ -174,6 +173,7 @@ const tl = gsap.timeline({
     trigger: ".intro",
     scrub:true,
     end:'center center',
+    duration:3
   }
 })
 this.layers.forEach(layer => {
@@ -253,14 +253,20 @@ margin-top: 10em !important;
 }
 
 .flex-container{
- 
+
 min-width:100% !important;
 }
 .vl {
   border-left: 2px solid #646464;
-  height: 200px;
+  height: 200px;transform: translateY(-20px);
 }
-
+.style{
+transform: translateY(-150px);
+}
+.styling{
+  transform: translateY(50px);
+}
+/* contact styling */
 .contact {
   background: rgb(28, 29, 32);
   height: 760px;
