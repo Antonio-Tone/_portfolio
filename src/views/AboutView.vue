@@ -20,7 +20,8 @@
  </div>
 <!-- image with brief discription -->
 
-<div class="row mt-5 intro">
+<div class="container">
+  <div class="row mt-5 intro">
   <div class="col-6 first text-center">
     <h1>brief discription</h1>
   </div>
@@ -30,6 +31,111 @@
   </div>
 </div>
 </div>
+</div>
+      <!-- skills section -->
+
+      <div class="flex-container p-4">
+      <h2 class=" m-5 offer capable">
+        WHAT I BRING TO THE TABLE...
+      </h2>
+    
+  
+  <div class="row mx-auto  text-center">
+    <div class="col-12 col-md-4 intro text-center">
+      <div>
+        <div>
+          <h2 class="lead mb-5">DESIGN</h2>
+        </div>
+          <div class="animated animate__bounceInLeft " style="animation-delay: 2s;">
+            <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: #8b8e92;"></i>
+            </div>
+      </div>
+      <div>
+        <p class="styling ps-4">
+          As a developer, I love designing, ensuring my websites have a modern look while incorporating my creative flair. I enjoy crafting intuitive user experiences that merge functionality with aesthetic appeal. My passion for innovation drives me to constantly explore new design trends and technologies,cause that is what excites me.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 intro text-center mb-5">
+      <div>
+        <div>
+          <h2 class="mb-5 lead">DEVELOPMENT</h2>
+        </div>
+        <div class="animated animate__fadeInDownBig" style="animation-delay: 2s;">
+          <i class="fa-solid fa-computer fa-beat-fade" style="color: #696c72;"></i>
+        </div>
+     
+      </div>
+      <div class="holder">
+      <div class="vl"></div>
+        <p class="style ps-4">
+          I specialize in constructing scalable websites from the ground up that seamlessly integrate with captivating design. My primary focus lies in the intricate details of micro animations, seamless transitions, and engaging user interactions. I am passionate about creating digital experiences that not only function flawlessly but also delight and engage users at every click.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 intro text-center">
+      <div>
+        <h2 class="mb-5 ps-4 lead">HOSTING</h2>
+      </div>
+      <div class="animated animate__bounceInRight" style="animation-delay: 2s;">
+        <i class="fa-solid fa-globe fa-beat-fade" style="color: #75777a;"></i>
+      </div>
+      <div class="holder">
+      <div class="vl"></div>
+        <p class=" ps-4 style">
+          My expertise lies in hosting websites on secure domains while optimizing their performance for swift and efficient operation. Ensuring both security and speed, I take pride in crafting an online presence that not only operates safely but also runs with optimal speed and efficiency, providing visitors with a seamless and secure browsing experience.
+        </p>
+      </div>
+    </div>
+</div>
+</div>
+<!-- contact section -->
+<section class="contact">
+      <div class="d-flex justify-content-center heading">
+        <img
+          class="profile"
+          src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png"
+          alt=""
+        />
+        <h1 class="connect">
+          Let's <br /><span class="shift">Connect</span
+          ><span class="animate-dot">.</span><span class="animate-dot">.</span>
+        </h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <hr class="HR" />
+        <a href="/contact"><magnetic class="con" buttonText="Contact" /></a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="info">Antoniotone815@gmail.com</span
+        ><span class="info">065 851 3653</span>
+      </div>
+      <div class="row footer">
+        <div class="col-6 general">
+          <div class="">
+            <div class=""><span>Version:</span></div>
+            <div class="">2023© Edition</div>
+          </div>
+        </div>
+        <div class="col-6 socials">
+          <div class="">
+            <div class=""><span>Socials:</span></div>
+            <div class="wrapper d-flex justify-content-center p-0">
+              <a
+                href="https://www.linkedin.com/in/antonio-tone-220925281"
+                target="_blank"
+                class="link"
+                >Linkdin</a
+              >
+              <a href="" class="link">Facebook</a>
+              <a href="" class="link">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </div>
 </template>
@@ -67,6 +173,7 @@ const tl = gsap.timeline({
     trigger: ".intro",
     scrub:true,
     end:'center center',
+    duration:3
   }
 })
 this.layers.forEach(layer => {
@@ -80,7 +187,7 @@ this.images.forEach(image => {
     ease:'linear',
     yPercent:-15,
     scale:1,
-    opacity: 0.7,
+    opacity: 0.5,
 
   })
 });
@@ -122,10 +229,10 @@ margin-top: 10em !important;
 }
 .image{
   width: 100%;
-  height:130%;
+  height:170%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2%;
   right: 0;
   bottom: 0;
   object-fit: cover;
@@ -133,7 +240,7 @@ margin-top: 10em !important;
 }
 .image__overlay{
   width: 100%;
-  height: 50%;
+  height: 90%;
   padding-top: 50%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5) !important;
@@ -141,5 +248,146 @@ margin-top: 10em !important;
   overflow: hidden;
   margin-bottom: 900px;
 }
+.sec{
+  height: 50rem;
+}
 
+.flex-container{
+
+min-width:100% !important;
+}
+.vl {
+  border-left: 2px solid #646464;
+  height: 200px;transform: translateY(-20px);
+}
+.style{
+transform: translateY(-150px);
+}
+.styling{
+  transform: translateY(50px);
+}
+/* contact styling */
+.contact {
+  background: rgb(28, 29, 32);
+  height: 760px;
+}
+.heading {
+  transform: translateX(-350px) translateY(120px);
+}
+.connect {
+  font-size: 5rem;
+  margin-left: 10px !important;}
+ .profile {
+  height: 75px;
+  width: 75px;
+  border-radius: 999px;
+  transform: translateY(100px) translateX(75px);
+  animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+
+}
+.shift {
+  margin-left: 90px;
+}
+
+.HR {
+  transform: translateY(200px);
+  width: 65% !important;
+}
+.con{
+  transform: translateY(160px) translateX(-290px);
+  z-index: 3;
+}
+.info {
+  transform: translateY(120px) translateX(-290px);
+  margin-right: 2rem;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+}
+.info:hover {
+  background-color: red;
+  cursor: pointer !important;
+}
+.footer {
+  transform: translateY(300px) !important;
+}
+.general {
+  transform: translateX(150px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.socials {
+  transform: translateX(-150px);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  transition: 1s ease-in-out;
+  padding: 5px;
+}
+
+.link:hover {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  background-color: lightblue;
+}
+@keyframes outerglow {
+  0% {
+    box-shadow: 0px 0px 0px blue;
+  }
+  100% {
+    box-shadow: 0px 0px 15px blue;
+  }
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: -13px;
+  }
+}
+
+.animate-dot {
+   opacity: 0;
+   animation: animateDot1 1s linear infinite;
+}
+.animate-dot:nth-child(2) {
+   animation: animateDot2 1s linear infinite;
+}
+
+
+.animate-dot:nth-child(3) {
+   animation: animateDot3 1s linear infinite;
+}
+
+@keyframes animateDot1 {
+   0%   {opacity: 0; }
+   20%  {opacity: 0;}
+   30%  {opacity: 1;}
+   90% {opacity: 1;}
+}
+
+@keyframes animateDot2 {
+   0%   {opacity: 0; }
+   35%  {opacity: 0;}
+   45%  {opacity: 1;}
+   90% {opacity: 1;}
+}
+
+@keyframes animateDot3 {
+   0%   {opacity: 0; }
+   50%  {opacity: 0;}
+   60%  {opacity: 1;}
+   90% {opacity: 1;}
+}
 </style>
