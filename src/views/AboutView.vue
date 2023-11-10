@@ -20,7 +20,8 @@
  </div>
 <!-- image with brief discription -->
 
-<div class="row mt-5 intro">
+<div class="container">
+  <div class="row mt-5 intro">
   <div class="col-6 first text-center">
     <h1>brief discription</h1>
   </div>
@@ -28,6 +29,66 @@
     <div class="image__overlay">
     <img class="image" src="https://i.postimg.cc/FR6pwSJS/IMG-1478.jpg" alt="">
   </div>
+</div>
+</div>
+      <!-- skills section -->
+
+      <div class="flex-container p-4 w-100">
+      <h2 class="mx-auto d-flex justify-content-center my-5 offer capable">
+        WHAT I BRING TO THE TABLE...
+      </h2>
+    
+  
+  <div class="row mx-auto mt-5 text-center">
+    <div class="col-12 col-md-4 intro text-center">
+      <div>
+        <div>
+          <h2 class="lead mb-5">DESIGN</h2>
+        </div>
+          <div class="animated animate__bounceInLeft mb-5" style="animation-delay: 2s;">
+            <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: #8b8e92;"></i>
+            </div>
+      </div>
+      <div>
+        <p class="styling my-5">
+          As a developer I love designing, my website look modern and I have a
+          creative mind.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 intro text-center mb-5">
+      <div>
+        <div>
+          <h2 class="mb-5 lead">DEVELOPMENT</h2>
+        </div>
+        <div class="animated animate__fadeInDownBig" style="animation-delay: 2s;">
+          <i class="fa-solid fa-computer fa-beat-fade" style="color: #696c72;"></i>
+        </div>
+     
+      </div>
+      <div class="vl">
+        <p class="styling my-5">
+          I build scalable websites from scratch that fit seamlessly with
+          design. My focus is on micro animations, transitions and interaction.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 intro text-center">
+      <div>
+        <h2 class="mb-5 ps-4 lead">HOSTING</h2>
+      </div>
+      <div class="animated animate__bounceInRight" style="animation-delay: 2s;">
+        <i class="fa-solid fa-globe fa-beat-fade" style="color: #75777a;"></i>
+      </div>
+      <div class="vl">
+        <p class="styling my-5 ps-4">
+          I host websites on secure domains and have your site running fast and
+          efficiently.
+        </p>
+      </div>
+    </div>
+</div>
 </div>
 </div>
 
@@ -67,7 +128,6 @@ const tl = gsap.timeline({
     trigger: ".intro",
     scrub:true,
     end:'center center',
-    markers:true
   }
 })
 this.layers.forEach(layer => {
@@ -123,7 +183,7 @@ margin-top: 10em !important;
 }
 .image{
   width: 100%;
-  height:130%;
+  height:150%;
   position: absolute;
   left: 0;
   top: 0;
@@ -134,7 +194,7 @@ margin-top: 10em !important;
 }
 .image__overlay{
   width: 100%;
-  height: 50%;
+  height: 90%;
   padding-top: 50%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5) !important;
@@ -142,5 +202,7 @@ margin-top: 10em !important;
   overflow: hidden;
   margin-bottom: 900px;
 }
-
+.sec{
+  height: 50rem;
+}
 </style>

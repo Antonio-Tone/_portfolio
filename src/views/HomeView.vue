@@ -897,8 +897,7 @@ background: linear-gradient(to right, #414345, #232526);
 }
 .connect {
   font-size: 5rem;
-  margin-left: 10px !important;
-}
+  margin-left: 10px !important;}
 .heading > .profile {
   height: 75px;
   width: 75px;
