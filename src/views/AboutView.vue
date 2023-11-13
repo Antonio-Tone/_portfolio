@@ -130,7 +130,7 @@
       </div>
       <div class="d-flex justify-content-center">
         <hr class="HR" />
-        <a href="/contact"><magnetic class="con" buttonText="Contact" /></a>
+        <router-link to="/contact"><magnetic class="con" buttonText="Contact" /></router-link>
       </div>
       <div class="d-flex justify-content-center">
         <span class="info">Antoniotone815@gmail.com</span

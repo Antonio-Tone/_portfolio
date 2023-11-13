@@ -33,9 +33,9 @@
       </div>
       <div class="about d-flex justify-content-center mb-5">
         <hr class="mx-auto mt-5" />
-        <a href="/about"
-          ><magnetic class="btn text-center" buttonText="About"
-        /></a>
+        <router-link to="/about">
+        <magnetic class="btn text-center" :buttonText="'About'" />
+     </router-link>
       </div>
     </div>
     <!--projects section -->
@@ -523,7 +523,7 @@
       </div>
       <div class="d-flex justify-content-center">
         <hr class="hr" />
-        <a href="/contact"><magnetic class="switch" buttonText="Contact" /></a>
+        <router-link to="/contact"><magnetic class="switch" buttonText="Contact" /></router-link>
       </div>
       <div class="d-flex justify-content-center">
         <span class="info">Antoniotone815@gmail.com</span
