@@ -23,7 +23,7 @@
 <div class="container">
   <div class="row mt-5 intro">
   <div class="col-6 first text-center">
-    <h1>brief discription</h1>
+    <div><p>Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape!</p></div>
   </div>
   <div class="col-6 sec">
     <div class="image__overlay">
@@ -173,21 +173,24 @@ const tl = gsap.timeline({
     trigger: ".intro",
     scrub:true,
     end:'center center',
-    duration:3
+    // duration:3,
+    // pin:true,
   }
 })
 this.layers.forEach(layer => {
   tl.to(layer,{
-    ease:'linear',
-    yPercent:-20
+    // ease:'linear',
+    yPercent:-15
   })
 });
 this.images.forEach(image => {
   tl.to(image,{
-    ease:'linear',
-    yPercent:-15,
+    // ease:'linear',
+    yPercent:-10,
     scale:1,
     opacity: 0.5,
+    
+   
 
   })
 });
@@ -232,14 +235,14 @@ margin-top: 10em !important;
   height:170%;
   position: absolute;
   left: 0;
-  top: 2%;
+  top: 0.5%;
   right: 0;
   bottom: 0;
   object-fit: cover;
   
 }
 .image__overlay{
-  width: 100%;
+  width: 120%;
   height: 90%;
   padding-top: 50%;
   position: relative;
