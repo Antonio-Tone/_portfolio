@@ -3,10 +3,10 @@
     <!-- hero section -->
 
     <div class="main">
-      <div class="photo">
+      <div>
         <img
           class="header"
-          src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg"
+          src="https://i.postimg.cc/NjdbZWj5/Desktop-1-1.png"
         />
         <div class="text">
           <h1>Antonio Tone</h1>

@@ -23,7 +23,7 @@
 <div class="container">
   <div class="row mt-5 intro">
   <div class="col-6 first text-center">
-    <p>Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape</p>
+    <p class="dis">Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape</p>
   </div>
   <div class="col-6 sec">
     <div class="image__overlay">
@@ -251,6 +251,11 @@ margin-top: 10em !important;
 }
 .first{
   width: 40%;
+}
+.dis{
+  font-size: larger;
+  transform: ro(80px);
+  
 }
 .image{
   width: 100%;

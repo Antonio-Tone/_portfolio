@@ -86,6 +86,8 @@
   <style scoped>
   .main{
     min-height: 100vh;
+    background: rgb(28, 29, 32);
+
   }
   .heading {
     margin-bottom: 20px;
