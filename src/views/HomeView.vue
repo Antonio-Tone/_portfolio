@@ -3,10 +3,10 @@
     <!-- hero section -->
 
     <div class="main">
-      <div class="photo">
+      <div>
         <img
           class="header"
-          src="https://i.postimg.cc/SsRKftR6/wallpaperflare-com-wallpaper.jpg"
+          src="https://i.postimg.cc/NjdbZWj5/Desktop-1-1.png"
         />
         <div class="text">
           <h1>Antonio Tone</h1>
@@ -33,9 +33,9 @@
       </div>
       <div class="about d-flex justify-content-center mb-5">
         <hr class="mx-auto mt-5" />
-        <a href="/about"
-          ><magnetic class="btn text-center" buttonText="About"
-        /></a>
+        <router-link to="/about">
+        <magnetic class="btn text-center" :buttonText="'About'" />
+     </router-link>
       </div>
     </div>
     <!--projects section -->
@@ -523,7 +523,7 @@
       </div>
       <div class="d-flex justify-content-center">
         <hr class="hr" />
-        <a href="/contact"><magnetic class="switch" buttonText="Contact" /></a>
+        <router-link to="/contact"><magnetic class="switch" buttonText="Contact" /></router-link>
       </div>
       <div class="d-flex justify-content-center">
         <span class="info">Antoniotone815@gmail.com</span
@@ -737,10 +737,7 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
 .prod {
   padding: 100px;
 }
-.image {
-  height: 250px;
-  width: 450px;
-}
+
 .profile {
   margin-top: 4px;
   height: 45px;

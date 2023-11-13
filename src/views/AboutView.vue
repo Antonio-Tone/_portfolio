@@ -23,7 +23,7 @@
 <div class="container">
   <div class="row mt-5 intro">
   <div class="col-6 first text-center">
-    <div><p>Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape!</p></div>
+    <p class="dis">Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape</p>
   </div>
   <div class="col-6 sec">
     <div class="image__overlay">
@@ -38,8 +38,6 @@
       <h2 class=" m-5 offer capable">
         WHAT I BRING TO THE TABLE...
       </h2>
-    
-  
   <div class="row mx-auto  text-center">
     <div class="col-12 col-md-4 intro text-center">
       <div>
@@ -47,7 +45,7 @@
           <h2 class="lead mb-5">DESIGN</h2>
         </div>
           <div class="animated animate__bounceInLeft " style="animation-delay: 2s;">
-            <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: #8b8e92;"></i>
+            <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: blue;"></i>
             </div>
       </div>
       <div>
@@ -62,7 +60,7 @@
           <h2 class="mb-5 lead">DEVELOPMENT</h2>
         </div>
         <div class="animated animate__fadeInDownBig" style="animation-delay: 2s;">
-          <i class="fa-solid fa-computer fa-beat-fade" style="color: #696c72;"></i>
+          <i class="fa-solid fa-computer fa-beat-fade" style="color: blue;"></i>
         </div>
      
       </div>
@@ -79,7 +77,7 @@
         <h2 class="mb-5 ps-4 lead">HOSTING</h2>
       </div>
       <div class="animated animate__bounceInRight" style="animation-delay: 2s;">
-        <i class="fa-solid fa-globe fa-beat-fade" style="color: #75777a;"></i>
+        <i class="fa-solid fa-globe fa-beat-fade" style="color: blue;"></i>
       </div>
       <div class="holder">
       <div class="vl"></div>
@@ -90,6 +88,33 @@
     </div>
 </div>
 </div>
+<!-- soft skills and hobbies -->
+
+<div class="wrapper">
+  <div class="row w-100 mb-5">
+    <div class="col-6 d-flex justify-content-center">
+      <div class="overlay-2">
+        <img class="image-2" src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png" alt="">
+      </div>
+    </div>
+    <div class="col-6">
+      <h2 class="">Soft Skills:</h2>
+<div class="underline">
+  <hr class="mb-3">
+</div>
+      <p class="mb-5">Beyond just the technical stuff, I’ve got this knack for talking and actually getting ideas across in a way that makes sense to everyone. I’m all about rolling with the punches—change doesn’t scare me, it just keeps things interesting. When things get messy, I’m the go-to for sorting them out, thinking up solutions like it’s a puzzle waiting to be cracked. And when it’s game time, I’m the team player who knows how to rally the crew, keep things fun, and actually get things done. Plus, I’ve got this thing for understanding people and making the most out of every minute. It’s not just about skills on paper; it’s about being the kind of person you’d want in your corner when things get real. </p>
+      <h2 class="">My hobbies:</h2>
+      <div class="underline">
+      <hr class="mb-3">
+     </div>
+      <p>
+        mid the hustle of work, there's a side of me that craves the adrenaline rush, and rugby has been my avenue for that thrill. The rush of the game, the teamwork, and the sheer physicality are my kind of high-energy adventure. When I'm not tackling on the field, I'm out chasing that same adrenaline at carnivals, seeking the heart-pounding excitement of rides and games. But amidst this buzz, I find my balance in the great outdoors. Hiking trails offer a different kind of rush, a peaceful one where it's about soaking in nature's beauty. And when I need a change of scenery, you'll often find me cruising down coastal roads, windows down, with the sound of waves crashing in the background. See, these moments aren't just about me-time; they're about appreciating the world and finding that peace that grounds me. Weekends are sacrosanct, a time for building bonds with friends and family. Being appreciative by nature, I find the greatest joy in these connections, the shared experiences that make life all the more vibrant.
+      </p>
+
+    </div>
+  </div>
+</div>
+
 <!-- contact section -->
 <section class="contact">
       <div class="d-flex justify-content-center heading">
@@ -105,7 +130,7 @@
       </div>
       <div class="d-flex justify-content-center">
         <hr class="HR" />
-        <a href="/contact"><magnetic class="con" buttonText="Contact" /></a>
+        <router-link to="/contact"><magnetic class="con" buttonText="Contact" /></router-link>
       </div>
       <div class="d-flex justify-content-center">
         <span class="info">Antoniotone815@gmail.com</span
@@ -173,8 +198,7 @@ const tl = gsap.timeline({
     trigger: ".intro",
     scrub:true,
     end:'center center',
-    // duration:3,
-    // pin:true,
+    duration:3,
   }
 })
 this.layers.forEach(layer => {
@@ -229,6 +253,11 @@ margin-top: 10em !important;
 }
 .first{
   width: 40%;
+}
+.dis{
+  font-size: larger;
+  transform: ro(80px);
+  
 }
 .image{
   width: 100%;
