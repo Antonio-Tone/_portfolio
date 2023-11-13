@@ -23,7 +23,7 @@
 <div class="container">
   <div class="row mt-5 intro">
   <div class="col-6 first text-center">
-    <h1>brief discription</h1>
+    <p>Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape</p>
   </div>
   <div class="col-6 sec">
     <div class="image__overlay">
@@ -90,6 +90,26 @@
     </div>
 </div>
 </div>
+<!-- what can I put here bro😭 -->
+<div class="wrapper">
+  <div class="row w-100 mb-5">
+    <div class="col-6 d-flex justify-content-center">
+      <div class="overlay-2">
+        <img class="image-2" src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png" alt="">
+      </div>
+    </div>
+    <div class="col-6">
+      <h2 class="mb-2">Soft Skills:</h2>
+      <p class="">Beyond just the technical stuff, I’ve got this knack for talking and actually getting ideas across in a way that makes sense to everyone. I’m all about rolling with the punches—change doesn’t scare me, it just keeps things interesting. When things get messy, I’m the go-to for sorting them out, thinking up solutions like it’s a puzzle waiting to be cracked. And when it’s game time, I’m the team player who knows how to rally the crew, keep things fun, and actually get things done. Plus, I’ve got this thing for understanding people and making the most out of every minute. It’s not just about skills on paper; it’s about being the kind of person you’d want in your corner when things get real. </p>
+      <h2 class="mb-2">My hobbies:</h2>
+      <p class="">
+        mid the hustle of work, there's a side of me that craves the adrenaline rush, and rugby has been my avenue for that thrill. The rush of the game, the teamwork, and the sheer physicality are my kind of high-energy adventure. When I'm not tackling on the field, I'm out chasing that same adrenaline at carnivals, seeking the heart-pounding excitement of rides and games. But amidst this buzz, I find my balance in the great outdoors. Hiking trails offer a different kind of rush, a peaceful one where it's about soaking in nature's beauty. And when I need a change of scenery, you'll often find me cruising down coastal roads, windows down, with the sound of waves crashing in the background. See, these moments aren't just about me-time; they're about appreciating the world and finding that peace that grounds me. Weekends are sacrosanct, a time for building bonds with friends and family. Being appreciative by nature, I find the greatest joy in these connections, the shared experiences that make life all the more vibrant.
+      </p>
+
+    </div>
+  </div>
+</div>
+
 <!-- contact section -->
 <section class="contact">
       <div class="d-flex justify-content-center heading">
@@ -173,7 +193,7 @@ const tl = gsap.timeline({
     trigger: ".intro",
     scrub:true,
     end:'center center',
-    duration:3
+    duration:3,
   }
 })
 this.layers.forEach(layer => {

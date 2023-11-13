@@ -737,10 +737,7 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
 .prod {
   padding: 100px;
 }
-.image {
-  height: 250px;
-  width: 450px;
-}
+
 .profile {
   margin-top: 4px;
   height: 45px;
