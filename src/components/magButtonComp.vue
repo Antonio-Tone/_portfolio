@@ -132,10 +132,10 @@ hoverMouse($("h5, button"));
   }
   @keyframes outerglow {
   0% {
-    box-shadow: 0px 0px 0px blue;
+    box-shadow: 0px 0px 0px #1ce278;
   }
   100% {
-    box-shadow: 0px 0px 15px blue;
+    box-shadow: 0px 0px 15px #1ce278;
   }
 }
 

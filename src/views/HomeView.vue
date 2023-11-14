@@ -3,15 +3,31 @@
     <!-- hero section -->
 
     <div class="main">
-      <div>
-        <img
-          class="header"
-          src="https://i.postimg.cc/NjdbZWj5/Desktop-1-1.png"
-        />
-        <div class="text">
-          <h1>Antonio Tone</h1>
-        </div>
+      <div class="header">
+<div class="skill">
+  <h1 class="dev DPP"><span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span></h1>
+  <h1 class="ps DPP"><span>P</span><span>r</span><span>o</span><span>b</span><span>l</span><span>e</span><span>m</span><span>&nbsp;</span><span>S</span><span>o</span><span>l</span><span>v</span><span>e</span><span>r</span>
+</h1>
+  <h1 class="des DPP"><span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span>
+</h1>
+  <div class="image vh-100">
+    <img src="https://i.postimg.cc/NMqsMGT1/C12-C1-Antonio-Torre-1-removebg-preview.png" alt="">
+    <div class="Name">
+      <div class="location d-flex justify-content-center">
+        <i class="fa-solid fa-location-crosshairs fa-fade"></i>
+        Cape Town, South Africa</div>
+      <hr class="line">
+        <h2 class="AT">Antonio Tone</h2>
+      <hr class="line">
+      <div class="scroll">
+        <p class="m-0">Scroll Down</p>
+        <i class="fa-solid fa-angle-down fa-bounce"></i>
+
       </div>
+    </div>
+  </div>
+</div>
+</div>
     </div>
     <!--introduction -->
 
@@ -574,6 +590,8 @@ export default {
   },
   mounted() {
     this.autoType();
+    this.initialize();
+
 
     gsap.registerPlugin(ScrollTrigger);
     const container = this.$el.querySelector(".holder");
@@ -611,6 +629,8 @@ export default {
         end: `+=${totalWidth}`,
       },
     });
+
+
   },
 
   methods: {
@@ -645,12 +665,48 @@ export default {
     });
   });
 },
-  },
 
-  
+initialize(){
+    this.setInitialStates();
+    this.header();
+   },
+   setInitialStates(){
+    gsap.set(' .dev span', {
+        opacity: 0,
+      });
+    gsap.set('.skill .ps span', {
+        opacity: 0,
+      });
+    gsap.set('.skill .des span', {
+        opacity: 0,
+      });
+   },
+   header(){
+    
+const tl = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".skill",
+  }
+})
+tl.to(".skill .dev span",{
+  opacity: 1,
+  ease:'expo.out',
+  stagger:0.04,
+});
+tl.to(".skill .ps span",{
+  opacity: 1,
+  ease:'expo.out',
+  stagger:0.04,
+});
+tl.to(".des span",{
+  opacity: 1,
+  ease:'expo.out',
+  stagger:0.04,
+});
 
 
- 
+   }
+  },  
 };
 </script>
 <style scoped>
@@ -658,18 +714,72 @@ export default {
   position: relative;
   min-height: 100vh !important;
 }
-.header {
-  z-index: 0;
-  position: absolute;
-  min-width: 100% !important;
-  height: 100% !important;
+.header{
+    width: 100%;
+     background-color: #0bc863;
+    height: 100vh;
+    position: relative;
+  }
+.skill{
+height: 100%;
+width: 100%;
+z-index: 0;
+
 }
-.text {
-  z-index: 3;
+.dev{
+  font-size: 10rem;
+  transform: translateX(60px);
   position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* color: #414345; */
+  color: aliceblue;
+}
+.ps{
+  font-size: 10rem;
+  transform: translateX(220px) translateY(180px);
+  position: absolute;
+  word-spacing: 120px;
+  color: #53585d;
+
+
+}
+.des{
+  font-size: 10rem;
+  transform: translateX(920px) translateY(340px);
+  position: absolute;
+  color: aliceblue;
+
+}
+.image{
+  z-index: 20;
+  position: absolute;
+  transform: translateX(32em) translateY(128px);
+  width: 100%;
+  min-height: 100vh !important;
+
+}
+
+.Name{
+  position: absolute;
+  min-width:100% !important;
+  z-index: 25 !important;
+  transform: translateX(-32em) translateY(-220px);
+  text-align: center !important;
+}
+.AT{
+  font-size: 5em;
+}
+.location{
+  transform: translateX(-42em);
+}
+.fa-fade{
+  font-size: 13px;
+  margin: 6px;
+}
+.line{
+  width: 100% !important;
+}
+.scroll{
+  transform: translateY(-13px);
 }
 .intro {
   width: 100% !important;
@@ -720,7 +830,6 @@ hr {
     
   );
   transition: 1s ease-in-out;
-  cursor: pointer !important;
   border: none !important;
 }
 .toggle:focus{
@@ -747,10 +856,10 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
 }
 @keyframes outerglow {
   0% {
-    box-shadow: 0px 0px 0px blue;
+    box-shadow: 0px 0px 0px #1ce278;
   }
   100% {
-    box-shadow: 0px 0px 15px blue;
+    box-shadow: 0px 0px 15px #1ce278;
   }
 }
 
@@ -922,7 +1031,7 @@ background: linear-gradient(to right, #414345, #232526);
   transition: 2s ease-in-out;
 }
 .info:hover {
-  background-color: red;
+  background-color:#14AE5C;
   cursor: pointer !important;
 }
 .footer {
