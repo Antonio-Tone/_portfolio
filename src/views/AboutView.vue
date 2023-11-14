@@ -45,7 +45,7 @@
           <h2 class="lead mb-5">DESIGN</h2>
         </div>
           <div class="animated animate__bounceInLeft " style="animation-delay: 2s;">
-            <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: blue;"></i>
+            <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: grey;"></i>
             </div>
       </div>
       <div>
@@ -60,7 +60,7 @@
           <h2 class="mb-5 lead">DEVELOPMENT</h2>
         </div>
         <div class="animated animate__fadeInDownBig" style="animation-delay: 2s;">
-          <i class="fa-solid fa-computer fa-beat-fade" style="color: blue;"></i>
+          <i class="fa-solid fa-computer fa-beat-fade" style="color: grey;"></i>
         </div>
      
       </div>
@@ -77,7 +77,7 @@
         <h2 class="mb-5 ps-4 lead">HOSTING</h2>
       </div>
       <div class="animated animate__bounceInRight" style="animation-delay: 2s;">
-        <i class="fa-solid fa-globe fa-beat-fade" style="color: blue;"></i>
+        <i class="fa-solid fa-globe fa-beat-fade" style="color: grey;"></i>
       </div>
       <div class="holder">
       <div class="vl"></div>
@@ -239,7 +239,7 @@ this.images.forEach(image => {
     trigger: ".wapper",
     scrub:true,
     start:'top bottom',
-    duration:3,
+    duration:1,
   }
 })
 this.layers2.forEach(layer => {
