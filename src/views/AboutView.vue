@@ -178,46 +178,85 @@ export default {
    initialize(){
     this.setInitialStates();
     this.overlay();
+    this.overlay2();
 
    },
    setInitialStates(){
     gsap.set('.image__overlay img', {
         opacity: 0,
-        scale:1.1,
+        scale: 1.08
       });
       gsap.set("image__overlay",{
+        // yPercent:-12
+      }),
 
-      })
-      this.layers = [...document.querySelectorAll("image__overlay")];
+      // pre-settings second image
+
+    gsap.set('.overlay-2 .image-2', {
+        opacity: 0,
+        scale: 1.08
+      });
+  
+      this.layers = [...document.querySelectorAll(".image__overlay")];
       this.images = [...document.querySelectorAll(".image")];
+      this.layers2 = [...document.querySelectorAll(".overlay-2")];
+      this.images2 = [...document.querySelectorAll(".image-2")];
    },
    overlay(){
     
-const tl = gsap.timeline({
+    const tl = gsap.timeline({
   scrollTrigger:{
-    trigger: ".intro",
+    trigger: ".switch",
     scrub:true,
-    end:'center center',
+    end:'top top',
     duration:3,
   }
 })
 this.layers.forEach(layer => {
   tl.to(layer,{
     ease:'linear',
-    yPercent:-20
+    yPercent:-10
   })
 });
 this.images.forEach(image => {
   tl.to(image,{
     ease:'linear',
-    yPercent:-15,
+    // yPercent:-15,
     scale:1,
     opacity: 0.5,
 
   })
 });
 
-   }
+   },
+
+    //  gsap for second image
+
+   overlay2(){
+    
+    const tl = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".wapper",
+    scrub:true,
+    start:'top bottom',
+    duration:3,
+  }
+})
+this.layers2.forEach(layer => {
+  tl.to(layer,{
+    ease:'linear',
+  })
+});
+this.images2.forEach(image => {
+  tl.to(image,{
+    ease:'linear',
+    scale:1,
+    opacity: 0.5,
+
+  })
+});
+
+   },
    
   },
 };
@@ -254,18 +293,18 @@ margin-top: 10em !important;
 }
 .dis{
   font-size: larger;
-  transform: ro(80px);
   
 }
 .image{
   width: 100%;
-  height:170%;
+  height:110%;
   position: absolute;
   left: 0;
-  top: 2%;
+  top: 0;
   right: 0;
   bottom: 0;
   object-fit: cover;
+  background-attachment: fixed;
   
 }
 .image__overlay{
@@ -336,7 +375,7 @@ transform: translateY(-150px);
   transition: 2s ease-in-out;
 }
 .info:hover {
-  background-color: red;
+  background-color: #0bc863;
   cursor: pointer !important;
 }
 .footer {
@@ -370,10 +409,10 @@ transform: translateY(-150px);
 }
 @keyframes outerglow {
   0% {
-    box-shadow: 0px 0px 0px blue;
+    box-shadow: 0px 0px 0px #1ce278;
   }
   100% {
-    box-shadow: 0px 0px 15px blue;
+    box-shadow: 0px 0px 15px #1ce278;
   }
 }
 
