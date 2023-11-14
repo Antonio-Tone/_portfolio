@@ -3,15 +3,24 @@
     <!-- hero section -->
 
     <div class="main">
-      <div>
-        <img
-          class="header"
-          src="https://i.postimg.cc/NjdbZWj5/Desktop-1-1.png"
-        />
-        <div class="text">
-          <h1>Antonio Tone</h1>
-        </div>
-      </div>
+      <div class="header">
+<div class="skill">
+  <h1 class="dev">Developer</h1>
+  <h1 class="ps">Problem Solver</h1>
+  <h1 class="des">Designer</h1>
+  <div class="image vh-100">
+    <img src="https://i.postimg.cc/NMqsMGT1/C12-C1-Antonio-Torre-1-removebg-preview.png" alt="">
+    <div class="Name">
+      <div class="location d-flex justify-content-center">
+        <i class="fa-solid fa-location-crosshairs fa-fade"></i>
+        Cape Town, South Africa</div>
+      <hr class="line">
+        <h2 class="AT">Antonio Tone</h2>
+      <hr class="line">
+    </div>
+  </div>
+</div>
+</div>
     </div>
     <!--introduction -->
 
@@ -658,18 +667,68 @@ export default {
   position: relative;
   min-height: 100vh !important;
 }
-.header {
-  z-index: 0;
-  position: absolute;
-  min-width: 100% !important;
-  height: 100% !important;
+.header{
+    width: 100%;
+    /* background-color: rgb(82,104,45);
+     */
+     background-color: #14AE5C;
+    /* background-color:rgb(48, 118, 146); */
+    height: 100vh;
+    position: relative;
+  }
+.skill{
+height: 100%;
+width: 100%;
+z-index: 0;
+
 }
-.text {
-  z-index: 3;
+.dev{
+  font-size: 10rem;
+  transform: translateX(60px);
   position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+.ps{
+  font-size: 10rem;
+  transform: translateX(190px) translateY(180px);
+  position: absolute;
+  word-spacing: 120px;
+  color: lightgrey;
+
+
+}
+.des{
+  font-size: 10rem;
+  transform: translateX(920px) translateY(340px);
+  position: absolute;
+}
+.image{
+  z-index: 20;
+  position: absolute;
+  transform: translateX(32em) translateY(128px);
+  width: 100%;
+  min-height: 100vh !important;
+
+}
+
+.Name{
+  position: absolute;
+  min-width:100% !important;
+  z-index: 25 !important;
+  transform: translateX(-32em) translateY(-220px);
+  text-align: center !important;
+}
+.AT{
+  font-size: 5em;
+}
+.location{
+  transform: translateX(-42em);
+}
+.fa-fade{
+  font-size: 13px;
+  margin: 6px;
+}
+.line{
+  width: 100% !important;
 }
 .intro {
   width: 100% !important;
