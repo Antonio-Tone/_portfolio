@@ -221,8 +221,10 @@ this.layers.forEach(layer => {
 this.images.forEach(image => {
   tl.to(image,{
     ease:'linear',
-    
-   
+    // yPercent:-15,
+    scale:1,
+    opacity: 0.5,
+
   })
 });
 
@@ -298,8 +300,6 @@ margin-top: 10em !important;
   height:110%;
   position: absolute;
   left: 0;
-
-  top: 0.5%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -308,7 +308,7 @@ margin-top: 10em !important;
   
 }
 .image__overlay{
-  width: 120%;
+  width: 100%;
   height: 90%;
   padding-top: 50%;
   position: relative;
