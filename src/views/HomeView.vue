@@ -602,8 +602,8 @@ export default {
     this.autoType();
     this.initialize();
 
-
     gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollSmoother);
     const container = this.$el.querySelector(".holder");
     const row2 = this.$el.querySelector(".holder");
     const itemsRow1 = gsap.utils.toArray(".row-1 .flex-col");
@@ -611,38 +611,41 @@ export default {
     const totalWidth = (itemsRow1.length + itemsRow2.length) * 300;
 
     gsap.to(itemsRow1, {
-      xPercent: -100 * (itemsRow1.length - 1),
-      ease: "linear",
-      // duration: 3,
-      scrollTrigger: {
-        start: "center center",
-        trigger: container,
-        pin: false,
-        pinSpacing: false,
-        scrub: 2,
-        snap: 0.5 / (itemsRow1.length - 1),
-        end: `+=${totalWidth}`,
-      },
+        xPercent: -100 * (itemsRow1.length - 1),
+        ease: "linear",
+        scrollTrigger: {
+            start: "center center",
+            trigger: container,
+            pin: false,
+            pinSpacing: false,
+            scrub: 2,
+            snap: 0.5 / (itemsRow1.length - 1),
+            end: `+=${totalWidth}`,
+        },
     });
 
     gsap.to(itemsRow2, {
-      xPercent: 100 * (itemsRow2.length + 1),
-      ease: "linear",
-      // duration: 3,
-      scrollTrigger: {
-        start: "center center",
-        trigger: row2,
-        pin: false,
-        pinSpacing: false,
-        scrub: 2,
-        // scrub:5
-        snap: 0.5 / (itemsRow2.length + 1),
-        end: `+=${totalWidth}`,
-      },
+        xPercent: 100 * (itemsRow2.length + 1),
+        ease: "linear",
+        scrollTrigger: {
+            start: "center center",
+            trigger: row2,
+            pin: false,
+            pinSpacing: false,
+            scrub: 2,
+            snap: 0.5 / (itemsRow2.length + 1),
+            end: `+=${totalWidth}`,
+        },
     });
 
+    // const smoother = new ScrollSmoother({
+    //     content: ".boss", // Adjust this selector based on your HTML structure
+    //     smooth: 3,
+    // });
 
-  },
+    // smoother.init();
+},
+
 
   methods: {
     show(elementNumber) {
