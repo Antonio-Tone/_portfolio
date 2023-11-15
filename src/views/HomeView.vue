@@ -66,6 +66,7 @@
       </div>
       <div>
         <div class="row prod" v-show="visibleElement === 1">
+          <p class="options d-flex justify-content-start">Hover to view:</p>
           <div class="col-6">
             <div class="card">
               <img
@@ -118,6 +119,8 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 2">
+          <p class="options d-flex justify-content-start">Hover to view:</p>
+
           <div class="col-6">
             <div class="card">
               <img
@@ -169,6 +172,8 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 3">
+          <p class="options d-flex justify-content-start">Hover to view:</p>
+
           <div class="col-6">
             <div class="card">
               <img
@@ -223,6 +228,7 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 4">
+          <p class="options d-flex justify-content-start">Hover to view:</p>
           <div class="col-6">
             <div class="card">
               <img
@@ -268,6 +274,7 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 5">
+          <p class="options d-flex justify-content-start">Hover to view:</p>
           <div class="col-6 d-flex justify-content-start">
             <div class="card">
               <img
@@ -860,7 +867,9 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
 .prod {
   padding: 100px;
 }
-
+.options{
+  transform: translateX(20px) translateY(-20px);
+}
 .profile {
   margin-top: 4px;
   height: 45px;
