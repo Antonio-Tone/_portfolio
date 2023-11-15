@@ -64,7 +64,7 @@
         <button class="toggle" @click="show(4)">BMI</button>
         <button class="toggle" @click="show(5)">Rental</button>
       </div>
-      <div class="">
+      <div>
         <div class="row prod" v-show="visibleElement === 1">
           <div class="col-6">
             <div class="card">
@@ -99,7 +99,8 @@
           </div>
           <div class="col-6 work">
             <div>
-              <h2 class="">MY FIRST PORTFOLIO</h2>
+              <h2 class="prdName">MY FIRST PORTFOLIO</h2>
+                <hr class="prodLine-1">
             </div>
             <p class="text-center disc">
               My very first website, created using HTML, Bootstrap, and CSS.
@@ -149,7 +150,8 @@
             </div>
           </div>
           <div class="col-6 work">
-            <h2 class="">MY FIRST E-COMMERCE</h2>
+            <h2 class="prdName">MY FIRST E-COMMERCE</h2>
+              <hr class="prodLine">
             <p class="text-center disc">
               I used CSS to make it look good, Bootstrap to keep it simple, and
               a bit of JavaScript to add some fun. You can browse properties,
@@ -199,8 +201,8 @@
             </div>
           </div>
           <div class="col-6 work">
-            <h2 class="">GROUP PROJECT</h2>
-
+            <h2 class="prdName">GROUP PROJECT</h2>
+              <hr class="prodLine">
             <p class="text-center disc">
               Collaboratively, my classmate and I teamed up to create an
               appliance store webpage using Node.js. This project involved
@@ -253,7 +255,8 @@
             </div>
           </div>
           <div class="col-6 work">
-            <h2 class="">My BMI Calculator Journey</h2>
+            <h2 class="prdName">My BMI Calculator Journey</h2>
+              <hr class="prodLine">
             <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immediate results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
             <div class="d-flex justify-content-center">
               <ul>
@@ -297,8 +300,8 @@
             </div>
           </div>
           <div class="col-6 work">
-            <h2 class="">CAPSTONE</h2>
-
+            <h2 class="prdName">CAPSTONE</h2>
+              <hr class="prodLine">
             <p class="text-center disc">
               My capstone project was a transformative journey where I designed
               and developed a luxury car rental website using Node.js and
@@ -806,7 +809,7 @@ z-index: 0;
 }
 hr {
   position: relative;
-  width: 50% !important;
+  width: 55% !important;
 }
 .about {
   position: relative;
@@ -838,6 +841,17 @@ background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
 background: linear-gradient(to right, #A7BFE8, #6190E8);
   color: white;
   animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.prdName{
+  color:
+  rgb(16, 16, 16) !important;
+  margin-bottom: 0 !important;
+}
+.prodLine{
+  width: 50% !important;
+}
+.prodLine-1{
+  width: 100% !important;
 }
 .lang{
   height: 25px;
