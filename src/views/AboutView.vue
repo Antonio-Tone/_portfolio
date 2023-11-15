@@ -35,8 +35,9 @@
       <!-- skills section -->
 
       <div class="flex-container p-4">
-      <h2 class=" m-5 offer capable">
+      <h2 class="capable">
         WHAT I BRING TO THE TABLE...
+        <hr class="m-0 capable-hr">
       </h2>
   <div class="row mx-auto  text-center">
     <div class="col-12 col-md-4 intro text-center">
@@ -251,7 +252,7 @@ this.images2.forEach(image => {
   tl.to(image,{
     ease:'linear',
     scale:1,
-    opacity: 0.5,
+    opacity: 0.9,
 
   })
 });
@@ -305,10 +306,12 @@ margin-top: 10em !important;
   bottom: 0;
   object-fit: cover;
   background-attachment: fixed;
+  border-radius: 30px;
   
 }
 .image__overlay{
   width: 100%;
+  border-radius: 30px;
   height: 90%;
   padding-top: 50%;
   position: relative;
@@ -316,6 +319,14 @@ margin-top: 10em !important;
   z-index: 1 ;
   overflow: hidden;
   margin-bottom: 900px;
+}
+.image-2 , .overlay-2{
+  border-radius: 30px;
+
+}
+/* capable settings */
+.capable-hr{
+  width: 28% ;
 }
 .sec{
   height: 50rem;
@@ -335,6 +346,7 @@ transform: translateY(-150px);
 .styling{
   transform: translateY(50px);
 }
+
 /* contact styling */
 .contact {
   background: rgb(28, 29, 32);
