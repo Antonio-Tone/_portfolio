@@ -135,8 +135,8 @@ button {
 
 button:hover {
   color: #eeebdd;
-  background: rgb(228,212,134);
-  box-shadow: 0 0 30px 5px rgb(228,212,134);
+  background: #0bc863;
+  box-shadow: 0 0 30px 5px #0bc863;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
