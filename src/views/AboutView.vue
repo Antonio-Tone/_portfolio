@@ -24,6 +24,21 @@
   <div class="row mt-5 intro">
   <div class="col-6 first text-center">
     <p class="dis">Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape</p>
+    <div class="">
+      <p class="d-flex justify-content-center text mt-5">Technologies I use:</p>
+      <div class="tech">
+        <ul class="list d-flex justify-content-center">
+        <li><img class="item" src="https://i.postimg.cc/dQ850VNh/icons8-vuejs-48.png" alt=""><br>vuejs</li>
+        <li><img class="item" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""><br>JavaScript</li>
+        <li><img class="item" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""><br>API</li>
+        </ul>
+        <ul class="list d-flex justify-content-center">
+        <li><img class="item" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""><br>Nodejs</li>
+        <li><img class="item" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""><br>MYSQL</li>
+        <li><img class="item" src="https://i.postimg.cc/ydprXQ9k/tweenmax-png-cf27916e926fbb328ff214f66b4c8429-removebg-preview.png" alt=""><br>GSAP</li>
+      </ul>
+      </div>
+    </div>
   </div>
   <div class="col-6 sec">
     <div class="image__overlay">
@@ -35,8 +50,9 @@
       <!-- skills section -->
 
       <div class="flex-container p-4">
-      <h2 class=" m-5 offer capable">
+      <h2 class="capable">
         WHAT I BRING TO THE TABLE...
+        <hr class="m-0 capable-hr">
       </h2>
   <div class="row mx-auto  text-center">
     <div class="col-12 col-md-4 intro text-center">
@@ -251,7 +267,7 @@ this.images2.forEach(image => {
   tl.to(image,{
     ease:'linear',
     scale:1,
-    opacity: 0.5,
+    opacity: 0.9,
 
   })
 });
@@ -285,6 +301,7 @@ i {
 transform: translateX(100px);
 }
 
+
 .intro{
 margin-top: 10em !important;
 }
@@ -305,10 +322,12 @@ margin-top: 10em !important;
   bottom: 0;
   object-fit: cover;
   background-attachment: fixed;
+  border-radius: 30px;
   
 }
 .image__overlay{
   width: 100%;
+  border-radius: 30px;
   height: 90%;
   padding-top: 50%;
   position: relative;
@@ -316,6 +335,14 @@ margin-top: 10em !important;
   z-index: 1 ;
   overflow: hidden;
   margin-bottom: 900px;
+}
+.image-2 , .overlay-2{
+  border-radius: 30px;
+
+}
+/* capable settings */
+.capable-hr{
+  width: 28% ;
 }
 .sec{
   height: 50rem;
@@ -335,6 +362,20 @@ transform: translateY(-150px);
 .styling{
   transform: translateY(50px);
 }
+.text{
+  font-size: 22px;
+  color: black;
+}
+.list{
+  list-style: none;
+}
+.item{
+  height: 50px !important;
+  margin: 25px;
+  filter: drop-shadow(0px 20px 12px black);
+
+}
+
 /* contact styling */
 .contact {
   background: rgb(28, 29, 32);

@@ -158,12 +158,14 @@ button:hover {
   button {
     margin: 10px;
   }
-}
-
-@media only screen and (max-width: 700px) {
-  .formButtons {
-    display: flex;
-    flex-direction: column;
+  
+  button:hover {
+    color: #eeebdd;
+    background: #1ce278;
+    box-shadow: 0 0 30px 5px #1ce278;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   button {
     margin: 10px;
