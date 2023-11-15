@@ -17,4 +17,4 @@ _render(time){
     requestAnimationFrame(this._render.bind(this));
 }
 }
-new App();
+new App

@@ -613,13 +613,13 @@ export default {
     gsap.to(itemsRow1, {
       xPercent: -100 * (itemsRow1.length - 1),
       ease: "linear",
-      duration: 3,
+      // duration: 3,
       scrollTrigger: {
         start: "center center",
         trigger: container,
         pin: false,
         pinSpacing: false,
-        scrub: 5,
+        scrub: 2,
         snap: 0.5 / (itemsRow1.length - 1),
         end: `+=${totalWidth}`,
       },
@@ -628,13 +628,14 @@ export default {
     gsap.to(itemsRow2, {
       xPercent: 100 * (itemsRow2.length + 1),
       ease: "linear",
-      duration: 3,
+      // duration: 3,
       scrollTrigger: {
         start: "center center",
         trigger: row2,
         pin: false,
         pinSpacing: false,
-        scrub: 5,
+        scrub: 2,
+        // scrub:5
         snap: 0.5 / (itemsRow2.length + 1),
         end: `+=${totalWidth}`,
       },

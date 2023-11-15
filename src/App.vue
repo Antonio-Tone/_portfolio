@@ -3,7 +3,7 @@
   <router-view/>
 </template>
 <script>
-import smoothScroller from "../public/smoothScroll.js";
+import smoothScroller from "../src/assets/smoothScroll";
 import navbarComp from "./components/navbarComp.vue";
 export default{
   components: {navbarComp},
@@ -24,6 +24,7 @@ export default{
 font-family: 'Cormorant', serif;
   color: #FFFF; 
   overflow-x: hidden;
+  /* scroll-behavior: smooth !important; */
   background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); 
 }
 html::-webkit-scrollbar{
