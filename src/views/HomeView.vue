@@ -340,7 +340,7 @@
     <section class="holder mx-auto">
       <div class="horizontal_item container">
         <div class="row row-1">
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -357,7 +357,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -376,7 +376,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -396,7 +396,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -417,7 +417,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -582,10 +582,7 @@
   </div>
 </template>
 <script>
-// import _ from "lodash";
-// import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import magnetic from "../components/magButtonComp.vue";
 export default {
   components: {
@@ -599,31 +596,12 @@ export default {
     };
   },
   mounted() {
-  // Add an event listener to the window scroll event
+    this.initialize();
+    this.autoType();
   window.addEventListener('scroll', this.handleScroll);
 
-  // Call other initialization methods if needed
-  this.initialize();
-  this.autoType();
 },
 
-beforeDestroy() {
-  // Remove the event listener when the component is destroyed
-  window.removeEventListener('scroll', this.handleScroll);
-},
-    
-    
-   
-    
-      // Add more animations if needed
-    
-
-    // const smoother = new ScrollSmoother({
-    //     content: ".boss", // Adjust this selector based on your HTML structure
-    //     smooth: 3,
-    // });
-
-    // smoother.init();
     methods: {
       show(elementNumber) {
         this.visibleElement = elementNumber;
@@ -700,14 +678,15 @@ beforeDestroy() {
     
      handleScroll() {
       const container = this.$el.querySelector(".holder");
-      const row2 = this.$el.querySelector(".holder");
+      const row2 = this.$el.querySelector(".row-1");
       const itemsRow1 = document.querySelectorAll(".row-1 .flex-col");
       const itemsRow2 = document.querySelectorAll(".row-2 .flex-col");
       const cardMargin = 200; // Adjust this value based on your actual card margin
-    const totalWidth = (itemsRow1.length + itemsRow2.length) * (300 + cardMargin);      
+    const totalWidth = (itemsRow1.length + itemsRow2.length) * (500 + cardMargin);      
     
       // Get the scroll position
       const scrollPosition = window.scrollY;
+      
     
       // Define the trigger positions for your animations
       const triggerPositionRow1 = container.offsetTop - window.innerHeight / 2;
@@ -716,9 +695,9 @@ beforeDestroy() {
       // Check if the scroll position has reached the trigger position for Row 1
       if (scrollPosition > triggerPositionRow1) {
         itemsRow1.forEach((item, index) => {
-          const offset = (index - itemsRow1.length / 2) * (300 + cardMargin);
-        const progress = (scrollPosition - triggerPositionRow1 - offset) / totalWidth;
-          item.style.transform = `translateX(${progress * 80}%)`;
+          const offset = (index - itemsRow1.length / 2) * (-650 + cardMargin);
+         const progress = (scrollPosition - triggerPositionRow1 - offset) / totalWidth;
+          item.style.transform = `translateX(${progress * 100}%)`;
         });
       }
     
@@ -727,7 +706,7 @@ beforeDestroy() {
         itemsRow2.forEach((item, index) => {
           const offset = (index + 1) * 300;
           const progress = (scrollPosition - triggerPositionRow2 - offset) / totalWidth;
-          item.style.transform = `translateX(${progress *-80}%)`;
+          item.style.transform = `translateX(${progress *-100}%)`;
         });
       }
     },
@@ -758,7 +737,6 @@ z-index: 0;
   font-size: 10rem;
   transform: translateX(60px);
   position: absolute;
-  /* color: #414345; */
   color: aliceblue;
 }
 .ps{
@@ -831,7 +809,6 @@ z-index: 0;
   flex-direction: column !important;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid white; */
   padding: 1.5em;
   filter: drop-shadow(0px 25px 12px black);
 }
@@ -964,8 +941,9 @@ background: linear-gradient(to right, #414345, #232526);
   padding: 0;
 }
 .row-1 {
-  width: 250vw;
-  transform: translateX(-12%);
+  width: 200vw;
+  transform: translateX(-2%);
+  /* margin-right: 15px !important; */
 
 }
 
