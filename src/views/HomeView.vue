@@ -340,7 +340,7 @@
     <section class="holder mx-auto">
       <div class="horizontal_item container">
         <div class="row row-1">
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -357,7 +357,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -376,7 +376,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -396,7 +396,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -417,7 +417,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-col m-2">
+          <div class="flex-col">
             <div class="horizontal-single-item">
               <div class="d-flex justify-content-center">
                 <img
@@ -582,10 +582,7 @@
   </div>
 </template>
 <script>
-// import _ from "lodash";
-// import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import magnetic from "../components/magButtonComp.vue";
 export default {
   components: {
@@ -593,135 +590,131 @@ export default {
   },
   data() {
     return {
-    
+        tl: gsap.timeline(),
       visibleElement: 1,
       lenis: null,
     };
   },
   mounted() {
-    this.autoType();
     this.initialize();
+    this.autoType();
+  window.addEventListener('scroll', this.handleScroll);
 
-    gsap.registerPlugin(ScrollTrigger);
-    // gsap.registerPlugin(ScrollSmoother);
-    const container = this.$el.querySelector(".holder");
-    const row2 = this.$el.querySelector(".holder");
-    const itemsRow1 = gsap.utils.toArray(".row-1 .flex-col");
-    const itemsRow2 = gsap.utils.toArray(".row-2 .flex-col");
-    const totalWidth = (itemsRow1.length + itemsRow2.length) * 300;
-
-    gsap.to(itemsRow1, {
-        xPercent: -100 * (itemsRow1.length - 1),
-        ease: "linear",
-        scrollTrigger: {
-            start: "center center",
-            trigger: container,
-            pin: false,
-            pinSpacing: false,
-            scrub: 2,
-            snap: 0.5 / (itemsRow1.length - 1),
-            end: `+=${totalWidth}`,
-        },
-    });
-
-    gsap.to(itemsRow2, {
-        xPercent: 100 * (itemsRow2.length + 1),
-        ease: "linear",
-        scrollTrigger: {
-            start: "center center",
-            trigger: row2,
-            pin: false,
-            pinSpacing: false,
-            scrub: 2,
-            snap: 0.5 / (itemsRow2.length + 1),
-            end: `+=${totalWidth}`,
-        },
-    });
-
-    // const smoother = new ScrollSmoother({
-    //     content: ".boss", // Adjust this selector based on your HTML structure
-    //     smooth: 3,
-    // });
-
-    // smoother.init();
 },
 
-
-  methods: {
-    show(elementNumber) {
-      this.visibleElement = elementNumber;
-    },
-    autoType() {
-  this.$nextTick(() => {
-    const textElements = document.querySelectorAll(".autotype");
-
-    textElements.forEach((textElement) => {
-      const originalText = textElement.textContent;
-      let i = 0;
-      
-      function typeText() {
-        const intervalId = setInterval(() => {
-          textElement.textContent = originalText.slice(0, i);
-          i += 3;
-          if (i > originalText.length) {
-            clearInterval(intervalId);
-            setTimeout(() => {
-              // Reset the text and call typeText again after a delay
-              
-              i = 0;
-              setTimeout(typeText, 20000); // Adjust the delay as needed
-            }, 10000); // Adjust the delay between loops as needed
-          }
-        }, 100); // Adjust the interval to control the typing speed
-      }
-      
-      typeText(); // Start the typing animation
-    });
-  });
-},
-
-initialize(){
-    this.setInitialStates();
-    this.header();
-   },
-   setInitialStates(){
-    gsap.set(' .dev span', {
-        opacity: 0,
-      });
-    gsap.set('.skill .ps span', {
-        opacity: 0,
-      });
-    gsap.set('.skill .des span', {
-        opacity: 0,
-      });
-   },
-   header(){
+    methods: {
+      show(elementNumber) {
+        this.visibleElement = elementNumber;
+      },
+      autoType() {
+    this.$nextTick(() => {
+      const textElements = document.querySelectorAll(".autotype");
     
-const tl = gsap.timeline({
-  scrollTrigger:{
-    trigger: ".skill",
-  }
-})
-tl.to(".skill .dev span",{
-  opacity: 1,
-  ease:'expo.out',
-  stagger:0.04,
-});
-tl.to(".skill .ps span",{
-  opacity: 1,
-  ease:'expo.out',
-  stagger:0.04,
-});
-tl.to(".des span",{
-  opacity: 1,
-  ease:'expo.out',
-  stagger:0.04,
-});
-
-
-   }
-  },  
+      textElements.forEach((textElement) => {
+        const originalText = textElement.textContent;
+        let i = 0;
+        
+        function typeText() {
+          const intervalId = setInterval(() => {
+            textElement.textContent = originalText.slice(0, i);
+            i += 3;
+            if (i > originalText.length) {
+              clearInterval(intervalId);
+              setTimeout(() => {
+                // Reset the text and call typeText again after a delay
+                
+                i = 0;
+                setTimeout(typeText, 20000); // Adjust the delay as needed
+              }, 10000); // Adjust the delay between loops as needed
+            }
+          }, 100); // Adjust the interval to control the typing speed
+        }
+        
+        typeText(); // Start the typing animation
+      });
+    });
+    },
+    
+    initialize(){
+      this.setInitialStates();
+      this.header();
+     },
+     setInitialStates(){
+      gsap.set(' .dev span', {
+          opacity: 0,
+        });
+      gsap.set('.skill .ps span', {
+          opacity: 0,
+        });
+      gsap.set('.skill .des span', {
+          opacity: 0,
+        });
+     },
+     header(){
+      
+    const tl = gsap.timeline({
+    scrollTrigger:{
+      trigger: ".skill",
+    }
+    })
+    tl.to(".skill .dev span",{
+    opacity: 1,
+    ease:'expo.out',
+    stagger:0.04,
+    });
+    tl.to(".skill .ps span",{
+    opacity: 1,
+    ease:'expo.out',
+    stagger:0.04,
+    });
+    tl.to(".des span",{
+    opacity: 1,
+    ease:'expo.out',
+    stagger:0.04,
+    });
+    
+    
+     },
+    
+     handleScroll() {
+      const container = this.$el.querySelector(".holder");
+      const row2 = this.$el.querySelector(".row-1");
+      const itemsRow1 = document.querySelectorAll(".row-1 .flex-col");
+      const itemsRow2 = document.querySelectorAll(".row-2 .flex-col");
+      const cardMargin = 200; // Adjust this value based on your actual card margin
+    const totalWidth = (itemsRow1.length + itemsRow2.length) * (500 + cardMargin);      
+    
+      // Get the scroll position
+      const scrollPosition = window.scrollY;
+      
+    
+      // Define the trigger positions for your animations
+      const triggerPositionRow1 = container.offsetTop - window.innerHeight / 2;
+      const triggerPositionRow2 = row2.offsetTop - window.innerHeight / 2;
+    
+      // Check if the scroll position has reached the trigger position for Row 1
+      if (scrollPosition > triggerPositionRow1) {
+        itemsRow1.forEach((item, index) => {
+          const offset = (index - itemsRow1.length / 2) * (-650 + cardMargin);
+         const progress = (scrollPosition - triggerPositionRow1 - offset) / totalWidth;
+          item.style.transform = `translateX(${progress * 100}%)`;
+        });
+      }
+    
+      // Check if the scroll position has reached the trigger position for Row 2
+      if (scrollPosition > triggerPositionRow2) {
+        itemsRow2.forEach((item, index) => {
+          const offset = (index + 1) * 300;
+          const progress = (scrollPosition - triggerPositionRow2 - offset) / totalWidth;
+          item.style.transform = `translateX(${progress *-100}%)`;
+        });
+      }
+    },
+    }  
 };
+
+
+
 </script>
 <style scoped>
 .main {
@@ -744,7 +737,6 @@ z-index: 0;
   font-size: 10rem;
   transform: translateX(60px);
   position: absolute;
-  /* color: #414345; */
   color: aliceblue;
 }
 .ps{
@@ -817,6 +809,8 @@ z-index: 0;
   flex-direction: column !important;
   align-items: center;
   justify-content: center;
+  padding: 1.5em;
+  filter: drop-shadow(0px 25px 12px black);
 }
 hr {
   position: relative;
@@ -948,7 +942,11 @@ background: linear-gradient(to right, #414345, #232526);
 }
 .row-1 {
   width: 200vw;
+  transform: translateX(-2%);
+  /* margin-right: 15px !important; */
+
 }
+
 .row-2 {
   width: 200vw;
   transform: translateX(-12%);
