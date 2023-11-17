@@ -593,7 +593,7 @@ export default {
   },
   data() {
     return {
-    
+        tl: gsap.timeline(),
       visibleElement: 1,
       lenis: null,
     };
@@ -601,42 +601,14 @@ export default {
   mounted() {
     this.autoType();
     this.initialize();
+    this.otherAnimations();
 
-    gsap.registerPlugin(ScrollTrigger);
-    // gsap.registerPlugin(ScrollSmoother);
-    const container = this.$el.querySelector(".holder");
-    const row2 = this.$el.querySelector(".holder");
-    const itemsRow1 = gsap.utils.toArray(".row-1 .flex-col");
-    const itemsRow2 = gsap.utils.toArray(".row-2 .flex-col");
-    const totalWidth = (itemsRow1.length + itemsRow2.length) * 300;
-
-    gsap.to(itemsRow1, {
-        xPercent: -100 * (itemsRow1.length - 1),
-        ease: "linear",
-        scrollTrigger: {
-            start: "center center",
-            trigger: container,
-            pin: false,
-            pinSpacing: false,
-            scrub: 2,
-            snap: 0.5 / (itemsRow1.length - 1),
-            end: `+=${totalWidth}`,
-        },
-    });
-
-    gsap.to(itemsRow2, {
-        xPercent: 100 * (itemsRow2.length + 1),
-        ease: "linear",
-        scrollTrigger: {
-            start: "center center",
-            trigger: row2,
-            pin: false,
-            pinSpacing: false,
-            scrub: 2,
-            snap: 0.5 / (itemsRow2.length + 1),
-            end: `+=${totalWidth}`,
-        },
-    });
+    
+    
+   
+    
+      // Add more animations if needed
+    
 
     // const smoother = new ScrollSmoother({
     //     content: ".boss", // Adjust this selector based on your HTML structure
@@ -719,7 +691,44 @@ tl.to(".des span",{
 });
 
 
-   }
+   },
+
+   otherAnimations() {
+    gsap.registerPlugin(ScrollTrigger);
+    const container = this.$el.querySelector(".holder");
+    const row2 = this.$el.querySelector(".holder");
+    const itemsRow1 = gsap.utils.toArray(".row-1 .flex-col");
+    const itemsRow2 = gsap.utils.toArray(".row-2 .flex-col");
+    const totalWidth = (itemsRow1.length + itemsRow2.length) * 300;
+      // Add your existing animations here using the `tl` timeline
+      this.tl.to(itemsRow1, {
+        xPercent: -100 * (itemsRow1.length - 1),
+        ease: "linear",
+        scrollTrigger: {
+          start: "center center",
+          trigger: container,
+          pin: false,
+          pinSpacing: false,
+          scrub: 2,
+          snap: 0.5 / (itemsRow1.length - 1),
+          end: `+=${totalWidth}`,
+        },
+      });
+
+      this.tl.to(itemsRow2, {
+        xPercent: 100 * (itemsRow2.length + 1),
+        ease: "linear",
+        scrollTrigger: {
+          start: "center center",
+          trigger: row2,
+          pin: false,
+          pinSpacing: false,
+          scrub: 2,
+          snap: 0.5 / (itemsRow2.length + 1),
+          end: `+=${totalWidth}`,
+        },
+      });
+    }
   },  
 };
 </script>
@@ -817,6 +826,9 @@ z-index: 0;
   flex-direction: column !important;
   align-items: center;
   justify-content: center;
+  /* border: 2px solid white; */
+  padding: 1.5em;
+  filter: drop-shadow(0px 25px 12px black);
 }
 hr {
   position: relative;
