@@ -11,7 +11,7 @@
   <h1 class="des DPP"><span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span>
 </h1>
   <div class="image vh-100">
-    <img src="https://i.postimg.cc/NMqsMGT1/C12-C1-Antonio-Torre-1-removebg-preview.png" alt="">
+    <img class="self" src="https://i.postimg.cc/NMqsMGT1/C12-C1-Antonio-Torre-1-removebg-preview.png" alt="">
     <div class="Name">
       <div class="location d-flex justify-content-center">
         <i class="fa-solid fa-location-crosshairs fa-fade"></i>
@@ -37,7 +37,7 @@
           Welcome to my digital playground, where pixels meet purpose and
           creativity knows no bounds. Explore the digital tapestry of my work,
           where innovation, design, and passion converge to craft extraordinary
-          experiences
+          experiences.
         </div>
       </div>
       <div class="col-6 text-center d-flex justify-content-center">
@@ -60,7 +60,7 @@
       <div class="d-flex justify-content-center">
         <button class="toggle" @click="show(1)">Portfolio</button>
         <button class="toggle" @click="show(2)">E-commerce</button>
-        <button class="toggle" @click="show(3)">Appliance store</button>
+        <button class="toggle AS" @click="show(3)">Appliance Store</button>
         <button class="toggle" @click="show(4)">BMI</button>
         <button class="toggle" @click="show(5)">Rental</button>
       </div>
@@ -309,7 +309,7 @@
           <div class="col-6 work">
             <h2 class="prdName">CAPSTONE</h2>
               <hr class="prodLine">
-            <p class="text-center disc">
+            <p class="text-center disc5">
               My capstone project was a transformative journey where I designed
               and developed a luxury car rental website using Node.js and
               JavaScript. Throughout the process, I not only created a visually
@@ -318,10 +318,7 @@
               me to hone my skills in web development, particularly in the
               realms of server-side scripting and client-side interactivity. I
               gained a deep understanding of website architecture, database
-              management, and user experience design. Overall, my capstone
-              project was an enriching experience that enabled me to evolve as a
-              developer and tackle the challenges of creating a sophisticated
-              online platform for luxury car enthusiasts.
+              management, and user experience design.
             </p>
             <div class="d-flex justify-content-center">
               <ul>
@@ -811,6 +808,7 @@ z-index: 0;
   justify-content: center;
   padding: 1.5em;
   filter: drop-shadow(0px 25px 12px black);
+  transform: translateY(-35px);
 }
 hr {
   position: relative;
@@ -837,9 +835,13 @@ hr {
     rgb(0, 0, 0) 99.4%
     
   );
+  
   transition: 1s ease-in-out;
   border: none !important;
 }
+.AS{
+    font-size:14px;
+  }
 .toggle:focus{
   background: #6190E8;  
 background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8); 
@@ -901,6 +903,7 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
 .disc{
   font-size: 1.2em;
 }
+
 .wrapper {
   padding: 20px;
 }
@@ -1016,7 +1019,7 @@ background: linear-gradient(to right, #414345, #232526);
 }
 
 .card:hover {
-  transform: scale(1.04);
+  /* transform: scale(1.09); */
 }
 
 .contact {
@@ -1132,4 +1135,161 @@ background: linear-gradient(to right, #414345, #232526);
    60%  {opacity: 1;}
    90% {opacity: 1;}
 }
+
+                              /* responsiveness  styling */
+
+
+/* Styles for extra small devices (phones) */
+@media (max-width: 575.98px) {
+  /* Your styles go here */
+}
+
+/* Styles for small devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your styles go here */
+}
+
+/* Styles for medium devices ( smaller laptops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .DPP{
+     font-size: 7.5em;
+  }
+  
+  .des{
+    transform: translateX(870px) translateY(340px);
+
+  }
+  .ps{
+    transform: translateX(200px) translateY(180px);
+    word-spacing: 70px;
+
+
+  }
+  .image{
+    transform: translateX(30em) translateY(128px);
+
+  }
+  .self{
+  height: 32.8em
+  }
+  .Name{
+    transform: translateX(-32em) translateY(-200px);
+    height: 10px !important;
+  }
+  .location{
+    transform: translateX(-35em);
+
+  }
+  .AT{
+    font-size: 4em;
+  }
+  
+  /* introduction responsiveness */
+
+  .head{
+    font-size: 1.5em !important;
+ 
+  }
+
+  hr{
+    width:65% !important;
+  }
+  .btn{
+    left:68%
+  }
+  
+  /* projects responsiveness */
+  .card{
+    width: 550px;
+  height: 255px;
+}
+
+  .prod{
+    padding: 80px;
+
+  }
+  .disc{
+    font-size: 1.1em;
+
+  }
+}
+
+
+/* Styles for large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1500px) {
+  .DPP{
+     font-size: 9.5em;
+  }
+  
+  .des{
+    transform: translateX(870px) translateY(340px);
+
+  }
+  .ps{
+    transform: translateX(200px) translateY(180px);
+    word-spacing: 70px;
+
+
+  }
+  .image{
+    transform: translateX(30em) translateY(128px);
+
+  }
+  .self{
+  height: 32.8em
+  }
+  .Name{
+    transform: translateX(-32em) translateY(-200px);
+    height: 10px !important;
+  }
+  .location{
+    transform: translateX(-35em);
+
+  }
+  .AT{
+    font-size: 4em;
+  }
+  
+  /* introduction responsiveness */
+
+  .head{
+    font-size: 1.5em !important;
+ 
+  }
+
+  hr{
+    width:65% !important;
+  }
+  .btn{
+    left:68%
+  }
+  
+  /* projects responsiveness */
+  .card{
+    width: 550px;
+  height: 255px;
+}
+
+  .prod{
+    padding: 80px;
+
+  }
+  .disc{
+    font-size: 1.1em;
+
+  }
+}
+
+/* Styles for extra large devices (large desktops/monitors) */
+@media (min-width: 1200px) {
+  /* Your styles go here */
+}
+
+   
+
+
+
+  
+
+
 </style>
