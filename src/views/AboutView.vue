@@ -23,14 +23,14 @@
 <div class="container">
   <div class="row mt-5 intro">
   <div class="col-6 first text-center">
-    <p class="dis">Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape</p>
+    <p class="dis">Hey there, I'm all about web development and problem-solving. I thrive on challenges that push my skills to new heights. My goal? To transition from being an aspiring web developer to a full-fledged software engineer. Join me on this coding journey as I tackle challenges and grow in this ever-evolving tech landscape.</p>
     <div class="">
       <p class="d-flex justify-content-center text mt-5">Technologies I use:</p>
       <div class="tech">
         <ul class="list d-flex justify-content-center">
-        <li><img class="item" src="https://i.postimg.cc/dQ850VNh/icons8-vuejs-48.png" alt=""><br>vuejs</li>
+        <li><img class="item" src="https://i.postimg.cc/dQ850VNh/icons8-vuejs-48.png" alt=""><br>Vue 3</li>
         <li><img class="item" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""><br>JavaScript</li>
-        <li><img class="item" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""><br>API</li>
+        <li><img class="item" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""><br>Restful API</li>
         </ul>
         <ul class="list d-flex justify-content-center">
         <li><img class="item" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""><br>Nodejs</li>
