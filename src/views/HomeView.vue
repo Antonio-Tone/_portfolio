@@ -1136,20 +1136,143 @@ transition: 1s ease-in-out;
    90% {opacity: 1;}
 }
 
-                                                     /* responsiveness  styling */
+                                    /* responsiveness  styling */
 
 
 /* Styles for extra small devices (phones) */
-@media screen and (max-width: 575.98px) {
+@media screen and (min-width: 250px)and (max-width: 550px) {
   /* Your styles go here */
 }
 
-/* Styles for small devices (tablets) */
 @media screen and (max-width: 576px) {
-  /* Your styles go here */
-}
-@media screen and (max-width: 767.98px) {
+  .self{
+  height: 25em !important;
+  }
+  .image{
+    transform: translateX(11em) translateY(140px) !important;
   
+  }
+  .dev{
+    transform: translateX(40px) translateY(28px);
+  }
+  .DPP{
+     font-size: 5.5em !important;
+  }
+  
+  .ps{
+    transform: translateX(60px) translateY(190px) !important;
+    word-spacing: 90px;
+
+
+  }
+  .des{
+    transform: translateX(500px) translateY(370px) !important;
+
+  }
+  .Name{
+    transform: translateX(-11em) translateY(-200px) !important;
+    height: 10px !important;
+  }
+  .location{
+    transform: translateX(-18.5em) !important;
+
+  }
+  .AT{
+    font-size: 4em;
+  }
+  
+  /* introduction responsiveness */
+
+  .head{
+   font-size: 1em !important;
+ 
+  }
+  .sub{
+    font-size:0.8em !important;
+  }
+
+  hr{
+    width:100% !important;
+  }
+  .btn{
+    left:63% !important;
+  }
+  
+  /* projects responsiveness */
+  .card, .img{
+    width: 300px !important;
+  height: 255px;
+}
+
+  .prod{
+    padding: 40px !important;
+
+  }
+  .disc{
+    font-size: 1em !important;
+
+  }
+  .flex-col {
+
+
+  padding: 20px;
+  height: 230px;
+  width: 300px;
+}
+.links {
+  height: 30px;
+}
+.holder {
+  height: 700px;
+
+}
+.row-1 {
+  width: 250vw;
+  transform: translateX(-1%);
+
+}
+
+.row-2 {
+  width: 250vw;
+  transform: translateX(-12%);
+}
+.test{
+
+}
+ /* contact page */
+
+.connect {
+  font-size: 5rem;
+  margin-left: px !important;
+}
+.heading {
+  transform: translateX(-200px) translateY(120px);
+}
+.hr {
+  transform: translateX(20px) translateY(200px);
+  width: 75% !important;
+}
+.switch{
+  transform: translateY(160px) translateX(-180px);
+
+}
+.info {
+  transform: translateY(160px) translateX(-180px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+}
+
+.general{
+  transform: translateX(30px);
+
+}
+.socials{
+  transform: translateX(-30px);
+
+}
 }
 
 /* Styles for medium devices ( smaller laptops) */
@@ -1193,25 +1316,28 @@ transition: 1s ease-in-out;
   /* introduction responsiveness */
 
   .head{
-   font-size: 1.3em !important;
+   font-size: 1em !important;
  
+  }
+  .sub{
+    font-size:0.8em !important;
   }
 
   hr{
-    width:65% !important;
+    width:100% !important;
   }
   .btn{
-    left:68%;
+    left:63% !important;
   }
   
   /* projects responsiveness */
   .card, .img{
-    width: 400px !important;
+    width: 300px !important;
   height: 255px;
 }
 
   .prod{
-    padding: 50px !important;
+    padding: 40px !important;
 
   }
   .disc{
@@ -1223,7 +1349,7 @@ transition: 1s ease-in-out;
 
   padding: 20px;
   height: 230px;
-  width: 340px;
+  width: 300px;
 }
 .links {
   height: 30px;
@@ -1233,13 +1359,13 @@ transition: 1s ease-in-out;
 
 }
 .row-1 {
-  width: 200vw;
+  width: 250vw;
   transform: translateX(-1%);
 
 }
 
 .row-2 {
-  width: 200vw;
+  width: 250vw;
   transform: translateX(-12%);
 }
 .test{
@@ -1252,19 +1378,32 @@ transition: 1s ease-in-out;
   margin-left: px !important;
 }
 .heading {
-  transform: translateX(-270px) translateY(120px);
+  transform: translateX(-200px) translateY(120px);
 }
 .hr {
-  transform: translateY(200px);
+  transform: translateX(20px) translateY(200px);
   width: 75% !important;
 }
+.switch{
+  transform: translateY(160px) translateX(-180px);
+
+}
 .info {
-  transform: translateY(160px) translateX(-250px);
+  transform: translateY(160px) translateX(-180px);
   margin-right: 1rem;
   border: 1px solid white;
-  padding: 12px;
+  padding: 10px;
   border-radius: 30px;
   transition: 2s ease-in-out;
+}
+
+.general{
+  transform: translateX(30px);
+
+}
+.socials{
+  transform: translateX(-30px);
+
 }
 }
 
