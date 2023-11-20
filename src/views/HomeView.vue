@@ -943,8 +943,7 @@ background: linear-gradient(to right, #414345, #232526);
 .row-1 {
   width: 200vw;
   transform: translateX(-2%);
-  /* margin-right: 15px !important; */
-
+transition: 1s ease-in-out;
 }
 
 .row-2 {
