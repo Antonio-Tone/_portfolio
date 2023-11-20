@@ -263,7 +263,7 @@
           <div class="col-6 work">
             <h2 class="prdName">My BMI Calculator Journey</h2>
               <hr class="prodLine">
-            <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immediate results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
+            <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immedia screen andte results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
             <div class="d-flex justify-content-center">
               <ul>
                 <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
@@ -849,6 +849,7 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
   color: white;
   animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
 }
+
 .prdName{
   color:
   rgb(16, 16, 16) !important;
@@ -1017,9 +1018,9 @@ transition: 1s ease-in-out;
   }
 }
 
-.card:hover {
-  /* transform: scale(1.09); */
-}
+/* .card:hover {
+  transform: scale(1.09);
+} */
 
 .contact {
   background: rgb(28, 29, 32);
@@ -1135,48 +1136,54 @@ transition: 1s ease-in-out;
    90% {opacity: 1;}
 }
 
-                              /* responsiveness  styling */
+                                                     /* responsiveness  styling */
 
 
 /* Styles for extra small devices (phones) */
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   /* Your styles go here */
 }
 
 /* Styles for small devices (tablets) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 576px) {
   /* Your styles go here */
+}
+@media screen and (max-width: 767.98px) {
+  
 }
 
 /* Styles for medium devices ( smaller laptops) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .DPP{
-     font-size: 7.5em;
-  }
-  
-  .des{
-    transform: translateX(870px) translateY(340px);
-
-  }
-  .ps{
-    transform: translateX(200px) translateY(180px);
-    word-spacing: 70px;
-
-
+@media screen and (max-width: 768px) {
+  .self{
+  height: 32em !important
   }
   .image{
-    transform: translateX(30em) translateY(128px);
+    transform: translateX(11em) translateY(140px) !important;
+  
+  }
+  .dev{
+    transform: translateX(40px) translateY(28px);
+  }
+  .DPP{
+     font-size: 5.5em !important;
+  }
+  
+  .ps{
+    transform: translateX(60px) translateY(190px) !important;
+    word-spacing: 90px;
+
 
   }
-  .self{
-  height: 32.8em
+  .des{
+    transform: translateX(500px) translateY(370px) !important;
+
   }
   .Name{
-    transform: translateX(-32em) translateY(-200px);
+    transform: translateX(-11em) translateY(-200px) !important;
     height: 10px !important;
   }
   .location{
-    transform: translateX(-35em);
+    transform: translateX(-18.5em) !important;
 
   }
   .AT{
@@ -1186,7 +1193,7 @@ transition: 1s ease-in-out;
   /* introduction responsiveness */
 
   .head{
-    font-size: 1.5em !important;
+   font-size: 1.3em !important;
  
   }
 
@@ -1194,55 +1201,106 @@ transition: 1s ease-in-out;
     width:65% !important;
   }
   .btn{
-    left:68%
+    left:68%;
   }
   
   /* projects responsiveness */
-  .card{
-    width: 550px;
+  .card, .img{
+    width: 400px !important;
   height: 255px;
 }
 
   .prod{
-    padding: 80px;
+    padding: 50px !important;
 
   }
   .disc{
-    font-size: 1.1em;
+    font-size: 1em !important;
 
   }
+  .flex-col {
+
+
+  padding: 20px;
+  height: 230px;
+  width: 340px;
+}
+.links {
+  height: 30px;
+}
+.holder {
+  height: 700px;
+
+}
+.row-1 {
+  width: 200vw;
+  transform: translateX(-1%);
+
+}
+
+.row-2 {
+  width: 200vw;
+  transform: translateX(-12%);
+}
+.test{
+
+}
+ /* contact page */
+
+.connect {
+  font-size: 5rem;
+  margin-left: px !important;
+}
+.heading {
+  transform: translateX(-270px) translateY(120px);
+}
+.hr {
+  transform: translateY(200px);
+  width: 75% !important;
+}
+.info {
+  transform: translateY(160px) translateX(-250px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+}
 }
 
 
 /* Styles for large devices (desktops) */
-@media (min-width: 992px) and (max-width: 1500px) {
+@media screen and (min-width: 992px) and (max-width: 1024px){
+  .self{
+  height: 31.8em !important
+  }
+  .image{
+    transform: translateX(18em) translateY(144px) !important;
+  
+  }
+  .dev{
+    transform: translateX(40px) translateY(25px);
+  }
   .DPP{
-     font-size: 9.5em;
+     font-size: 7.7em !important;
   }
   
-  .des{
-    transform: translateX(870px) translateY(340px);
-
-  }
   .ps{
-    transform: translateX(200px) translateY(180px);
+    transform: translateX(80px) translateY(180px) !important;
     word-spacing: 70px;
 
 
   }
-  .image{
-    transform: translateX(30em) translateY(128px);
+  .des{
+    transform: translateX(615px) translateY(330px) !important;
 
   }
-  .self{
-  height: 32.8em
-  }
   .Name{
-    transform: translateX(-32em) translateY(-200px);
+    transform: translateX(-18em) translateY(-200px) !important;
     height: 10px !important;
   }
   .location{
-    transform: translateX(-35em);
+    transform: translateX(-25.5em) !important;
 
   }
   .AT{
@@ -1252,8 +1310,122 @@ transition: 1s ease-in-out;
   /* introduction responsiveness */
 
   .head{
-    font-size: 1.5em !important;
+   font-size: 1.3em !important;
  
+  }
+
+  hr{
+    width:65% !important;
+  }
+  .btn{
+    left:68%;
+  }
+  
+  /* projects responsiveness */
+  .card, .img{
+    width: 400px !important;
+  height: 255px;
+}
+
+  .prod{
+    padding: 50px !important;
+
+  }
+  .disc{
+    font-size: 1em !important;
+
+  }
+  .flex-col {
+
+
+  padding: 20px;
+  height: 230px;
+  width: 340px;
+}
+.links {
+  height: 30px;
+}
+.holder {
+  height: 700px;
+
+}
+.row-1 {
+  width: 200vw;
+  transform: translateX(-1%);
+
+}
+
+.row-2 {
+  width: 200vw;
+  transform: translateX(-12%);
+}
+.test{
+
+}
+ /* contact page */
+
+.connect {
+  font-size: 5rem;
+  margin-left: px !important;
+}
+.heading {
+  transform: translateX(-270px) translateY(120px);
+}
+.hr {
+  transform: translateY(200px);
+  width: 75% !important;
+}
+.info {
+  transform: translateY(160px) translateX(-250px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .dev{
+    transform: translateX(40px) translateY(25px);
+  }
+  .DPP{
+     font-size: 8.2em;
+  }
+  
+  .ps{
+    transform: translateX(130px) translateY(180px);
+    word-spacing: 70px;
+
+
+  }
+  .des{
+    transform: translateX(720px) translateY(330px);
+
+  }
+  .image{
+    transform: translateX(22em) translateY(112px);
+
+  }
+  .self{
+  height: 33.8em
+  }
+  .Name{
+    transform: translateX(-23em) translateY(-200px);
+    height: 10px !important;
+  }
+  .location{
+    transform: translateX(-31em);
+
+  }
+  .AT{
+    font-size: 4em;
+  }
+  
+  /* introduction responsiveness */
+  .head{
+    font-size: 1.3em !important;
   }
 
   hr{
@@ -1264,8 +1436,8 @@ transition: 1s ease-in-out;
   }
   
   /* projects responsiveness */
-  .card{
-    width: 550px;
+  .card, .img{
+    width: 450px !important;
   height: 255px;
 }
 
@@ -1280,9 +1452,7 @@ transition: 1s ease-in-out;
 }
 
 /* Styles for extra large devices (large desktops/monitors) */
-@media (min-width: 1200px) {
-  /* Your styles go here */
-}
+
 
    
 
