@@ -4,7 +4,7 @@
             <ul class="d-flex justify-content-center nav">
                 <li class="copyR mx-start">©Code by Antonio Tone</li>   
                 <li class="ms-auto"> <router-link class=" link" to="/" >Home</router-link></li>
-                <li> <router-link class="link" to="/about" >About</router-link></li>
+                <li> <a class="link" href="/about" >About</a></li>
                 <li> <router-link class="link" to="/contact" >Contact</router-link></li>
             </ul>
         </nav>

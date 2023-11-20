@@ -49,9 +49,9 @@
       </div>
       <div class="about d-flex justify-content-center mb-5">
         <hr class="mx-auto mt-5" />
-        <router-link to="/about">
+        <a href="/about">
         <magnetic class="btn text-center" :buttonText="'About'" />
-     </router-link>
+        </a>
       </div>
     </div>
     <!--projects section -->
