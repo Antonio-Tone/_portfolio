@@ -1142,18 +1142,18 @@ transition: 1s ease-in-out;
 /* Styles for extra small devices (phones) */
 @media screen and (min-width: 300px)and (max-width: 549.98px) {
   .self{
-  height: 19em;
-  width: 13em;
+  height: 18em;
+  width: 10em;
   }
   .image{
-    transform: translateX(11em) translateY(188px) !important;
+    transform: translateX(3em) translateY(364px) !important;
   
   }
   .dev{
     transform: translateX(10px) translateY(28px);
   }
   .DPP{
-     font-size: 4.5em !important;
+     font-size: 2.5em !important;
   }
   
   .ps{
