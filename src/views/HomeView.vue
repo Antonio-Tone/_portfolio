@@ -1140,55 +1140,51 @@ transition: 1s ease-in-out;
 
 
 /* Styles for extra small devices (phones) */
-@media screen and (min-width: 250px)and (max-width: 550px) {
-  /* Your styles go here */
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 300px)and (max-width: 549.98px) {
   .self{
-  height: 25em !important;
+  height: 19em;
+  width: 13em;
   }
   .image{
-    transform: translateX(11em) translateY(140px) !important;
+    transform: translateX(11em) translateY(188px) !important;
   
   }
   .dev{
-    transform: translateX(40px) translateY(28px);
+    transform: translateX(10px) translateY(28px);
   }
   .DPP{
-     font-size: 5.5em !important;
+     font-size: 4.5em !important;
   }
   
   .ps{
-    transform: translateX(60px) translateY(190px) !important;
-    word-spacing: 90px;
+    transform: translateX(58px) translateY(190px) !important;
+    word-spacing: 60px;
 
 
   }
   .des{
-    transform: translateX(500px) translateY(370px) !important;
+    transform: translateX(350px) translateY(370px) !important;
 
   }
   .Name{
-    transform: translateX(-11em) translateY(-200px) !important;
-    height: 10px !important;
+    transform: translateX(-11em) translateY(-180px) !important;
   }
   .location{
-    transform: translateX(-18.5em) !important;
+    transform: translateX(-12.5em) !important;
 
   }
   .AT{
-    font-size: 4em;
+    font-size: 3em;
   }
   
   /* introduction responsiveness */
 
   .head{
-   font-size: 1em !important;
+   font-size: 0.6em !important;
  
   }
   .sub{
-    font-size:0.8em !important;
+    font-size:0.5em !important;
   }
 
   hr{
@@ -1197,26 +1193,38 @@ transition: 1s ease-in-out;
   .btn{
     left:63% !important;
   }
+
+    /* projects responsiveness */
+
+.toggle {
+  margin: 5px;
+  padding: 3px;
+  width: 50px;
+  font-size: 8px;
+ 
+}
   
-  /* projects responsiveness */
   .card, .img{
-    width: 300px !important;
-  height: 255px;
+    width: 200px !important;
+  height: 250px;
 }
 
   .prod{
     padding: 40px !important;
 
   }
+  .prdName {
+    font-size: 1.4em;
+  }
   .disc{
-    font-size: 1em !important;
+    font-size: 0.7em !important;
 
   }
   .flex-col {
 
 
   padding: 20px;
-  height: 230px;
+  height: 220px;
   width: 300px;
 }
 .links {
@@ -1227,13 +1235,13 @@ transition: 1s ease-in-out;
 
 }
 .row-1 {
-  width: 250vw;
+  width: 300vw;
   transform: translateX(-1%);
 
 }
 
 .row-2 {
-  width: 250vw;
+  width: 300vw;
   transform: translateX(-12%);
 }
 .test{
@@ -1242,41 +1250,211 @@ transition: 1s ease-in-out;
  /* contact page */
 
 .connect {
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-left: px !important;
 }
+.heading > .profile {
+  height: 55px;
+  width: 55px;
+  transform: translateY(60px) translateX(75px);
+
+}
 .heading {
-  transform: translateX(-200px) translateY(120px);
+  transform: translateX(-150px) translateY(200px);
 }
 .hr {
-  transform: translateX(20px) translateY(200px);
+  transform: translateX(20px) translateY(300px);
   width: 75% !important;
 }
 .switch{
-  transform: translateY(160px) translateX(-180px);
+  transform: translateY(260px) translateX(-150px);
 
 }
 .info {
-  transform: translateY(160px) translateX(-180px);
+  transform: translateY(220px) translateX(-140px);
   margin-right: 1rem;
   border: 1px solid white;
-  padding: 10px;
+  padding: 7px;
   border-radius: 30px;
   transition: 2s ease-in-out;
+  font-size: 0.7em;
 }
 
 .general{
-  transform: translateX(30px);
+  transform: translateX(30px) translateY(100px);
 
 }
 .socials{
-  transform: translateX(-30px);
+  transform: translateX(-30px) translateY(100px);
 
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 550px) and (max-width: 576px) {
+  .self{
+  height: 29em;
+  width: 12em;
+  }
+  .image{
+    transform: translateX(10em) translateY(188px) !important;
+  
+  }
+  .dev{
+    transform: translateX(10px) translateY(28px);
+  }
+  .DPP{
+     font-size: 4.5em !important;
+  }
+  
+  .ps{
+    transform: translateX(40px) translateY(200px) !important;
+    word-spacing: 60px;
+
+
+  }
+  .des{
+    transform: translateX(325px) translateY(370px) !important;
+
+  }
+  .Name{
+    transform: translateX(-11em) translateY(-180px) !important;
+  }
+  .location{
+    transform: translateX(-11em) !important;
+
+  }
+  .AT{
+    font-size: 3em;
+  }
+  
+  /* introduction responsiveness */
+
+  .head{
+   font-size: 0.6em !important;
+ 
+  }
+  .sub{
+    font-size:0.4em !important;
+  }
+
+  hr{
+    width:140% !important;
+  }
+  .btn{
+    left:50% !important;
+  }
+
+    /* projects responsiveness */
+
+.toggle {
+  margin: 5px;
+  padding: 3px;
+  width: 50px;
+  font-size: 8px;
+ 
+}
+  
+  .card, .img{
+    width: 200px !important;
+  height: 250px;
+}
+
+  .prod{
+    padding: 40px !important;
+
+  }
+  .prdName {
+    font-size: 1.4em;
+  }
+  .disc{
+    font-size: 0.7em !important;
+
+  }
+  .flex-col {
+
+
+  padding: 20px;
+  height: 220px;
+  width: 300px;
+}
+.links {
+  height: 30px;
+}
+.holder {
+  height: 700px;
+
+}
+.row-1 {
+  width: 300vw;
+  transform: translateX(-1%);
+
+}
+
+.row-2 {
+  width: 300vw;
+  transform: translateX(-12%);
+}
+.test{
+
+}
+ /* contact page */
+
+.connect {
+  font-size: 3.5rem;
+  margin-left: px !important;
+}
+.heading > .profile {
+  height: 55px;
+  width: 55px;
+  transform: translateY(60px) translateX(75px);
+
+}
+.heading {
+  transform: translateX(-150px) translateY(200px);
+}
+.hr {
+  transform: translateX(20px) translateY(300px);
+  width: 75% !important;
+}
+.switch{
+  transform: translateY(260px) translateX(-150px);
+
+}
+.info {
+  transform: translateY(220px) translateX(-140px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+  font-size: 0.7em;
+}
+
+.general{
+  transform: translateX(30px) translateY(100px);
+
+}
+.socials{
+  transform: translateX(-30px) translateY(100px);
+
+}
+}
+
+
+
 
 /* Styles for medium devices ( smaller laptops) */
-@media screen and (max-width: 768px) {
+@media screen and (min-width:768px) and (max-width: 768px) {
   .self{
   height: 32em !important
   }
