@@ -15,7 +15,7 @@
     <div class="Name">
       <div class="location d-flex justify-content-center">
         <i class="fa-solid fa-location-crosshairs fa-fade"></i>
-        Cape Town, South Africa</div>
+        <p>Cape Town, South Africa</p></div>
       <hr class="line">
         <h2 class="AT">Antonio Tone</h2>
       <hr class="line">
@@ -1142,49 +1142,57 @@ transition: 1s ease-in-out;
 /* Styles for extra small devices (phones) */
 @media screen and (min-width: 300px)and (max-width: 549.98px) {
   .self{
-  height: 18em;
+  height: 22em !important;
   width: 10em;
   }
   .image{
-    transform: translateX(3em) translateY(364px) !important;
+    transform: translateX(2em) translateY(300px) !important;
   
   }
   .dev{
-    transform: translateX(10px) translateY(28px);
+    transform: translateX(10px) translateY(88px);
   }
   .DPP{
      font-size: 2.5em !important;
   }
   
   .ps{
-    transform: translateX(58px) translateY(190px) !important;
-    word-spacing: 60px;
+    transform: translateX(28px) translateY(190px) !important;
+    word-spacing: 10px;
 
 
   }
   .des{
-    transform: translateX(350px) translateY(370px) !important;
+    transform: translateX(170px) translateY(300px) !important;
 
   }
   .Name{
-    transform: translateX(-11em) translateY(-180px) !important;
+    transform: translateX(-1em) translateY(-163px) !important;
   }
-  .location{
-    transform: translateX(-12.5em) !important;
+  .location {
+    transform: translateX(4.5em) translateY(25px) !important;
+  }
+    .location > p {
+      font-size:0.6em !important;
 
-  }
+    }
+     .fa-fade{
+      transform: translateY(-3px);
+      font-size:0.5em !important;
+
+    }
   .AT{
-    font-size: 3em;
+    font-size: 2em;
   }
   
   /* introduction responsiveness */
 
   .head{
-   font-size: 0.6em !important;
+   font-size: 0.1em !important;
  
   }
   .sub{
-    font-size:0.5em !important;
+    font-size:0.09em !important;
   }
 
   hr{
@@ -1300,7 +1308,7 @@ transition: 1s ease-in-out;
 
 
 
-@media screen and (min-width: 550px) and (max-width: 576px) {
+@media screen and (min-width: 500px) and (max-width: 576px) {
   .self{
   height: 29em;
   width: 12em;
