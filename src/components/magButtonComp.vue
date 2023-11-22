@@ -1,7 +1,7 @@
 <template>
     <div>
 
-<button class="hover-effect text-center"><h5>{{ buttonText }}</h5></button>
+<button class="hover-effect "><h5 class="mt-2">{{ buttonText }}</h5></button>
     </div>
   </template>
   
@@ -118,11 +118,10 @@ hoverMouse($("h5, button"));
     color: white;
     cursor: pointer !important;
     border: none;
+    
 
   }
-  h5{
-    transform: translateY(-15px);
-  }
+  
   .hover-effect:hover{
     animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
 
@@ -136,6 +135,16 @@ hoverMouse($("h5, button"));
   }
   100% {
     box-shadow: 0px 0px 15px #1ce278;
+  }
+}
+
+@media screen and (min-width: 300px)and (max-width: 450px){
+  .hover-effect{
+    width:5em ;
+    height: 5em;
+  }
+  h5{
+    font-size:13px;
   }
 }
 

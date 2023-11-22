@@ -151,9 +151,9 @@ ul{
    color: #6190E8 !important;
 }
 
-@media screen and (min-width: 300px){
+@media screen and (min-width: 300px) and (max-width:380px){
   .copyR{
-    display: none;
+    display: none !important;
   }
 }
 
