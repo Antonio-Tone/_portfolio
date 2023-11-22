@@ -15,7 +15,7 @@
   <p class="d-flex justify-content-end w-75 cv">download CV below:</p>
     <div class="d-flex justify-content-center mt-5">
       <hr class="hr">
-      <a href="\files\CV of Antonio Tone.pdf" download><magnetic class="switch" buttonText="CV" /></a>
+      <a href="\files\CV of Antonio Tone.pdf" download><magnetic class="download" buttonText="CV" /></a>
  </div>
  </div>
 <!-- image with brief discription -->
@@ -54,14 +54,14 @@
         WHAT I BRING TO THE TABLE...
         <hr class="m-0 capable-hr">
       </h2>
-  <div class="row mx-auto  text-center">
+  <div class="row mx-auto  text-center DDH">
     <div class="col-12 col-md-4 intro text-center">
       <div>
         <div>
           <h2 class="lead mb-5">DESIGN</h2>
         </div>
           <div class="animated animate__bounceInLeft " style="animation-delay: 2s;">
-            <i class="fa-solid fa-pen-nib fa-beat-fade" style="color: grey;"></i>
+            <i class="fa-solid fa-pen-nib fa-beat-fade tool" style="color: grey;"></i>
             </div>
       </div>
       <div>
@@ -76,7 +76,7 @@
           <h2 class="mb-5 lead">DEVELOPMENT</h2>
         </div>
         <div class="animated animate__fadeInDownBig" style="animation-delay: 2s;">
-          <i class="fa-solid fa-computer fa-beat-fade" style="color: grey;"></i>
+          <i class="fa-solid fa-computer fa-beat-fade tool" style="color: grey;"></i>
         </div>
      
       </div>
@@ -93,7 +93,7 @@
         <h2 class="mb-5 ps-4 lead">HOSTING</h2>
       </div>
       <div class="animated animate__bounceInRight" style="animation-delay: 2s;">
-        <i class="fa-solid fa-globe fa-beat-fade" style="color: grey;"></i>
+        <i class="fa-solid fa-globe fa-beat-fade tool" style="color: grey;"></i>
       </div>
       <div class="holder">
       <div class="vl"></div>
@@ -114,17 +114,17 @@
       </div>
     </div>
     <div class="col-6">
-      <h2 class="">Soft Skills:</h2>
+      <h2 class="soft">Soft Skills:</h2>
 <div class="underline">
   <hr class="mb-3">
 </div>
-      <p class="mb-5">Beyond just the technical stuff, I’ve got this knack for talking and actually getting ideas across in a way that makes sense to everyone. I’m all about rolling with the punches—change doesn’t scare me, it just keeps things interesting. When things get messy, I’m the go-to for sorting them out, thinking up solutions like it’s a puzzle waiting to be cracked. And when it’s game time, I’m the team player who knows how to rally the crew, keep things fun, and actually get things done. Plus, I’ve got this thing for understanding people and making the most out of every minute. It’s not just about skills on paper; it’s about being the kind of person you’d want in your corner when things get real. </p>
-      <h2 class="">My hobbies:</h2>
+      <p class="mb-5 last">Beyond just the technical stuff, I’ve got this knack for talking and actually getting ideas across in a way that makes sense to everyone. I’m all about rolling with the punches—change doesn’t scare me, it just keeps things interesting. When things get messy, I’m the go-to for sorting them out, thinking up solutions like it’s a puzzle waiting to be cracked. And when it’s game time, I’m the team player who knows how to rally the crew, keep things fun, and actually get things done. Plus, I’ve got this thing for understanding people and making the most out of every minute. It’s not just about skills on paper; it’s about being the kind of person you’d want in your corner when things get real. </p>
+      <h2 class="soft">My hobbies:</h2>
       <div class="underline">
       <hr class="mb-3">
      </div>
-      <p>
-        mid the hustle of work, there's a side of me that craves the adrenaline rush, and rugby has been my avenue for that thrill. The rush of the game, the teamwork, and the sheer physicality are my kind of high-energy adventure. When I'm not tackling on the field, I'm out chasing that same adrenaline at carnivals, seeking the heart-pounding excitement of rides and games. But amidst this buzz, I find my balance in the great outdoors. Hiking trails offer a different kind of rush, a peaceful one where it's about soaking in nature's beauty. And when I need a change of scenery, you'll often find me cruising down coastal roads, windows down, with the sound of waves crashing in the background. See, these moments aren't just about me-time; they're about appreciating the world and finding that peace that grounds me. Weekends are sacrosanct, a time for building bonds with friends and family. Being appreciative by nature, I find the greatest joy in these connections, the shared experiences that make life all the more vibrant.
+      <p class="last">
+        mid the hustle of work, there's a side of me that craves the adrenaline rush,, often satisfied through rugby and thrilling carnival rides. Yet, to maintain balance, I appreciate the tranquility of outdoor activities like hiking and coastal drives. Weekends hold special significance for me, dedicated to building connections with friends and family, cherishing shared experiences that add vibrancy to life.
       </p>
 
     </div>
@@ -146,7 +146,7 @@
       </div>
       <div class="d-flex justify-content-center">
         <hr class="HR" />
-        <router-link to="/contact"><magnetic class="con" buttonText="Contact" /></router-link>
+        <router-link to="/contact"><magnetic class="switch" buttonText="Contact" /></router-link>
       </div>
       <div class="d-flex justify-content-center">
         <span class="info">Antoniotone815@gmail.com</span
@@ -222,7 +222,7 @@ export default {
     
     const tl = gsap.timeline({
   scrollTrigger:{
-    trigger: ".switch",
+    trigger: ".download",
     scrub:true,
     end:'top top',
     duration:3,
@@ -292,7 +292,7 @@ i {
   /* height: 1px; */
   width: 70%;
 }
-.switch{
+.download{
   position: absolute;
   transform: translateY(-35px) translateX(-160px);
   z-index: 3;
@@ -403,7 +403,7 @@ transform: translateY(-150px);
   transform: translateY(200px);
   width: 65% !important;
 }
-.con{
+.switch {
   transform: translateY(160px) translateX(-290px);
   z-index: 3;
 }
@@ -500,4 +500,536 @@ transform: translateY(-150px);
    60%  {opacity: 1;}
    90% {opacity: 1;}
 }
+
+
+
+                                    /* responsiveness  styling */
+
+ @media screen and (min-width: 300px)and (max-width: 450px){
+  .quote{
+  font-size: 1em;
+}
+i {
+  font-size: 8px;
+  transform: translateY(-3px) !important;
+}
+
+.download{
+  transform: translateY(-25px) translateX(-100px);
+
+}
+
+.cv{
+  transform: translateX(20px);
+  font-size: 0.8em;
+
+}
+
+.dis{
+  font-size: 7.5px !important;
+  margin-bottom: 3px;
+}
+.text{
+  font-size: 12.5px;
+  margin-bottom: 0;
+  margin-top: 25px !important;
+}
+.sec{
+  height: 30rem;
+
+}
+.item{
+  height: 15px !important;
+  margin-left: 5px;
+
+}
+li{
+  font-size: 8px;
+  transform: translateX(-5px);
+}
+.tool{
+  font-size: 15px !important;
+}
+
+.image{
+  width: 100%;
+  height:100%;
+
+  
+}
+.image__overlay{
+  width: 100%;
+  height: 75% !important;
+  width: 100% !important;
+
+}
+.first{
+  transform: translateY(-20px);
+}
+.dis{
+  font-size: 8.4px !important;
+}
+.image__overlay{
+  transform: translateX(20px);
+  transition: 1s ease-in-out;
+  height:80%;
+}
+.image{
+  height: 125%;
+}
+
+.styling{
+  font-size: small;
+  transform: translateY(20px);
+
+
+}
+.style{
+  transform: translateY(-180px);
+  font-size: small;
+
+}
+
+.capable-hr{
+  width: 38% ;
+
+}
+
+
+.image-2 , .overlay-2{
+  border-radius: 30px;
+height: 270px;
+width: 130px;
+transform: translateX(5px) translateY(10px);
+}
+.soft{
+  /* transform: translateX(80px) !important; */
+  font-size: 10px;
+}
+
+.last{
+  font-size: 6px;
+  margin-bottom: 13px !important;
+}
+
+
+  /* contact page */
+
+.connect {
+  font-size: 2.5rem;
+  margin-left: px !important;
+}
+.heading > .profile {
+  height: 55px;
+  width: 55px;
+  transform: translateY(45px) translateX(80px);
+
+}
+.heading {
+  transform: translateX(-40px) translateY(200px);
+}
+.HR {
+  transform: translateX(40px) translateY(300px);
+  width: 75% !important;
+}
+.switch{
+  transform: translateY(275px) translateX(-105px);
+
+}
+.info {
+  transform: translateY(300px) translateX(10px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+  font-size: 0.7em;
+}
+
+.general{
+  transform: translateX(20px) translateY(180px);
+  font-size: 0.5em;
+
+}
+.socials{
+  transform: translateX(-20px) translateY(180px);
+  font-size: 0.5em;
+
+}
+ }
+
+
+ @media screen and (min-width: 500px) and (max-width: 576px){
+  .quote{
+  font-size: 1.5em;
+}
+
+.cv{
+  transform: translateX(20px);
+
+}
+
+.dis{
+  font-size: 12.5px !important;
+}
+.item{
+  height: 30px !important;
+  margin-left: 5px;
+
+}
+li{
+  font-size: 8px;
+  transform: translateX(-10px);
+}
+
+.image{
+  width: 100%;
+  height:100%;
+
+  
+}
+.image__overlay{
+  width: 100%;
+  height: 65% !important;
+
+}
+.first{
+  transform: translateY(-20px);
+}
+.dis{
+  font-size: small;
+}
+.image__overlay{
+  transform: translateX(40px);
+  transition: 1s ease-in-out;
+  height:80%;
+}
+.image{
+  height: 125%;
+}
+
+.styling{
+  font-size: small;
+  transform: translateY(20px);
+
+
+}
+.style{
+  transform: translateY(-180px);
+  font-size: small;
+
+}
+
+.capable-hr{
+  width: 38% ;
+
+}
+.DDH > .col-12{
+}
+
+.image-2 , .overlay-2{
+  border-radius: 30px;
+height: 400px;
+width: 280px;
+transform: translateY(20px);
+}
+.soft{
+  transform: translateX(80px) !important;
+}
+
+.last{
+  font-size: 11px;
+  margin-bottom: 13px !important;
+}
+
+ /* contact page */
+.connect {
+  font-size: 3.5rem;
+  margin-left: px !important;
+}
+.heading > .profile {
+  height: 55px;
+  width: 55px;
+  transform: translateY(60px) translateX(75px);
+
+}
+.heading {
+  transform: translateX(-150px) translateY(200px);
+}
+.HR {
+  transform: translateX(20px) translateY(300px);
+  width: 75% !important;
+}
+.switch{
+  transform: translateY(260px) translateX(-150px);
+
+}
+.info {
+  transform: translateY(220px) translateX(-140px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+  font-size: 0.7em;
+}
+
+.general{
+  transform: translateX(30px) translateY(100px);
+
+}
+.socials{
+  transform: translateX(-30px) translateY(100px);
+
+}
+ }
+
+
+ @media screen and (min-width:768px) and (max-width: 768px){
+  .quote{
+  font-size: 2em;
+}
+
+.cv{
+  transform: translateX(60px);
+
+}
+
+.dis{
+  font-size: medium;
+}
+.item{
+  height: 40px !important;
+
+}
+
+.image{
+  width: 100%;
+  height:100%;
+
+  
+}
+.image__overlay{
+  width: 100%;
+  height: 80%;
+
+}
+.first{
+  transform: translateY(-20px);
+}
+.dis{
+  font-size: small;
+}
+.image__overlay{
+  transform: translateX(40px);
+  transition: 1s ease-in-out;
+  height:80%;
+}
+.image{
+  height: 125%;
+}
+
+.styling{
+  font-size: small;
+  transform: translateY(20px);
+
+
+}
+.style{
+  transform: translateY(-180px);
+  font-size: small;
+
+}
+
+.capable-hr{
+  width: 38% ;
+
+}
+.DDH > .col-12{
+}
+
+.image-2 , .overlay-2{
+  border-radius: 30px;
+height: 450px;
+width: 320px;
+}
+
+.last{
+  font-size: 13px;
+}
+
+ 
+  /* contact page */
+
+ .connect {
+  font-size: 5rem;
+  margin-left: px !important;
+}
+.heading {
+  transform: translateX(-200px) translateY(120px);
+}
+.HR {
+  transform: translateX(20px) translateY(200px);
+  width: 75% !important;
+}
+.switch{
+  transform: translateY(160px) translateX(-180px);
+
+}
+.info {
+  transform: translateY(160px) translateX(-180px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+}
+
+.general{
+  transform: translateX(30px);
+
+}
+.socials{
+  transform: translateX(-30px);
+
+}
+ }
+
+ /* Styles for large devices (desktops) */
+@media screen and (min-width: 992px) and (max-width: 1023.98px){
+  .quote{
+  font-size: 2.5em;
+}
+.cv{
+  transform: translateX(60px);
+
+}
+
+.dis{
+  font-size: medium;
+}
+.item{
+  height: 40px !important;
+
+}
+
+.image{
+  width: 100%;
+  height:100%;
+
+  
+}
+.image__overlay{
+  width: 100%;
+  height: 80%;
+
+}
+.styling{
+  font-size: small;
+  transform: translateY(20px);
+
+
+}
+.style{
+  transform: translateY(-180px);
+  font-size: small;
+
+}
+
+.capable-hr{
+  width: 38% ;
+
+}
+.DDH > .col-12{
+}
+
+.image-2 , .overlay-2{
+  border-radius: 30px;
+height: 450px;
+}
+
+.last{
+  font-size: 13px;
+}
+
+  /* contact page */
+
+.connect {
+  font-size: 5rem;
+  margin-left: px !important;
+}
+.heading {
+  transform: translateX(-270px) translateY(120px);
+}
+.HR {
+  transform: translateY(200px);
+  width: 75% !important;
+}
+.info {
+  transform: translateY(160px) translateX(-250px);
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+.quote{
+  font-size: 2.7em;
+}
+.cv{
+  transform: translateX(60px);
+
+}
+
+.dis{
+  font-size: medium;
+}
+.item{
+  height: 40px !important;
+
+}
+
+.image{
+  width: 100%;
+  height:100%;
+
+  
+}
+.image__overlay{
+  width: 100%;
+  height: 80%;
+
+}
+.styling{
+  font-size: small;
+  transform: translateY(20px);
+
+
+}
+.style{
+  transform: translateY(-180px);
+  font-size: small;
+
+}
+
+.capable-hr{
+  width: 38% ;
+
+}
+.DDH > .col-12{
+}
+
+.image-2 , .overlay-2{
+  border-radius: 30px;
+height: 450px;
+}
+
+.last{
+  font-size: 13px;
+}
+}
+
 </style>

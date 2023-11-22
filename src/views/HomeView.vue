@@ -1626,7 +1626,7 @@ font-size: 0.6em;
 
 
 /* Styles for large devices (desktops) */
-@media screen and (min-width: 992px) and (max-width: 1024px){
+@media screen and (min-width: 992px) and (max-width: 1023.98px){
   .self{
   height: 31.8em !important
   }
