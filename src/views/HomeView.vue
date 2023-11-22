@@ -1140,7 +1140,7 @@ transition: 1s ease-in-out;
 
 
 /* Styles for extra small devices (phones) */
-@media screen and (min-width: 300px)and (max-width: 549.98px) {
+@media screen and (min-width: 300px)and (max-width: 450px) {
   .self{
   height: 22em !important;
   width: 10em;
@@ -1188,98 +1188,113 @@ transition: 1s ease-in-out;
   /* introduction responsiveness */
 
   .head{
-   font-size: 0.1em !important;
+   font-size: 0.3em !important;
  
   }
+  .intro{
+    padding: 60px;
+  }
   .sub{
-    font-size:0.09em !important;
+    font-size:0.2em !important;
   }
 
   hr{
-    width:100% !important;
+    width:120% !important;
   }
   .btn{
-    left:63% !important;
+    left:43% !important;
+    bottom: -40% !important;
+
   }
 
     /* projects responsiveness */
 
 .toggle {
-  margin: 5px;
-  padding: 3px;
+  margin: 3px;
+  padding: 2px;
   width: 50px;
   font-size: 8px;
  
 }
   
   .card, .img{
-    width: 200px !important;
-  height: 250px;
+    width: 150px !important;
+  height: 150px;
 }
 
   .prod{
-    padding: 40px !important;
+    padding: 5px !important;
 
   }
   .prdName {
-    font-size: 1.4em;
+    font-size: 1.2em;
+    margin-left: 10px;
   }
   .disc{
-    font-size: 0.7em !important;
+    font-size: 0.4em !important;
+    margin-bottom: 2px !important;
 
   }
+  .lang{
+  height: 15px;
+  margin-right: 2px;
+}
+ul{
+  padding: 0 !important;
+}
   .flex-col {
 
 
   padding: 20px;
-  height: 220px;
-  width: 300px;
+  height: 205px;
+  width: 210px;
+}
+.test{
+font-size: 0.6em;
 }
 .links {
   height: 30px;
 }
 .holder {
-  height: 700px;
+  height: 550px;
 
 }
 .row-1 {
-  width: 300vw;
+  width: 400vw;
   transform: translateX(-1%);
 
 }
 
 .row-2 {
-  width: 300vw;
+  width: 400vw;
   transform: translateX(-12%);
 }
-.test{
 
-}
  /* contact page */
 
 .connect {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-left: px !important;
 }
 .heading > .profile {
   height: 55px;
   width: 55px;
-  transform: translateY(60px) translateX(75px);
+  transform: translateY(45px) translateX(80px);
 
 }
 .heading {
-  transform: translateX(-150px) translateY(200px);
+  transform: translateX(-40px) translateY(200px);
 }
 .hr {
-  transform: translateX(20px) translateY(300px);
+  transform: translateX(40px) translateY(300px);
   width: 75% !important;
 }
 .switch{
-  transform: translateY(260px) translateX(-150px);
+  transform: translateY(275px) translateX(-105px);
 
 }
 .info {
-  transform: translateY(220px) translateX(-140px);
+  transform: translateY(300px) translateX(10px);
   margin-right: 1rem;
   border: 1px solid white;
   padding: 7px;
@@ -1289,11 +1304,13 @@ transition: 1s ease-in-out;
 }
 
 .general{
-  transform: translateX(30px) translateY(100px);
+  transform: translateX(20px) translateY(180px);
+  font-size: 0.5em;
 
 }
 .socials{
-  transform: translateX(-30px) translateY(100px);
+  transform: translateX(-20px) translateY(180px);
+  font-size: 0.5em;
 
 }
 }
@@ -1382,7 +1399,7 @@ transition: 1s ease-in-out;
 
   }
   .prdName {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .disc{
     font-size: 0.7em !important;
