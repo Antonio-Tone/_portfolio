@@ -66,7 +66,7 @@
       </div>
       <div>
         <div class="row prod" v-show="visibleElement === 1">
-          <p class="options d-flex justify-content-start">Hover to view:</p>
+          <p class="options d-flex justify-content-start"></p>
           <div class="col-6">
             <div class="card">
               <img
@@ -119,7 +119,7 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 2">
-          <p class="options d-flex justify-content-start">Hover to view:</p>
+          <p class="options d-flex justify-content-start"></p>
 
           <div class="col-6">
             <div class="card">
@@ -172,7 +172,7 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 3">
-          <p class="options d-flex justify-content-start">Hover to view:</p>
+          <p class="options d-flex justify-content-start"></p>
 
           <div class="col-6">
             <div class="card">
@@ -228,7 +228,7 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 4">
-          <p class="options d-flex justify-content-start">Hover to view:</p>
+          <p class="options d-flex justify-content-start"></p>
           <div class="col-6">
             <div class="card">
               <img
@@ -274,7 +274,7 @@
           </div>
         </div>
         <div class="row prod" v-show="visibleElement === 5">
-          <p class="options d-flex justify-content-start">Hover to view:</p>
+          <p class="options d-flex justify-content-start"></p>
           <div class="col-6 d-flex justify-content-start">
             <div class="card">
               <img
@@ -871,6 +871,10 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
 .options{
   transform: translateX(20px) translateY(-20px);
 }
+.options::before{
+  content: "hover to view" !important;
+
+}
 .profile {
   margin-top: 4px;
   height: 45px;
@@ -1223,7 +1227,17 @@ transition: 1s ease-in-out;
 }
 
   .prod{
-    padding: 5px !important;
+    padding: 10px !important;
+    margin-top: 10px;
+
+  }
+  .options{
+    margin-bottom: 1px;
+    margin-top: 20px;
+    transform: translateX(20px) translateY(-10px);
+  }
+  .options:before{
+    content: "Tab to view" !important;
 
   }
   .prdName {
