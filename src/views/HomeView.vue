@@ -1179,6 +1179,7 @@ transition: 1s ease-in-out;
      .fa-fade{
       transform: translateY(-3px);
       font-size:0.5em !important;
+      
 
     }
   .AT{
