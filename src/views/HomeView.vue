@@ -1215,9 +1215,9 @@ transition: 1s ease-in-out;
 
 .toggle {
   margin: 3px;
-  padding: 2px;
-  width: 50px;
-  font-size: 8px;
+  padding: 7px;
+  width: 52px;
+  font-size: 8.5px;
  
 }
   
