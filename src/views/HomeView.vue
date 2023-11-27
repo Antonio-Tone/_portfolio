@@ -694,7 +694,7 @@ export default {
         itemsRow1.forEach((item, index) => {
           const offset = (index - itemsRow1.length / 2) * (-650 + cardMargin);
          const progress = (scrollPosition - triggerPositionRow1 - offset) / totalWidth;
-          item.style.transform = `translateX(${progress * 100}%)`;
+          item.style.transform = `translateX(${progress * 200}%)`;
         });
       }
     
@@ -703,7 +703,7 @@ export default {
         itemsRow2.forEach((item, index) => {
           const offset = (index + 1) * 300;
           const progress = (scrollPosition - triggerPositionRow2 - offset) / totalWidth;
-          item.style.transform = `translateX(${progress *-100}%)`;
+          item.style.transform = `translateX(${progress *-200}%)`;
         });
       }
     },
