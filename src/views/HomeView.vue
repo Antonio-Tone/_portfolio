@@ -4,30 +4,46 @@
 
     <div class="main">
       <div class="header">
-<div class="skill">
-  <h1 class="dev DPP"><span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span></h1>
-  <h1 class="ps DPP"><span>P</span><span>r</span><span>o</span><span>b</span><span>l</span><span>e</span><span>m</span><span>&nbsp;</span><span>S</span><span>o</span><span>l</span><span>v</span><span>e</span><span>r</span>
-</h1>
-  <h1 class="des DPP"><span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span>
-</h1>
-  <div class="image vh-100">
-    <img class="self" src="https://i.postimg.cc/NMqsMGT1/C12-C1-Antonio-Torre-1-removebg-preview.png" alt="">
-    <div class="Name">
-      <div class="location d-flex justify-content-center">
-        <i class="fa-solid fa-location-crosshairs fa-fade"></i>
-        <p>Cape Town, South Africa</p></div>
-      <hr class="line">
-        <h2 class="AT">Antonio Tone</h2>
-      <hr class="line">
-      <div class="scroll">
-        <p class="m-0">Scroll Down</p>
-        <i class="fa-solid fa-angle-down fa-bounce"></i>
-
+        <div class="skill">
+          <h1 class="dev DPP">
+            <span>D</span><span>e</span><span>v</span><span>e</span
+            ><span>l</span><span>o</span><span>p</span><span>e</span
+            ><span>r</span>
+          </h1>
+          <h1 class="ps DPP">
+            <span>P</span><span>r</span><span>o</span><span>b</span
+            ><span>l</span><span>e</span><span>m</span><span>&nbsp;</span
+            ><span>S</span><span>o</span><span>l</span><span>v</span
+            ><span>e</span><span>r</span>
+          </h1>
+          <h1 class="des DPP">
+            <span>D</span><span>e</span><span>s</span><span>i</span
+            ><span>g</span><span>n</span><span>e</span><span>r</span>
+          </h1>
+          <div class="">
+            <img
+              class="self"
+              src="https://i.postimg.cc/9F2T8wLq/C12-C1-Antonio-Torre-2-min.jpg"
+              alt=""
+            />
+          </div>
+          <div class="location d-flex justify-content-center">
+            <i class="fa-solid fa-location-crosshairs fa-fade"></i>
+            <p>Cape Town, South Africa</p>
+          </div>
+          <div class="Name d-flex justify-content-center">
+            <h2 class="AT">Antonio Tone</h2>
+            &nbsp;
+            <h2 class="AT">-Antonio Tone</h2>
+            &nbsp;
+            <h2 class="AT">-Antonio Tone</h2>
+            &nbsp;
+            <h2 class="AT">-Antonio Tone</h2>
+            &nbsp;
+            <h2 class="AT">-Antonio Tone</h2>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-</div>
     </div>
     <!--introduction -->
 
@@ -50,288 +66,13 @@
       <div class="about d-flex justify-content-center mb-5">
         <hr class="mx-auto mt-5" />
         <a href="/about">
-        <magnetic class="btn text-center" :buttonText="'About'" />
+          <magnetic class="btn text-center" :buttonText="'About'" />
         </a>
       </div>
     </div>
     <!--projects section -->
+    <carousel />
 
-    <div class="projects">
-      <div class="d-flex justify-content-center">
-        <button class="toggle" @click="show(1)">Portfolio</button>
-        <button class="toggle" @click="show(2)">E-commerce</button>
-        <button class="toggle AS" @click="show(3)">Appliance Store</button>
-        <button class="toggle" @click="show(4)">BMI</button>
-        <button class="toggle" @click="show(5)">Rental</button>
-      </div>
-      <div>
-        <div class="row prod" v-show="visibleElement === 1">
-          <p class="options d-flex justify-content-start"></p>
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href="https://lighthearted-marshmallow-2d6528.netlify.app"
-                  taget="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href="https://github.com/Antonio-Tone/Profile"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <div>
-              <h2 class="prdName">MY FIRST PORTFOLIO</h2>
-                <hr class="prodLine-1">
-            </div>
-            <p class="text-center disc">
-              My very first website, created using HTML, Bootstrap, and CSS.
-              This portfolio reflects my early foray into web development,
-              showcasing my initial projects, skills, and aspirations. It's a
-              simple yet meaningful step in my journey towards mastering web
-              development.
-            </p>
-            <div class="d-flex justify-content-center">
-              <ul>
-                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 2">
-          <p class="options d-flex justify-content-start"></p>
-
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href="https://arsites.netlify.app"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href="https://github.com/Antonio-Tone/e-commerce_pg"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <h2 class="prdName">MY FIRST E-COMMERCE</h2>
-              <hr class="prodLine">
-            <p class="text-center disc">
-              I used CSS to make it look good, Bootstrap to keep it simple, and
-              a bit of JavaScript to add some fun. You can browse properties,
-              search with ease, and even click around interactive images. It's a
-              bit rough around the edges, but I'm proud of what I've created.
-              Give it a go and see if you find your dream place
-            </p>
-            <div class="d-flex justify-content-center">
-              <ul>
-                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 3">
-          <p class="options d-flex justify-content-start"></p>
-
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png  "
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href="https://appliance-cartel-node.web.app/"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href="https://github.com/cheslynherman/node-fullstack-eomp"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <h2 class="prdName">GROUP PROJECT</h2>
-              <hr class="prodLine">
-            <p class="text-center disc">
-              Collaboratively, my classmate and I teamed up to create an
-              appliance store webpage using Node.js. This project involved
-              designing and implementing a comprehensive online platform for
-              customers to browse and purchase appliances. We meticulously
-              crafted features such as product listings and an efficient
-              checkout system, reflecting our dedication to delivering a
-              seamless shopping experience.
-            </p>
-            <div class="d-flex justify-content-center">
-              <ul>
-                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 4">
-          <p class="options d-flex justify-content-start"></p>
-          <div class="col-6">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href="https://willowy-druid-f2607c.netlify.app"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href="https://github.com/Antonio-Tone/bmi"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <h2 class="prdName">My BMI Calculator Journey</h2>
-              <hr class="prodLine">
-            <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immedia screen andte results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
-            <div class="d-flex justify-content-center">
-              <ul>
-                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row prod" v-show="visibleElement === 5">
-          <p class="options d-flex justify-content-start"></p>
-          <div class="col-6 d-flex justify-content-start">
-            <div class="card">
-              <img
-                class="img"
-                src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png"
-                alt=""
-              />
-              <div class="textBox">
-                <div class="d-flex justify-content-center">
-                  <a href="https://capstonepj-3a7db.web.app/"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href="https://github.com/Antonio-Tone/capstone_pj"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 work">
-            <h2 class="prdName">CAPSTONE</h2>
-              <hr class="prodLine">
-            <p class="text-center disc5">
-              My capstone project was a transformative journey where I designed
-              and developed a luxury car rental website using Node.js and
-              JavaScript. Throughout the process, I not only created a visually
-              stunning and functional website but also discovered valuable
-              insights about my strengths and weaknesses. This project allowed
-              me to hone my skills in web development, particularly in the
-              realms of server-side scripting and client-side interactivity. I
-              gained a deep understanding of website architecture, database
-              management, and user experience design.
-            </p>
-            <div class="d-flex justify-content-center">
-              <ul>
-                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- testimonials -->
 
     <section class="holder mx-auto">
@@ -349,7 +90,9 @@
               <div class="text-center">
                 <p class="name mx-auto">Tara Snell</p>
                 <p class="test autotype">
-                  "Antonio is one determined ,dedicated team member to have on any team, he gets the job done and always to lend a hand to make sure the whole team are on the same page."
+                  "Antonio is one determined ,dedicated team member to have on
+                  any team, he gets the job done and always to lend a hand to
+                  make sure the whole team are on the same page."
                 </p>
               </div>
             </div>
@@ -448,10 +191,10 @@
               <div class="text-center">
                 <p class="name mx-auto">Deno Rautenbach</p>
                 <p class="test autotype">
-                 " Antonio is a very hardworking individual.He has improved a lot
-                  in both his coding aswell as in his problem solving skills. He
-                  is an extremely nice person to work with as he is very
-                  friendly"
+                  " Antonio is a very hardworking individual.He has improved a
+                  lot in both his coding aswell as in his problem solving
+                  skills. He is an extremely nice person to work with as he is
+                  very friendly"
                 </p>
               </div>
             </div>
@@ -468,7 +211,11 @@
               <div class="text-center">
                 <p class="name mx-auto">Ayesha Galant</p>
                 <p class="test autotype">
-                 "Working alongside Antonio on several IT ventures has been an absolute pleasure. His precision-oriented approach coupled with his knack for troubleshooting is highly commendable. He unequivocally embodies talent and commitment in his work ethic."
+                  "Working alongside Antonio on several IT ventures has been an
+                  absolute pleasure. His precision-oriented approach coupled
+                  with his knack for troubleshooting is highly commendable. He
+                  unequivocally embodies talent and commitment in his work
+                  ethic."
                 </p>
               </div>
             </div>
@@ -485,10 +232,11 @@
               <div class="text-center">
                 <p class="name mx-auto">Maxwill Isaacs</p>
                 <p class="test autotype">
-                  "Antonio is an exceptionally hard worker and always making time
-                  to assist anyone who is in need. Also goes the extra-mile when
-                  doing anything that has to be done. He is also very confident
-                  in his capabilities and never fails to get the Job done"
+                  "Antonio is an exceptionally hard worker and always making
+                  time to assist anyone who is in need. Also goes the extra-mile
+                  when doing anything that has to be done. He is also very
+                  confident in his capabilities and never fails to get the Job
+                  done"
                 </p>
               </div>
             </div>
@@ -505,7 +253,10 @@
               <div class="text-center">
                 <p class="name mx-auto">Laiquah Cotie</p>
                 <p class="test autotype">
-                "Antonio  is an exceptional professional, with deep expertise, dedication, and strong problem-solving skills. His work ethic, clear communication, and collaborative nature make him a remarkable team player. I wholeheartedly recommend him."
+                  "Antonio is an exceptional professional, with deep expertise,
+                  dedication, and strong problem-solving skills. His work ethic,
+                  clear communication, and collaborative nature make him a
+                  remarkable team player. I wholeheartedly recommend him."
                 </p>
               </div>
             </div>
@@ -522,7 +273,11 @@
               <div class="text-center">
                 <p class="name mx-auto">Ganiefah Majiet</p>
                 <p class="test autotype">
-                  "Antonio one, someone who Id definitely recommend. His always positive and willing to help the next person although he himself is busy, his an intelligent and very hardworking person. He is always positive and he always provides everyone with help and motivation"
+                  "Antonio one, someone who Id definitely recommend. His always
+                  positive and willing to help the next person although he
+                  himself is busy, his an intelligent and very hardworking
+                  person. He is always positive and he always provides everyone
+                  with help and motivation"
                 </p>
               </div>
             </div>
@@ -546,7 +301,9 @@
       </div>
       <div class="d-flex justify-content-center">
         <hr class="hr" />
-        <router-link to="/contact"><magnetic class="switch" buttonText="Contact" /></router-link>
+        <router-link to="/contact"
+          ><magnetic class="switch" buttonText="Contact"
+        /></router-link>
       </div>
       <div class="d-flex justify-content-center">
         <span class="info">Antoniotone815@gmail.com</span
@@ -581,13 +338,15 @@
 <script>
 import { gsap } from "gsap";
 import magnetic from "../components/magButtonComp.vue";
+import Carousel from "../components/carouselComp.vue";
 export default {
   components: {
     magnetic,
+    Carousel,
   },
   data() {
     return {
-        tl: gsap.timeline(),
+      tl: gsap.timeline(),
       visibleElement: 1,
       lenis: null,
     };
@@ -595,193 +354,227 @@ export default {
   mounted() {
     this.initialize();
     this.autoType();
-  window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
+  },
 
-},
-
-    methods: {
-      show(elementNumber) {
-        this.visibleElement = elementNumber;
-      },
-      autoType() {
-    this.$nextTick(() => {
-      const textElements = document.querySelectorAll(".autotype");
-    
-      textElements.forEach((textElement) => {
-        const originalText = textElement.textContent;
-        let i = 0;
-        
-        function typeText() {
-          const intervalId = setInterval(() => {
-            textElement.textContent = originalText.slice(0, i);
-            i += 3;
-            if (i > originalText.length) {
-              clearInterval(intervalId);
-              setTimeout(() => {
-                // Reset the text and call typeText again after a delay
-                
-                i = 0;
-                setTimeout(typeText, 20000); // Adjust the delay as needed
-              }, 10000); // Adjust the delay between loops as needed
-            }
-          }, 100); // Adjust the interval to control the typing speed
-        }
-        
-        typeText(); // Start the typing animation
-      });
-    });
+  methods: {
+    show(elementNumber) {
+      this.visibleElement = elementNumber;
     },
-    
-    initialize(){
+    autoType() {
+      this.$nextTick(() => {
+        const textElements = document.querySelectorAll(".autotype");
+
+        textElements.forEach((textElement) => {
+          const originalText = textElement.textContent;
+          let i = 0;
+
+          function typeText() {
+            const intervalId = setInterval(() => {
+              textElement.textContent = originalText.slice(0, i);
+              i += 3;
+              if (i > originalText.length) {
+                clearInterval(intervalId);
+                setTimeout(() => {
+                  // Reset the text and call typeText again after a delay
+
+                  i = 0;
+                  setTimeout(typeText, 20000); // Adjust the delay as needed
+                }, 10000); // Adjust the delay between loops as needed
+              }
+            }, 100); // Adjust the interval to control the typing speed
+          }
+
+          typeText(); // Start the typing animation
+        });
+      });
+    },
+
+    initialize() {
       this.setInitialStates();
       this.header();
-     },
-     setInitialStates(){
-      gsap.set(' .dev span', {
-          opacity: 0,
-        });
-      gsap.set('.skill .ps span', {
-          opacity: 0,
-        });
-      gsap.set('.skill .des span', {
-          opacity: 0,
-        });
-     },
-     header(){
-      
-    const tl = gsap.timeline({
-    scrollTrigger:{
-      trigger: ".skill",
-    }
-    })
-    tl.to(".skill .dev span",{
-    opacity: 1,
-    ease:'expo.out',
-    stagger:0.04,
-    });
-    tl.to(".skill .ps span",{
-    opacity: 1,
-    ease:'expo.out',
-    stagger:0.04,
-    });
-    tl.to(".des span",{
-    opacity: 1,
-    ease:'expo.out',
-    stagger:0.04,
-    });
-    
-    
-     },
-    
-     handleScroll() {
+    },
+    setInitialStates() {
+      gsap.set(" .dev span", {
+        opacity: 0,
+      });
+      gsap.set(".skill .ps span", {
+        opacity: 0,
+      });
+      gsap.set(".skill .des span", {
+        opacity: 0,
+      });
+    },
+    header() {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".skill",
+        },
+      });
+      tl.to(".skill .dev span", {
+        opacity: 1,
+        ease: "expo.out",
+        stagger: 0.04,
+      });
+      tl.to(".skill .ps span", {
+        opacity: 1,
+        ease: "expo.out",
+        stagger: 0.04,
+      });
+      tl.to(".des span", {
+        opacity: 1,
+        ease: "expo.out",
+        stagger: 0.04,
+      });
+    },
+
+    handleScroll() {
       const container = this.$el.querySelector(".holder");
       const row2 = this.$el.querySelector(".row-1");
       const itemsRow1 = document.querySelectorAll(".row-1 .flex-col");
       const itemsRow2 = document.querySelectorAll(".row-2 .flex-col");
       const cardMargin = 200; // Adjust this value based on your actual card margin
-    const totalWidth = (itemsRow1.length + itemsRow2.length) * (500 + cardMargin);      
-    
+      const totalWidth =
+        (itemsRow1.length + itemsRow2.length) * (500 + cardMargin);
+
       // Get the scroll position
       const scrollPosition = window.scrollY;
-      
-    
+
       // Define the trigger positions for your animations
       const triggerPositionRow1 = container.offsetTop - window.innerHeight / 2;
       const triggerPositionRow2 = row2.offsetTop - window.innerHeight / 2;
-    
+
       // Check if the scroll position has reached the trigger position for Row 1
       if (scrollPosition > triggerPositionRow1) {
         itemsRow1.forEach((item, index) => {
           const offset = (index - itemsRow1.length / 2) * (-650 + cardMargin);
-         const progress = (scrollPosition - triggerPositionRow1 - offset) / totalWidth;
+          const progress =
+            (scrollPosition - triggerPositionRow1 - offset) / totalWidth;
           item.style.transform = `translateX(${progress * 200}%)`;
         });
       }
-    
+
       // Check if the scroll position has reached the trigger position for Row 2
       if (scrollPosition > triggerPositionRow2) {
         itemsRow2.forEach((item, index) => {
           const offset = (index + 1) * 300;
-          const progress = (scrollPosition - triggerPositionRow2 - offset) / totalWidth;
-          item.style.transform = `translateX(${progress *-200}%)`;
+          const progress =
+            (scrollPosition - triggerPositionRow2 - offset) / totalWidth;
+          item.style.transform = `translateX(${progress * -200}%)`;
         });
       }
     },
-    }  
+  },
 };
-
-
-
 </script>
 <style scoped>
 .main {
   position: relative;
   min-height: 100vh !important;
 }
-.header{
-    width: 100%;
-     background-color: #0bc863;
-    height: 100vh;
-    position: relative;
-  }
-.skill{
-height: 100%;
-width: 100%;
-z-index: 0;
-
-}
-.dev{
-  font-size: 10rem;
-  transform: translateX(60px);
-  position: absolute;
-  color: aliceblue;
-}
-.ps{
-  font-size: 10rem;
-  transform: translateX(220px) translateY(180px);
-  position: absolute;
-  word-spacing: 120px;
-  color: #53585d;
-
-
-}
-.des{
-  font-size: 10rem;
-  transform: translateX(920px) translateY(340px);
-  position: absolute;
-  color: aliceblue;
-
-}
-.image{
-  z-index: 20;
-  position: absolute;
-  transform: translateX(32em) translateY(128px);
+.header {
   width: 100%;
-  min-height: 100vh !important;
-
+  background-color: #76a686;
+  height: 100vh;
+  position: relative;
 }
-
-.Name{
+.skill {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.dev {
+  font-size: 10rem;
+  left: 2%;
+  top: 4%;
   position: absolute;
-  min-width:100% !important;
-  z-index: 25 !important;
-  transform: translateX(-32em) translateY(-220px);
+  color: aliceblue;
+}
+.ps {
+  font-size: 10rem;
+  top: 4%;
+  transform: translateY(180px);
+  left: 2%;
+  position: absolute;
+  /* word-spacing: 120px; */
+  color: #53585d;
+}
+.des {
+  font-size: 10rem;
+  transform: translateY(340px);
+  left: 35%;
+  top: 4%;
+  position: absolute;
+  color: aliceblue;
+}
+ .image {
+  z-index: 20;
+  /* transform: translateY(-20px); */
+  width: 100%;
+  /* min-height: 100vh !important; */
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);  background-color: #181614;
+  background-position: center;
+} 
+.self {
+  object-fit: cover;
+  object-position: left top;
+  transform: translateX(110px);
+  border-radius: 9999px;
+  left: 61%;
+  top: 10%;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border: solid 3px grey;
+
+
+  /* height: 100%;
+  width: 100%;
+  clip-path: polygon(30% 0, 0 56%, 30% 100%); */
+}
+.namez {
+  min-width: 100% !important;
+  transform: translateY(620px);
+  margin: auto !important;
   text-align: center !important;
 }
-.AT{
-  font-size: 5em;
+.Name {
+  position: absolute;
+  z-index: 25 !important;
+  bottom: 2% !important;
+  min-width: 100% !important;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-.location{
-  transform: translateX(-42em);
+.AT {
+  font-size: 9em;
+  display: flex;
+  white-space: nowrap !important;
+
 }
-.fa-fade{
-  font-size: 13px;
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.location {
+  transform: translateX(-42em) translateY(450px);
+  color: #53585d;
+}
+.fa-fade {
+  font-size: 15px;
   margin: 6px;
 }
-.line{
+.line {
   width: 100% !important;
 }
-.scroll{
+.scroll {
   transform: translateY(-13px);
 }
 .intro {
@@ -833,47 +626,44 @@ hr {
     circle at 24.1% 68.8%,
     rgb(50, 50, 50) 0%,
     rgb(0, 0, 0) 99.4%
-    
   );
-  
+
   transition: 1s ease-in-out;
   border: none !important;
 }
-.AS{
-    font-size:14px;
-  }
-.toggle:focus{
-  background: #6190E8;  
-background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8); 
-background: linear-gradient(to right, #A7BFE8, #6190E8);
+.AS {
+  font-size: 14px;
+}
+.toggle:focus {
+  background: #6190e8;
+  background: -webkit-linear-gradient(to right, #a7bfe8, #6190e8);
+  background: linear-gradient(to right, #a7bfe8, #6190e8);
   color: white;
   animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.prdName{
-  color:
-  rgb(16, 16, 16) !important;
+.prdName {
+  color: rgb(16, 16, 16) !important;
   margin-bottom: 0 !important;
 }
-.prodLine{
+.prodLine {
   width: 50% !important;
 }
-.prodLine-1{
+.prodLine-1 {
   width: 100% !important;
 }
-.lang{
+.lang {
   height: 25px;
   margin-right: 3px;
 }
 .prod {
   padding: 100px;
 }
-.options{
+.options {
   transform: translateX(20px) translateY(-20px);
 }
-.options::before{
+.options::before {
   content: "hover to view" !important;
-
 }
 .profile {
   margin-top: 4px;
@@ -898,14 +688,13 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
 .container {
   max-width: 100em;
 }
-.autotype{
+.autotype {
   font-size: 14px;
 }
 .horizontal-single-item {
   height: 210px;
-
 }
-.disc{
+.disc {
   font-size: 1.2em;
 }
 
@@ -913,14 +702,15 @@ background: linear-gradient(to right, #A7BFE8, #6190E8);
   padding: 20px;
 }
 .flex-col {
-  background: #232526;  
-background: -webkit-linear-gradient(to right, #414345, #232526); 
-background: linear-gradient(to right, #414345, #232526); 
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
 
   padding: 20px;
   height: 250px;
   width: 360px;
   text-align: center !important;
+  border-radius: 30px;
 }
 .links {
   height: 30px;
@@ -951,7 +741,7 @@ background: linear-gradient(to right, #414345, #232526);
 .row-1 {
   width: 200vw;
   transform: translateX(-2%);
-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .row-2 {
@@ -1035,7 +825,8 @@ transition: 1s ease-in-out;
 }
 .connect {
   font-size: 5rem;
-  margin-left: 10px !important;}
+  margin-left: 10px !important;
+}
 .heading > .profile {
   height: 75px;
   width: 75px;
@@ -1063,7 +854,7 @@ transition: 1s ease-in-out;
   transition: 2s ease-in-out;
 }
 .info:hover {
-  background-color:#14AE5C;
+  background-color: #14ae5c;
   cursor: pointer !important;
 }
 .footer {
@@ -1107,714 +898,643 @@ transition: 1s ease-in-out;
 }
 
 .animate-dot {
-   opacity: 0;
-   animation: animateDot1 1s linear infinite;
+  opacity: 0;
+  animation: animateDot1 1s linear infinite;
 }
 .animate-dot:nth-child(2) {
-   animation: animateDot2 1s linear infinite;
+  animation: animateDot2 1s linear infinite;
 }
 
-
 .animate-dot:nth-child(3) {
-   animation: animateDot3 1s linear infinite;
+  animation: animateDot3 1s linear infinite;
 }
 
 @keyframes animateDot1 {
-   0%   {opacity: 0; }
-   20%  {opacity: 0;}
-   30%  {opacity: 1;}
-   90% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
 }
 
 @keyframes animateDot2 {
-   0%   {opacity: 0; }
-   35%  {opacity: 0;}
-   45%  {opacity: 1;}
-   90% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
 }
 
 @keyframes animateDot3 {
-   0%   {opacity: 0; }
-   50%  {opacity: 0;}
-   60%  {opacity: 1;}
-   90% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
 }
 
-                                    /* responsiveness  styling */
-
+/* responsiveness  styling */
 
 /* Styles for extra small devices (phones) */
-@media screen and (min-width: 300px)and (max-width: 450px) {
-  .self{
-  height: 22em !important;
-  width: 10em;
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .self {
+    height: 22em !important;
+    width: 10em;
   }
-  .image{
+  .image {
     transform: translateX(2em) translateY(300px) !important;
-  
   }
-  .dev{
+  .dev {
     transform: translateX(10px) translateY(88px);
   }
-  .DPP{
-     font-size: 2.5em !important;
+  .DPP {
+    font-size: 2.5em !important;
   }
-  
-  .ps{
+
+  .ps {
     transform: translateX(28px) translateY(190px) !important;
     word-spacing: 10px;
-
-
   }
-  .des{
+  .des {
     transform: translateX(170px) translateY(300px) !important;
-
   }
-  .Name{
+  .Name {
     transform: translateX(-1em) translateY(-163px) !important;
   }
   .location {
     transform: translateX(4.5em) translateY(25px) !important;
   }
-    .location > p {
-      font-size:0.6em !important;
-
-    }
-     .fa-fade{
-      transform: translateY(-3px);
-      font-size:0.5em !important;
-
-    }
-  .AT{
+  .location > p {
+    font-size: 0.6em !important;
+  }
+  .fa-fade {
+    transform: translateY(-3px);
+    font-size: 0.5em !important;
+  }
+  .AT {
     font-size: 2em;
   }
-  
+
   /* introduction responsiveness */
 
-  .head{
-   font-size: 0.3em !important;
- 
+  .head {
+    font-size: 0.3em !important;
   }
-  .intro{
+  .intro {
     padding: 60px;
   }
-  .sub{
-    font-size:0.2em !important;
+  .sub {
+    font-size: 0.2em !important;
   }
 
-  hr{
-    width:120% !important;
+  hr {
+    width: 120% !important;
   }
-  .btn{
-    left:43% !important;
+  .btn {
+    left: 43% !important;
     bottom: -40% !important;
-
   }
 
-    /* projects responsiveness */
+  /* projects responsiveness */
 
-.toggle {
-  margin: 3px;
-  padding: 7px;
-  width: 52px;
-  font-size: 8.5px;
- 
-}
-  
-  .card, .img{
+  .toggle {
+    margin: 3px;
+    padding: 7px;
+    width: 52px;
+    font-size: 8.5px;
+  }
+
+  .card,
+  .img {
     width: 150px !important;
-  height: 150px;
-}
+    height: 150px;
+  }
 
-  .prod{
+  .prod {
     padding: 10px !important;
     margin-top: 10px;
-
   }
-  .options{
+  .options {
     margin-bottom: 1px;
     margin-top: 20px;
     transform: translateX(20px) translateY(-10px);
   }
-  .options:before{
+  .options:before {
     content: "Tab to view" !important;
-
   }
   .prdName {
     font-size: 1.2em;
     margin-left: 10px;
   }
-  .disc{
+  .disc {
     font-size: 0.4em !important;
     margin-bottom: 2px !important;
-
   }
-  .lang{
-  height: 15px;
-  margin-right: 2px;
-}
-ul{
-  padding: 0 !important;
-}
+  .lang {
+    height: 15px;
+    margin-right: 2px;
+  }
+  ul {
+    padding: 0 !important;
+  }
   .flex-col {
+    padding: 20px;
+    height: 205px;
+    width: 210px;
+  }
+  .test {
+    font-size: 0.6em;
+  }
+  .links {
+    height: 30px;
+  }
+  .holder {
+    height: 550px;
+  }
+  .row-1 {
+    width: 400vw;
+    transform: translateX(-1%);
+  }
 
+  .row-2 {
+    width: 400vw;
+    transform: translateX(-12%);
+  }
 
-  padding: 20px;
-  height: 205px;
-  width: 210px;
+  /* contact page */
+
+  .connect {
+    font-size: 2.5rem;
+    margin-left: px !important;
+  }
+  .heading > .profile {
+    height: 55px;
+    width: 55px;
+    transform: translateY(45px) translateX(80px);
+  }
+  .heading {
+    transform: translateX(-40px) translateY(200px);
+  }
+  .hr {
+    transform: translateX(40px) translateY(300px);
+    width: 75% !important;
+  }
+  .switch {
+    transform: translateY(275px) translateX(-105px);
+  }
+  .info {
+    transform: translateY(300px) translateX(10px);
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 30px;
+    transition: 2s ease-in-out;
+    font-size: 0.7em;
+  }
+
+  .general {
+    transform: translateX(20px) translateY(180px);
+    font-size: 0.5em;
+  }
+  .socials {
+    transform: translateX(-20px) translateY(180px);
+    font-size: 0.5em;
+  }
 }
-.test{
-font-size: 0.6em;
-}
-.links {
-  height: 30px;
-}
-.holder {
-  height: 550px;
-
-}
-.row-1 {
-  width: 400vw;
-  transform: translateX(-1%);
-
-}
-
-.row-2 {
-  width: 400vw;
-  transform: translateX(-12%);
-}
-
- /* contact page */
-
-.connect {
-  font-size: 2.5rem;
-  margin-left: px !important;
-}
-.heading > .profile {
-  height: 55px;
-  width: 55px;
-  transform: translateY(45px) translateX(80px);
-
-}
-.heading {
-  transform: translateX(-40px) translateY(200px);
-}
-.hr {
-  transform: translateX(40px) translateY(300px);
-  width: 75% !important;
-}
-.switch{
-  transform: translateY(275px) translateX(-105px);
-
-}
-.info {
-  transform: translateY(300px) translateX(10px);
-  margin-right: 1rem;
-  border: 1px solid white;
-  padding: 7px;
-  border-radius: 30px;
-  transition: 2s ease-in-out;
-  font-size: 0.7em;
-}
-
-.general{
-  transform: translateX(20px) translateY(180px);
-  font-size: 0.5em;
-
-}
-.socials{
-  transform: translateX(-20px) translateY(180px);
-  font-size: 0.5em;
-
-}
-}
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 500px) and (max-width: 576px) {
-  .self{
-  height: 29em;
-  width: 12em;
+  .self {
+    height: 29em;
+    width: 12em;
   }
-  .image{
+  .image {
     transform: translateX(10em) translateY(188px) !important;
-  
   }
-  .dev{
+  .dev {
     transform: translateX(10px) translateY(28px);
   }
-  .DPP{
-     font-size: 4.5em !important;
+  .DPP {
+    font-size: 4.5em !important;
   }
-  
-  .ps{
+
+  .ps {
     transform: translateX(40px) translateY(200px) !important;
     word-spacing: 60px;
-
-
   }
-  .des{
+  .des {
     transform: translateX(325px) translateY(370px) !important;
-
   }
-  .Name{
+  .Name {
     transform: translateX(-11em) translateY(-180px) !important;
   }
-  .location{
+  .location {
     transform: translateX(-11em) !important;
-
   }
-  .AT{
+  .AT {
     font-size: 3em;
   }
-  
+
   /* introduction responsiveness */
 
-  .head{
-   font-size: 0.6em !important;
- 
+  .head {
+    font-size: 0.6em !important;
   }
-  .sub{
-    font-size:0.4em !important;
-  }
-
-  hr{
-    width:140% !important;
-  }
-  .btn{
-    left:50% !important;
+  .sub {
+    font-size: 0.4em !important;
   }
 
-    /* projects responsiveness */
+  hr {
+    width: 140% !important;
+  }
+  .btn {
+    left: 50% !important;
+  }
 
-.toggle {
-  margin: 5px;
-  padding: 3px;
-  width: 50px;
-  font-size: 8px;
- 
-}
-  
-  .card, .img{
+  /* projects responsiveness */
+
+  .toggle {
+    margin: 5px;
+    padding: 3px;
+    width: 50px;
+    font-size: 8px;
+  }
+
+  .card,
+  .img {
     width: 200px !important;
-  height: 250px;
-}
+    height: 250px;
+  }
 
-  .prod{
+  .prod {
     padding: 40px !important;
-
   }
   .prdName {
     font-size: 1.3em;
   }
-  .disc{
+  .disc {
     font-size: 0.7em !important;
-
   }
   .flex-col {
+    padding: 20px;
+    height: 220px;
+    width: 300px;
+  }
+  .links {
+    height: 30px;
+  }
+  .holder {
+    height: 700px;
+  }
+  .row-1 {
+    width: 300vw;
+    transform: translateX(-1%);
+  }
 
+  .row-2 {
+    width: 300vw;
+    transform: translateX(-12%);
+  }
+  .test {
+  }
+  /* contact page */
 
-  padding: 20px;
-  height: 220px;
-  width: 300px;
-}
-.links {
-  height: 30px;
-}
-.holder {
-  height: 700px;
+  .connect {
+    font-size: 3.5rem;
+    margin-left: px !important;
+  }
+  .heading > .profile {
+    height: 55px;
+    width: 55px;
+    transform: translateY(60px) translateX(75px);
+  }
+  .heading {
+    transform: translateX(-150px) translateY(200px);
+  }
+  .hr {
+    transform: translateX(20px) translateY(300px);
+    width: 75% !important;
+  }
+  .switch {
+    transform: translateY(260px) translateX(-150px);
+  }
+  .info {
+    transform: translateY(220px) translateX(-140px);
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 30px;
+    transition: 2s ease-in-out;
+    font-size: 0.7em;
+  }
 
+  .general {
+    transform: translateX(30px) translateY(100px);
+  }
+  .socials {
+    transform: translateX(-30px) translateY(100px);
+  }
 }
-.row-1 {
-  width: 300vw;
-  transform: translateX(-1%);
-
-}
-
-.row-2 {
-  width: 300vw;
-  transform: translateX(-12%);
-}
-.test{
-
-}
- /* contact page */
-
-.connect {
-  font-size: 3.5rem;
-  margin-left: px !important;
-}
-.heading > .profile {
-  height: 55px;
-  width: 55px;
-  transform: translateY(60px) translateX(75px);
-
-}
-.heading {
-  transform: translateX(-150px) translateY(200px);
-}
-.hr {
-  transform: translateX(20px) translateY(300px);
-  width: 75% !important;
-}
-.switch{
-  transform: translateY(260px) translateX(-150px);
-
-}
-.info {
-  transform: translateY(220px) translateX(-140px);
-  margin-right: 1rem;
-  border: 1px solid white;
-  padding: 7px;
-  border-radius: 30px;
-  transition: 2s ease-in-out;
-  font-size: 0.7em;
-}
-
-.general{
-  transform: translateX(30px) translateY(100px);
-
-}
-.socials{
-  transform: translateX(-30px) translateY(100px);
-
-}
-}
-
-
-
 
 /* Styles for medium devices ( smaller laptops) */
-@media screen and (min-width:768px) and (max-width: 768px) {
-  .self{
-  height: 32em !important
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .self {
+    height: 32em !important;
   }
-  .image{
+  .image {
     transform: translateX(11em) translateY(140px) !important;
-  
   }
-  .dev{
+  .dev {
     transform: translateX(40px) translateY(28px);
   }
-  .DPP{
-     font-size: 5.5em !important;
+  .DPP {
+    font-size: 5.5em !important;
   }
-  
-  .ps{
+
+  .ps {
     transform: translateX(60px) translateY(190px) !important;
     word-spacing: 90px;
-
-
   }
-  .des{
+  .des {
     transform: translateX(500px) translateY(370px) !important;
-
   }
-  .Name{
+  .Name {
     transform: translateX(-11em) translateY(-200px) !important;
     height: 10px !important;
   }
-  .location{
+  .location {
     transform: translateX(-18.5em) !important;
-
   }
-  .AT{
+  .AT {
     font-size: 4em;
   }
-  
+
   /* introduction responsiveness */
 
-  .head{
-   font-size: 1em !important;
- 
-  }
-  .sub{
-    font-size:0.8em !important;
-  }
-
-  hr{
-    width:100% !important;
-  }
-  .btn{
-    left:63% !important;
-  }
-  
-  /* projects responsiveness */
-  .card, .img{
-    width: 300px !important;
-  height: 255px;
-}
-
-  .prod{
-    padding: 40px !important;
-
-  }
-  .disc{
+  .head {
     font-size: 1em !important;
+  }
+  .sub {
+    font-size: 0.8em !important;
+  }
 
+  hr {
+    width: 100% !important;
+  }
+  .btn {
+    left: 63% !important;
+  }
+
+  /* projects responsiveness */
+  .card,
+  .img {
+    width: 300px !important;
+    height: 255px;
+  }
+
+  .prod {
+    padding: 40px !important;
+  }
+  .disc {
+    font-size: 1em !important;
   }
   .flex-col {
+    padding: 20px;
+    height: 230px;
+    width: 300px;
+  }
+  .links {
+    height: 30px;
+  }
+  .holder {
+    height: 700px;
+  }
+  .row-1 {
+    width: 250vw;
+    transform: translateX(-1%);
+  }
 
+  .row-2 {
+    width: 250vw;
+    transform: translateX(-12%);
+  }
+  .test {
+  }
+  /* contact page */
 
-  padding: 20px;
-  height: 230px;
-  width: 300px;
-}
-.links {
-  height: 30px;
-}
-.holder {
-  height: 700px;
+  .connect {
+    font-size: 5rem;
+    margin-left: px !important;
+  }
+  .heading {
+    transform: translateX(-200px) translateY(120px);
+  }
+  .hr {
+    transform: translateX(20px) translateY(200px);
+    width: 75% !important;
+  }
+  .switch {
+    transform: translateY(160px) translateX(-180px);
+  }
+  .info {
+    transform: translateY(160px) translateX(-180px);
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 2s ease-in-out;
+  }
 
+  .general {
+    transform: translateX(30px);
+  }
+  .socials {
+    transform: translateX(-30px);
+  }
 }
-.row-1 {
-  width: 250vw;
-  transform: translateX(-1%);
-
-}
-
-.row-2 {
-  width: 250vw;
-  transform: translateX(-12%);
-}
-.test{
-
-}
- /* contact page */
-
-.connect {
-  font-size: 5rem;
-  margin-left: px !important;
-}
-.heading {
-  transform: translateX(-200px) translateY(120px);
-}
-.hr {
-  transform: translateX(20px) translateY(200px);
-  width: 75% !important;
-}
-.switch{
-  transform: translateY(160px) translateX(-180px);
-
-}
-.info {
-  transform: translateY(160px) translateX(-180px);
-  margin-right: 1rem;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 30px;
-  transition: 2s ease-in-out;
-}
-
-.general{
-  transform: translateX(30px);
-
-}
-.socials{
-  transform: translateX(-30px);
-
-}
-}
-
 
 /* Styles for large devices (desktops) */
-@media screen and (min-width: 992px) and (max-width: 1023.98px){
-  .self{
-  height: 31.8em !important
+@media screen and (min-width: 992px) and (max-width: 1023.98px) {
+  .self {
+    height: 31.8em !important;
   }
-  .image{
+  .image {
     transform: translateX(18em) translateY(144px) !important;
-  
   }
-  .dev{
+  .dev {
     transform: translateX(40px) translateY(25px);
   }
-  .DPP{
-     font-size: 7.7em !important;
+  .DPP {
+    font-size: 7.7em !important;
   }
-  
-  .ps{
+
+  .ps {
     transform: translateX(80px) translateY(180px) !important;
     word-spacing: 70px;
-
-
   }
-  .des{
+  .des {
     transform: translateX(615px) translateY(330px) !important;
-
   }
-  .Name{
+  .Name {
     transform: translateX(-18em) translateY(-200px) !important;
     height: 10px !important;
   }
-  .location{
+  .location {
     transform: translateX(-25.5em) !important;
-
   }
-  .AT{
+  .AT {
     font-size: 4em;
   }
-  
+
   /* introduction responsiveness */
 
-  .head{
-   font-size: 1.3em !important;
- 
-  }
-
-  hr{
-    width:65% !important;
-  }
-  .btn{
-    left:68%;
-  }
-  
-  /* projects responsiveness */
-  .card, .img{
-    width: 400px !important;
-  height: 255px;
-}
-
-  .prod{
-    padding: 50px !important;
-
-  }
-  .disc{
-    font-size: 1em !important;
-
-  }
-  .flex-col {
-
-
-  padding: 20px;
-  height: 230px;
-  width: 340px;
-}
-.links {
-  height: 30px;
-}
-.holder {
-  height: 700px;
-
-}
-.row-1 {
-  width: 200vw;
-  transform: translateX(-1%);
-
-}
-
-.row-2 {
-  width: 200vw;
-  transform: translateX(-12%);
-}
-.test{
-
-}
- /* contact page */
-
-.connect {
-  font-size: 5rem;
-  margin-left: px !important;
-}
-.heading {
-  transform: translateX(-270px) translateY(120px);
-}
-.hr {
-  transform: translateY(200px);
-  width: 75% !important;
-}
-.info {
-  transform: translateY(160px) translateX(-250px);
-  margin-right: 1rem;
-  border: 1px solid white;
-  padding: 12px;
-  border-radius: 30px;
-  transition: 2s ease-in-out;
-}
-
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .dev{
-    transform: translateX(40px) translateY(25px);
-  }
-  .DPP{
-     font-size: 8.2em;
-  }
-  
-  .ps{
-    transform: translateX(130px) translateY(180px);
-    word-spacing: 70px;
-
-
-  }
-  .des{
-    transform: translateX(720px) translateY(330px);
-
-  }
-  .image{
-    transform: translateX(22em) translateY(112px);
-
-  }
-  .self{
-  height: 33.8em
-  }
-  .Name{
-    transform: translateX(-23em) translateY(-200px);
-    height: 10px !important;
-  }
-  .location{
-    transform: translateX(-31em);
-
-  }
-  .AT{
-    font-size: 4em;
-  }
-  
-  /* introduction responsiveness */
-  .head{
+  .head {
     font-size: 1.3em !important;
   }
 
-  hr{
-    width:65% !important;
+  hr {
+    width: 65% !important;
   }
-  .btn{
-    left:68%
+  .btn {
+    left: 68%;
   }
-  
+
   /* projects responsiveness */
-  .card, .img{
-    width: 450px !important;
-  height: 255px;
+  .card,
+  .img {
+    width: 400px !important;
+    height: 255px;
+  }
+
+  .prod {
+    padding: 50px !important;
+  }
+  .disc {
+    font-size: 1em !important;
+  }
+  .flex-col {
+    padding: 20px;
+    height: 230px;
+    width: 340px;
+  }
+  .links {
+    height: 30px;
+  }
+  .holder {
+    height: 700px;
+  }
+  .row-1 {
+    width: 200vw;
+    transform: translateX(-1%);
+  }
+
+  .row-2 {
+    width: 200vw;
+    transform: translateX(-12%);
+  }
+  .test {
+  }
+  /* contact page */
+
+  .connect {
+    font-size: 5rem;
+    margin-left: px !important;
+  }
+  .heading {
+    transform: translateX(-270px) translateY(120px);
+  }
+  .hr {
+    transform: translateY(200px);
+    width: 75% !important;
+  }
+  .info {
+    transform: translateY(160px) translateX(-250px);
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 12px;
+    border-radius: 30px;
+    transition: 2s ease-in-out;
+  }
 }
 
-  .prod{
-    padding: 80px;
-
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .dev {
+    transform: translateX(40px) translateY(25px);
   }
-  .disc{
-    font-size: 1.1em;
+  .DPP {
+    font-size: 8.2em;
+  }
 
+  .ps {
+    transform: translateX(130px) translateY(180px);
+    word-spacing: 70px;
+  }
+  .des {
+    transform: translateX(720px) translateY(330px);
+  }
+  .image {
+    transform: translateX(22em) translateY(112px);
+  }
+  .self {
+    height: 33.8em;
+  }
+  .Name {
+    transform: translateX(-23em) translateY(-200px);
+    height: 10px !important;
+  }
+  .location {
+    transform: translateX(-31em);
+  }
+  .AT {
+    font-size: 4em;
+  }
+
+  /* introduction responsiveness */
+  .head {
+    font-size: 1.3em !important;
+  }
+
+  hr {
+    width: 65% !important;
+  }
+  .btn {
+    left: 68%;
+  }
+
+  /* projects responsiveness */
+  .card,
+  .img {
+    width: 450px !important;
+    height: 255px;
+  }
+
+  .prod {
+    padding: 80px;
+  }
+  .disc {
+    font-size: 1.1em;
   }
 }
 
 /* Styles for extra large devices (large desktops/monitors) */
-
-
-   
-
-
-
-  
-
-
 </style>
