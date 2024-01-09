@@ -28,8 +28,12 @@
             />
           </div>
           <div class="location d-flex justify-content-center">
-            <i class="fa-solid fa-location-crosshairs fa-fade"></i>
-            <p>Cape Town, South Africa</p>
+            <img
+                        class="pin"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      />
+            <p class="cape">Cape Town, South Africa</p>
           </div>
           <div class="Name d-flex justify-content-center">
             <h2 class="AT">Antonio Tone</h2>
@@ -42,6 +46,7 @@
             &nbsp;
             <h2 class="AT">-Antonio Tone</h2>
           </div>
+
         </div>
       </div>
     </div>
@@ -468,13 +473,17 @@ export default {
 };
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 .main {
   position: relative;
   min-height: 100vh !important;
 }
 .header {
   width: 100%;
-  background-color: #76a686;
+  background: #56ab2f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 100vh;
   position: relative;
 }
@@ -482,6 +491,7 @@ export default {
   height: 100%;
   width: 100%;
   z-index: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 .dev {
   font-size: 10rem;
@@ -489,67 +499,54 @@ export default {
   top: 4%;
   position: absolute;
   color: aliceblue;
+  font-size: 100px;
 }
 .ps {
-  font-size: 10rem;
+  font-size: 100px;
   top: 4%;
   transform: translateY(180px);
   left: 2%;
   position: absolute;
   /* word-spacing: 120px; */
-  color: #53585d;
+  color: rgb(28, 29, 32);
 }
 .des {
-  font-size: 10rem;
+  font-size: 100px;
+
   transform: translateY(340px);
-  left: 35%;
+  left: 31%;
   top: 4%;
   position: absolute;
   color: aliceblue;
 }
- .image {
-  z-index: 20;
-  /* transform: translateY(-20px); */
-  width: 100%;
-  /* min-height: 100vh !important; */
-  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);  background-color: #181614;
-  background-position: center;
-} 
+
 .self {
   object-fit: cover;
   object-position: left top;
-  transform: translateX(110px);
   border-radius: 9999px;
-  left: 61%;
-  top: 10%;
+  left: 68%;
+  top: 8%;
   position: absolute;
-  height: 500px;
-  width: 500px;
-  border: solid 3px grey;
+  height: 420px;
+  width:  420px;
+  border: solid 1.5px #fff;
 
 
-  /* height: 100%;
-  width: 100%;
-  clip-path: polygon(30% 0, 0 56%, 30% 100%); */
+ 
 }
-.namez {
-  min-width: 100% !important;
-  transform: translateY(620px);
-  margin: auto !important;
-  text-align: center !important;
-}
+
 .Name {
   position: absolute;
   z-index: 25 !important;
   bottom: 2% !important;
   min-width: 100% !important;
   animation-name: infiniteScroll;
-  animation-duration: 20s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 .AT {
-  font-size: 9em;
+  font-size: 12em;
   display: flex;
   white-space: nowrap !important;
 
@@ -564,16 +561,21 @@ export default {
   }
 }
 .location {
-  transform: translateX(-42em) translateY(450px);
-  color: #53585d;
+  /* transform: translateX(-40em) translateY(450px); */
+  position: absolute;
+  top: 55%;
+  left: 3%;
+  color: rgb(50, 52, 57);
+;
 }
-.fa-fade {
-  font-size: 15px;
+.pin {
+  height: 35px;
   margin: 6px;
 }
-.line {
-  width: 100% !important;
+.cape{
+  font-size: 25px;
 }
+
 .scroll {
   transform: translateY(-13px);
 }
