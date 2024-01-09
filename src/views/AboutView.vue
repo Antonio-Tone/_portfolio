@@ -724,8 +724,7 @@ li{
   width: 38% ;
 
 }
-.DDH > .col-12{
-}
+
 
 .image-2 , .overlay-2{
   border-radius: 30px;
@@ -845,8 +844,6 @@ transform: translateY(20px);
   width: 38% ;
 
 }
-.DDH > .col-12{
-}
 
 .image-2 , .overlay-2{
   border-radius: 30px;
@@ -940,8 +937,7 @@ width: 320px;
   width: 38% ;
 
 }
-.DDH > .col-12{
-}
+
 
 .image-2 , .overlay-2{
   border-radius: 30px;
@@ -1019,8 +1015,7 @@ height: 450px;
   width: 38% ;
 
 }
-.DDH > .col-12{
-}
+
 
 .image-2 , .overlay-2{
   border-radius: 30px;

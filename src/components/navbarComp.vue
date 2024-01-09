@@ -6,6 +6,7 @@
                 <li class="ms-auto"> <router-link class=" link" to="/" >Home</router-link></li>
                 <li> <a class="link" href="/about" >About</a></li>
                 <li> <router-link class="link" to="/contact" >Contact</router-link></li>
+                <li> <router-link class="link" to="/test" >magic</router-link></li>
             </ul>
         </nav>
     </div>
