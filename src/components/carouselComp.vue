@@ -2,7 +2,7 @@
     <div>
       <div class="gallery">
         <div class="gallery-container">
-          <img class="gallery-item gallery-item-1 " src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png" data-index="1">
+              <img class="gallery-item gallery-item-1 img" src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png" data-index="1">
           <img class="gallery-item gallery-item-2" src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png" data-index="2">
           <img class="gallery-item gallery-item-3" src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png" data-index="3">
           <img class="gallery-item gallery-item-4" src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png" data-index="4">
@@ -86,14 +86,14 @@
   justify-content: center;
   color: white;
   transition: 0.2s ease-in-out;
-  }
-  .links {
+}
+.links {
   height: 30px;
-  }
-  .linkBg {
+}
+.linkBg {
   background-color: transparent !important;
-  }
-  .textBox {
+}
+.textBox {
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -102,53 +102,53 @@
   gap: 15px;
   transition: 0.2s ease-in-out;
   z-index: 2;
-  }
-  
-  .textBox > .text {
+}
+
+.textBox > .text {
   font-weight: bold;
-  }
-  
-  .textBox > .head {
+}
+
+.textBox > .head {
   font-size: 20px;
-  }
-  
-  .textBox > .price {
+}
+
+.textBox > .price {
   font-size: 17px;
-  }
-  
-  .textBox > span {
+}
+
+.textBox > span {
   font-size: 12px;
   color: lightgrey;
-  }
-  
-  .card:hover > .textBox {
+}
+
+.card:hover > .textBox {
   opacity: 1;
-  }
-  
-  .card:hover > .img {
+}
+
+.card:hover > .img {
   filter: blur(7px);
-  }
-  .card:hover {
+}
+.card:hover {
   animation: anim 3s infinite !important;
-  }
-  
-  @keyframes anim {
+}
+
+@keyframes anim {
   0% {
     transform: translateY(0);
   }
-  
+
   50% {
     transform: translateY(-20px);
   }
-  
+
   100% {
     transform: translateY(0);
   }
-  }
-  
-  /* testing animation */
-  
-  
+}
+
+/* testing animation */
+
+
     body{
       margin: 0;
       padding: 0;
@@ -168,28 +168,28 @@
       position: relative;
     }
     .gallery-item{
-     height: 210px;
+     height: 200px;
      opacity: 0;
      position: absolute;
      transition: all 0.3s ease-in-out;
-     width: 500px;
+     width: 330px;
      z-index: 0;
      border-radius: 15px;
      background-size: contain;
     }
     .gallery-item-1{
-      left:8%;
+      left:15%;
       opacity: .4 ;
       transform: translateX(-50%);
     }
     .gallery-item-2, .gallery-item-4{
-      height: 235px;
+      height: 250px;
       opacity: 0.8;
-      width: 400px;
+      width: 380px;
       z-index:1 ;
     }
     .gallery-item-2{
-  left:23%;
+  left:30%;
   transform: translateX(-50%);
     }
     .gallery-item-3{
@@ -202,11 +202,11 @@
     z-index: 2;
     }
     .gallery-item-4{
-  left: 80%;
+  left: 70%;
    transform: translateX(-50%);
     }
     .gallery-item-5{
-      left: 92%;
+      left: 85%;
       opacity: .4;
       transform: translateX(-50%);
   
@@ -220,7 +220,7 @@
     .gallery-controls button{
       background-color: transparent;
       border: 0;
-      cursor: pointer !important;
+      cursor: pointer;
       font-size: 30px;
       margin: 0 50px;
       padding: 0 12px;
@@ -232,7 +232,20 @@
     .gallery-controls-previous{
       position: relative;
     }
- 
+    .gallery-controls-previous::before{
+      border: solid black;
+      border-width: 0 5px 5px 0;
+      content: "";
+      display: inline-block;
+      height: 5px;
+      left:30px;
+      padding: 10px;
+      position: absolute;
+      top:25%;
+      transform: rotate(135deg) translateY(-50%);
+      transition: left 0.15s ease-in-out;
+      width:5px;
+    }
     .gallery-controls-previous:hover::before{
       left:-40px;
   
@@ -282,3 +295,4 @@
     
      
   </style>
+  
