@@ -585,16 +585,17 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
   padding: 120px;
 }
 .head {
-  font-size: 1.7em !important;
+  font-size: 2em !important;
   display: block !important;
 }
 .sub {
-  font-size: 1em;
+  font-size: 1.6em;
   display: block !important;
   margin-top: 2em;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
+ transform: translateY(-20px);
 }
 .work {
   display: flex;
@@ -607,7 +608,7 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
 }
 hr {
   position: relative;
-  width: 55% !important;
+  width: 80% !important;
 }
 .about {
   position: relative;
@@ -615,8 +616,8 @@ hr {
 .btn {
   position: absolute;
   z-index: 3;
-  bottom: -60% !important;
-  left: 65%;
+  bottom: -88% !important;
+  left: 48%;
 }
 .toggle {
   margin: 5px;
@@ -757,7 +758,7 @@ hr {
   height: 285px;
   position: absolute;
   transition: 0.2s ease-in-out;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .textBox {
@@ -768,7 +769,7 @@ hr {
   justify-content: center;
   gap: 15px;
   transition: 0.2s ease-in-out;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .textBox > .text {
