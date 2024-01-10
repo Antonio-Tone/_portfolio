@@ -341,7 +341,6 @@
   </div>
 </template>
 <script>
-import projects from "../components/sliderComp.vue";
 import { gsap } from "gsap";
 import magnetic from "../components/magButtonComp.vue";
 import Carousel from "../components/carouselComp.vue";
