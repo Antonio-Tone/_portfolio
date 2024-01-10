@@ -758,7 +758,7 @@ hr {
   height: 285px;
   position: absolute;
   transition: 0.2s ease-in-out;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .textBox {
@@ -769,7 +769,7 @@ hr {
   justify-content: center;
   gap: 15px;
   transition: 0.2s ease-in-out;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .textBox > .text {
