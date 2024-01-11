@@ -76,8 +76,282 @@
       </div>
     </div>
     <!--projects section -->
-    <carousel />
+    <div class="projects">
+      <div class="d-flex justify-content-center">
+        <button class="toggle" @click="show(1)">Portfolio</button>
+        <button class="toggle" @click="show(2)">E-commerce</button>
+        <button class="toggle AS" @click="show(3)">Appliance Store</button>
+        <button class="toggle" @click="show(4)">BMI</button>
+        <button class="toggle" @click="show(5)">Rental</button>
+      </div>
+      <div>
+        <div class="row prod" v-show="visibleElement === 1">
+          <p class="options d-flex justify-content-start"></p>
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://lighthearted-marshmallow-2d6528.netlify.app"
+                  taget="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/Profile"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <div>
+              <h2 class="prdName">MY FIRST PORTFOLIO</h2>
+                <hr class="prodLine-1">
+            </div>
+            <p class="text-center disc">
+              My very first website, created using HTML, Bootstrap, and CSS.
+              This portfolio reflects my early foray into web development,
+              showcasing my initial projects, skills, and aspirations. It's a
+              simple yet meaningful step in my journey towards mastering web
+              development.
+            </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 2">
+          <p class="options d-flex justify-content-start"></p>
 
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://arsites.netlify.app"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/e-commerce_pg"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="prdName">MY FIRST E-COMMERCE</h2>
+              <hr class="prodLine">
+            <p class="text-center disc">
+              I used CSS to make it look good, Bootstrap to keep it simple, and
+              a bit of JavaScript to add some fun. You can browse properties,
+              search with ease, and even click around interactive images. It's a
+              bit rough around the edges, but I'm proud of what I've created.
+              Give it a go and see if you find your dream place
+            </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 3">
+          <p class="options d-flex justify-content-start"></p>
+
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png  "
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://appliance-cartel-node.web.app/"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/cheslynherman/node-fullstack-eomp"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="prdName">GROUP PROJECT</h2>
+              <hr class="prodLine">
+            <p class="text-center disc">
+              Collaboratively, my classmate and I teamed up to create an
+              appliance store webpage using Node.js. This project involved
+              designing and implementing a comprehensive online platform for
+              customers to browse and purchase appliances. We meticulously
+              crafted features such as product listings and an efficient
+              checkout system, reflecting our dedication to delivering a
+              seamless shopping experience.
+            </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 4">
+          <p class="options d-flex justify-content-start"></p>
+          <div class="col-6">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://willowy-druid-f2607c.netlify.app"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/bmi"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="prdName">My BMI Calculator Journey</h2>
+              <hr class="prodLine">
+            <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immedia screen andte results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row prod" v-show="visibleElement === 5">
+          <p class="options d-flex justify-content-start"></p>
+          <div class="col-6 d-flex justify-content-start">
+            <div class="card">
+              <img
+                class="img"
+                src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png"
+                alt=""
+              />
+              <div class="textBox">
+                <div class="d-flex justify-content-center">
+                  <a href="https://capstonepj-3a7db.web.app/"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                  <a href="https://github.com/Antonio-Tone/capstone_pj"
+                  target="_blank"
+                    ><button class="toggle linkBg">
+                      <img
+                        class="links"
+                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        alt=""
+                      /></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 work">
+            <h2 class="prdName">CAPSTONE</h2>
+              <hr class="prodLine">
+            <p class="text-center disc5">
+              My capstone project was a transformative journey where I designed
+              and developed a luxury car rental website using Node.js and
+              JavaScript. Throughout the process, I not only created a visually
+              stunning and functional website but also discovered valuable
+              insights about my strengths and weaknesses. This project allowed
+              me to hone my skills in web development, particularly in the
+              realms of server-side scripting and client-side interactivity. I
+              gained a deep understanding of website architecture, database
+              management, and user experience design.
+            </p>
+            <div class="d-flex justify-content-center">
+              <ul>
+                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
+                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- testimonials -->
 
     <section class="holder mx-auto">
@@ -343,11 +617,9 @@
 <script>
 import { gsap } from "gsap";
 import magnetic from "../components/magButtonComp.vue";
-import Carousel from "../components/carouselComp.vue";
 export default {
   components: {
     magnetic,
-    Carousel,
   },
   data() {
     return {
@@ -546,7 +818,7 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
   animation-timing-function: linear;
 }
 .AT {
-  font-size: 12em;
+  font-size: 10em;
   display: flex;
   white-space: nowrap !important;
 
@@ -758,7 +1030,6 @@ hr {
   height: 285px;
   position: absolute;
   transition: 0.2s ease-in-out;
-  /* z-index: 1; */
 }
 
 .textBox {

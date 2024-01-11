@@ -2,31 +2,7 @@
     <div>
       <div class="gallery">
         <div class="gallery-container">
-          <div class="card">
-            <img class="gallery-item gallery-item-1 img" src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png" data-index="1">
-              <div class="textBox" v-show="isHidden">
-                <div class="d-flex justify-content-center">
-                  <a href="https://lighthearted-marshmallow-2d6528.netlify.app"
-                  taget="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                  <a href="https://github.com/Antonio-Tone/Profile"
-                  target="_blank"
-                    ><button class="toggle linkBg">
-                      <img
-                        class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
-                        alt=""
-                      /></button
-                  ></a>
-                </div>
-              </div>
-            </div>
+          <img class="gallery-item gallery-item-1  img" src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png" data-index="1">
           <img class="gallery-item gallery-item-2" src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png" data-index="2">
           <img class="gallery-item gallery-item-3" src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png" data-index="3">
           <img class="gallery-item gallery-item-4" src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png" data-index="4">
@@ -116,18 +92,6 @@
    }
    </script> 
   <style scoped>
-  .card {
-  /* width: 600px;
-  height: 285px; */
-  background: #313131;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  transition: 0.2s ease-in-out;
-}
 .links {
   height: 30px;
 }
@@ -142,7 +106,7 @@
   justify-content: center;
   gap: 15px;
   transition: 0.2s ease-in-out;
-  /* z-index: 2; */
+  /* z-index: ; */
 }
 
 .textBox > .text {
