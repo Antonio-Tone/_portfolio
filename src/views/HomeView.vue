@@ -758,7 +758,6 @@ hr {
   height: 285px;
   position: absolute;
   transition: 0.2s ease-in-out;
-  /* z-index: 1; */
 }
 
 .textBox {
