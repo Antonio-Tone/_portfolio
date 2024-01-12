@@ -833,10 +833,9 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
   }
 }
 .location {
-  /* transform: translateX(-40em) translateY(450px); */
   position: absolute;
   top: 55%;
-  left: 3%;
+  left: 1%;
   color: rgb(50, 52, 57);
 ;
 }
@@ -941,9 +940,11 @@ hr {
   content: "hover to view" !important;
 }
 .profile {
+  object-fit: cover;
+  object-position: left top;
   margin-top: 4px;
-  height: 45px;
-  width: 45px;
+  height: 55px;
+  width: 55px;
   border-radius: 999px;
   animation: outerglow 1s alternate infinite cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -1025,6 +1026,7 @@ hr {
 }
 
 .img {
+    filter: drop-shadow(0px 20px 10px black);
   border-radius: 20px;
   width: 600px;
   height: 285px;
