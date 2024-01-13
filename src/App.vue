@@ -22,9 +22,10 @@ export default{
 #app,html {
   font-family: 'Archivo Narrow', sans-serif;
 font-family: 'Cormorant', serif;
-  color: #FFFF; 
+  color: rgb(28, 29, 32); 
   overflow-x: hidden;
-  background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); 
+  /* background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);  */
+  background: rgb(226, 226, 226);
 }
 html::-webkit-scrollbar{
   display: none !important;
