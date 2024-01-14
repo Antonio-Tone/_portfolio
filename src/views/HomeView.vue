@@ -53,7 +53,7 @@
     <!--introduction -->
 
     <div class="row intro">
-      <div class="col-6 text-center d-flex justify-content-start">
+      <div class="col-6 text-center d-flex justify-content-start intro-1">
         <div class="head">
           Welcome to my digital playground, where pixels meet purpose and
           creativity knows no bounds. Explore the digital tapestry of my work,
@@ -61,7 +61,7 @@
           experiences.
         </div>
       </div>
-      <div class="col-6 text-center d-flex justify-content-center">
+      <div class="col-6 text-center d-flex justify-content-center intro-2">
         <p class="sub">
           In the world of web design, my passion for design,<br />
           code, and interaction sets me apart and fuels my <br />
@@ -77,6 +77,7 @@
     </div>
     <!--projects section -->
     <div class="projects">
+      <div class="tst mb-5"><h2>My Work:</h2></div>
       <div class="d-flex justify-content-center">
         <button class="toggle" @click="show(1)">Portfolio</button>
         <button class="toggle" @click="show(2)">E-commerce</button>
@@ -766,7 +767,7 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
   font-family: 'Montserrat', sans-serif;
 }
 .dev {
-  font-size: 10rem;
+  font-size: 100px;
   left: 2%;
   top: 4%;
   position: absolute;
@@ -856,17 +857,21 @@ background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, F
   padding: 120px;
 }
 .head {
-  font-size: 2em !important;
+  font-size: 1.7em !important;
   display: block !important;
 }
 .sub {
-  font-size: 1.6em;
+  font-size: 1.5em;
   display: block !important;
   margin-top: 2em;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
  transform: translateY(-20px);
+}
+.tst{
+  position:relative;
+  left:8%;
 }
 .work {
   display: flex;
@@ -956,9 +961,12 @@ hr {
     box-shadow: 0px 0px 15px #1ce278;
   }
 }
-
+.name{
+  color:black;
+}
 .test {
   font-size: small;
+  color:white;
 }
 
 .container {
@@ -1102,6 +1110,7 @@ hr {
 .connect {
   font-size: 5rem;
   margin-left: 10px !important;
+  color:white;
 }
 .heading > .profile {
   height: 75px;
@@ -1124,10 +1133,11 @@ hr {
 .info {
   transform: translateY(160px) translateX(-290px);
   margin-right: 2rem;
-  border: 1px solid white;
+  border: 1px solid rgb(219, 188, 188);
   padding: 15px;
   border-radius: 30px;
   transition: 2s ease-in-out;
+  color:white;
 }
 .info:hover {
   background-color: #14ae5c;
@@ -1141,6 +1151,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: start;
+  color:white;
+
 }
 .socials {
   transform: translateX(-150px);
@@ -1148,6 +1160,8 @@ hr {
   flex-direction: column;
   align-items: end;
   justify-content: end;
+  color:white;
+
 }
 .link {
   text-decoration: none;
@@ -1234,54 +1248,98 @@ hr {
 
 /* Styles for extra small devices (phones) */
 @media screen and (min-width: 300px) and (max-width: 450px) {
-  .self {
-    height: 22em !important;
-    width: 10em;
-  }
-  .image {
-    transform: translateX(2em) translateY(300px) !important;
+  .DPP{
+    font-size:28px;
   }
   .dev {
-    transform: translateX(10px) translateY(88px);
-  }
-  .DPP {
-    font-size: 2.5em !important;
-  }
+  left: 2%;
+  top: 50%;
+  position: absolute;
+  color: aliceblue;
+}
+.ps {
+  top: 27%;
+  transform: translateY(180px);
+  left: 8%;
+  position: absolute;
+  /* word-spacing: 120px; */
+  color: rgb(28, 29, 32);
+}
+.des {
+  transform: translateY(380px);
+  left:50%;
+  top: 0%;
+  position: absolute;
+  color: aliceblue;
+}
+.location {
+  position: absolute;
+  top: 78%;
+  left: 5%;
+  color: rgb(50, 52, 57);
+;
+}
+.pin {
+  height: 12px;
+  margin: 6px;
+}
+.cape{
+  font-size: 10px;
+  transform:translateY(4px);
+}
 
-  .ps {
-    transform: translateX(28px) translateY(190px) !important;
-    word-spacing: 10px;
-  }
-  .des {
-    transform: translateX(170px) translateY(300px) !important;
-  }
-  .Name {
-    transform: translateX(-1em) translateY(-163px) !important;
-  }
-  .location {
-    transform: translateX(4.5em) translateY(25px) !important;
-  }
-  .location > p {
-    font-size: 0.6em !important;
-  }
-  .fa-fade {
-    transform: translateY(-3px);
-    font-size: 0.5em !important;
-  }
-  .AT {
-    font-size: 2em;
-  }
+.self {
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 9999px;
+  left: 10%;
+  top: 8%;
+  position: absolute;
+  height: 220px;
+  width:  220px;
+  border: solid 1.5px #fff;
+
+
+ 
+}
+
+.Name {
+  position: absolute;
+  z-index: 25 !important;
+  bottom: 3% !important;
+  width: 200% !important;
+  animation-name: infiniteScroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.AT {
+  font-size: 2.5em;
+  display: flex;
+  white-space: nowrap !important;
+
+}
 
   /* introduction responsiveness */
-
+.intro{
+  min-width:100%;
+  padding:20px !important;
+}
+  .intro-1{
+    width:60% !important;
+  }
+  .intro-2{
+    width:40%;
+  }
   .head {
-    font-size: 0.3em !important;
+    font-size: 0.6em !important;
   }
   .intro {
     padding: 60px;
   }
   .sub {
-    font-size: 0.2em !important;
+    font-size: 0.4em !important;
+    transform:translateY(10px);
   }
 
   hr {
@@ -1400,51 +1458,95 @@ hr {
 }
 
 @media screen and (min-width: 500px) and (max-width: 576px) {
-  .self {
-    height: 29em;
-    width: 12em;
-  }
-  .image {
-    transform: translateX(10em) translateY(188px) !important;
+  .DPP{
+    font-size:35px;
   }
   .dev {
-    transform: translateX(10px) translateY(28px);
-  }
-  .DPP {
-    font-size: 4.5em !important;
-  }
+  left: 2%;
+  top: 48%;
+  position: absolute;
+  color: aliceblue;
+}
+.ps {
+  top: 28%;
+  transform: translateY(180px);
+  left: 8%;
+  position: absolute;
+  /* word-spacing: 120px; */
+  color: rgb(28, 29, 32);
+}
+.des {
+  transform: translateY(380px);
+  left:50%;
+  top: 4%;
+  position: absolute;
+  color: aliceblue;
+}
+.location {
+  position: absolute;
+  font-size:1px;
+  top: 74%;
+  left: 5%;
+  color: rgb(50, 52, 57);
+;
+}
+.pin {
+  height: 20px;
+  margin: 6px;
+}
+.cape{
+  font-size: 15px;
+}
 
-  .ps {
-    transform: translateX(40px) translateY(200px) !important;
-    word-spacing: 60px;
-  }
-  .des {
-    transform: translateX(325px) translateY(370px) !important;
-  }
-  .Name {
-    transform: translateX(-11em) translateY(-180px) !important;
-  }
-  .location {
-    transform: translateX(-11em) !important;
-  }
-  .AT {
-    font-size: 3em;
-  }
+.self {
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 9999px;
+  left: 30%;
+  top: 8%;
+  position: absolute;
+  height: 260px;
+  width:  260px;
+  border: solid 1.5px #fff;
 
+
+ 
+}
+
+.Name {
+  position: absolute;
+  z-index: 25 !important;
+  bottom: 3% !important;
+  width: 200% !important;
+  animation-name: infiniteScroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.AT {
+  font-size: 3.8em;
+  display: flex;
+  white-space: nowrap !important;
+
+}
+ 
+ 
   /* introduction responsiveness */
 
   .head {
-    font-size: 0.6em !important;
+    font-size: 0.5em !important;
   }
   .sub {
     font-size: 0.4em !important;
+    transform:translateY(5px);
   }
 
   hr {
     width: 140% !important;
   }
   .btn {
-    left: 50% !important;
+    left: 55% !important;
+    bottom:-60% !important;
   }
 
   /* projects responsiveness */
@@ -1515,7 +1617,7 @@ hr {
     transform: translateY(260px) translateX(-150px);
   }
   .info {
-    transform: translateY(220px) translateX(-140px);
+    transform: translateY(260px) translateX(-140px);
     margin-right: 1rem;
     border: 1px solid white;
     padding: 7px;
@@ -1533,37 +1635,82 @@ hr {
 }
 
 /* Styles for medium devices ( smaller laptops) */
-@media screen and (min-width: 768px) and (max-width: 768px) {
-  .self {
-    height: 32em !important;
-  }
-  .image {
-    transform: translateX(11em) translateY(140px) !important;
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .DPP{
+    font-size:70px;
   }
   .dev {
-    transform: translateX(40px) translateY(28px);
-  }
-  .DPP {
-    font-size: 5.5em !important;
-  }
+  left: 2%;
+  top: 48%;
+  position: absolute;
+  color: aliceblue;
+}
+.ps {
+  top: 42%;
+  transform: translateY(180px);
+  left: 8%;
+  position: absolute;
+  /* word-spacing: 120px; */
+  color: rgb(28, 29, 32);
+}
+.des {
+  transform: translateY(380px);
+  left:50%;
+  top: 34%;
+  position: absolute;
+  color: aliceblue;
+}
+.location {
+  position: absolute;
+  font-size:1px;
+  top: 72%;
+  left: 7%;
+  color: rgb(50, 52, 57);
+;
+}
+.pin {
+  height: 25px;
+  margin: 6px;
+}
+.cape{
+  font-size: 22px;
+}
 
-  .ps {
-    transform: translateX(60px) translateY(190px) !important;
-    word-spacing: 90px;
-  }
-  .des {
-    transform: translateX(500px) translateY(370px) !important;
-  }
-  .Name {
-    transform: translateX(-11em) translateY(-200px) !important;
-    height: 10px !important;
-  }
+.self {
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 9999px;
+  left: 22%;
+  top: 8%;
+  position: absolute;
+  height: 420px;
+  width:  420px;
+  border: solid 1.5px #fff;
+
+
+ 
+}
+
+.Name {
+  position: absolute;
+  z-index: 25 !important;
+  bottom: 3% !important;
+  width: 200% !important;
+  animation-name: infiniteScroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.AT {
+  font-size: 6.5em;
+  display: flex;
+  white-space: nowrap !important;
+
+}
   .location {
     transform: translateX(-18.5em) !important;
   }
-  .AT {
-    font-size: 4em;
-  }
+ 
 
   /* introduction responsiveness */
 
@@ -1596,8 +1743,18 @@ hr {
   }
   .flex-col {
     padding: 20px;
-    height: 230px;
+    height: 260px;
     width: 300px;
+  }
+  .test{
+    font-weight:none !important;
+  }
+  .disc5{
+    font-size:11px;
+    font-weight:none !important;
+  }
+  .disc{
+    font-weight:none !important;
   }
   .links {
     height: 30px;
@@ -1650,42 +1807,91 @@ hr {
 }
 
 /* Styles for large devices (desktops) */
-@media screen and (min-width: 992px) and (max-width: 1023.98px) {
-  .self {
-    height: 31.8em !important;
-  }
-  .image {
-    transform: translateX(18em) translateY(144px) !important;
+@media screen and (min-width:992px) and (max-width:996px){
+  .DPP{
+    font-size:60px !important;
   }
   .dev {
-    transform: translateX(40px) translateY(25px);
-  }
-  .DPP {
-    font-size: 7.7em !important;
-  }
+  left: 2%;
+  top: 18%;
+  position: absolute;
+  color: aliceblue;
+}
+.ps {
+  top: 12%;
+  transform: translateY(180px);
+  left: 8%;
+  position: absolute;
+  /* word-spacing: 120px; */
+  color: rgb(28, 29, 32);
+}
+.des {
+  transform: translateY(380px);
+  left:40%;
+  top:-4%;
+  position: absolute;
+  color: aliceblue !important;
+}
+.location {
+  position: absolute;
+  font-size:1px;
+  top: 68%;
+  left: 5%;
+  color: rgb(50, 52, 57);
+;
+}
+.pin {
+  height: 25px;
+  margin: 6px;
+}
+.cape{
+  font-size: 22px;
+}
 
-  .ps {
-    transform: translateX(80px) translateY(180px) !important;
-    word-spacing: 70px;
-  }
-  .des {
-    transform: translateX(615px) translateY(330px) !important;
-  }
-  .Name {
-    transform: translateX(-18em) translateY(-200px) !important;
-    height: 10px !important;
-  }
+.self {
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 9999px;
+  left: 60%;
+  top: 8%;
+  position: absolute;
+  height: 330px;
+  width:  330px;
+  border: solid 1.5px #fff;
+
+
+ 
+}
+
+.Name {
+  position: absolute;
+  z-index: 25 !important;
+  bottom: 1% !important;
+  width: 200% !important;
+  animation-name: infiniteScroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.AT {
+  font-size: 5em;
+  display: flex;
+  white-space: nowrap !important;
+
+}
   .location {
-    transform: translateX(-25.5em) !important;
+    transform: translateX(-18.5em) !important;
   }
-  .AT {
-    font-size: 4em;
-  }
+ 
 
   /* introduction responsiveness */
 
   .head {
-    font-size: 1.3em !important;
+    font-size: 1.4em !important;
+  }
+  .sub{
+    font-size: 1.2em !important;
+  
   }
 
   hr {
@@ -1758,7 +1964,6 @@ hr {
     transform: translateX(40px) translateY(25px);
   }
   .DPP {
-    font-size: 8.2em;
   }
 
   .ps {

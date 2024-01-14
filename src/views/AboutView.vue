@@ -2,7 +2,7 @@
   <div>
     <!-- intro quote -->
     <div class="qoute mb-5">
-      <h1 class="text-center quote mt-5">
+      <h1 class="text-center  mt-5 abtInt">
       <span
         ><i class="fa-solid fa-quote-left fa-flip-vertical"></i></span
       >Celebrate your unique story, for it is the brushstroke that paints <br />
@@ -277,10 +277,14 @@ this.images2.forEach(image => {
   },
 };
 </script>
+
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Cormorant:ital,wght@1,300&display=swap');
 h1 {
   color: white !important;
   font-size: 60px;
+  font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Cormorant', serif;
 }
 i {
   font-size: 20px;
@@ -386,7 +390,9 @@ transform: translateY(-150px);
 }
 .connect {
   font-size: 5rem;
-  margin-left: 10px !important;}
+  margin-left: 10px !important;
+  color:white;
+}
  .profile {
   height: 75px;
   width: 75px;
@@ -410,10 +416,12 @@ transform: translateY(-150px);
 .info {
   transform: translateY(120px) translateX(-290px);
   margin-right: 2rem;
-  border: 1px solid white;
+  border: 1px solid rgb(216, 203, 203);
   padding: 15px;
   border-radius: 30px;
   transition: 2s ease-in-out;
+  color:white;
+
 }
 .info:hover {
   background-color: #0bc863;
@@ -427,6 +435,8 @@ transform: translateY(-150px);
   display: flex;
   flex-direction: column;
   align-items: start;
+  color:white;
+
 }
 .socials {
   transform: translateX(-150px);
@@ -434,6 +444,8 @@ transform: translateY(-150px);
   flex-direction: column;
   align-items: end;
   justify-content: end;
+  color:white;
+
 }
 .link {
   text-decoration: none;
@@ -508,9 +520,11 @@ transform: translateY(-150px);
  @media screen and (min-width: 300px)and (max-width: 450px){
   .quote{
   font-size: 1em;
+color:#646464;
 }
 i {
   font-size: 8px;
+
   transform: translateY(-3px) !important;
 }
 
@@ -893,7 +907,7 @@ width: 320px;
  }
 
  /* Styles for large devices (desktops) */
-@media screen and (min-width: 992px) and (max-width: 1023.98px){
+@media screen and (max-width: 992px){
   .quote{
   font-size: 2.5em;
 }
