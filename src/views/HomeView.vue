@@ -1249,16 +1249,16 @@ hr {
 /* Styles for extra small devices (phones) */
 @media screen and (min-width: 300px) and (max-width: 450px) {
   .DPP{
-    font-size:28px;
+    font-size:30px;
   }
   .dev {
   left: 2%;
-  top: 50%;
+  top: 55%;
   position: absolute;
   color: aliceblue;
 }
 .ps {
-  top: 27%;
+  top: 37%;
   transform: translateY(180px);
   left: 8%;
   position: absolute;
@@ -1268,14 +1268,14 @@ hr {
 .des {
   transform: translateY(380px);
   left:50%;
-  top: 0%;
+  top: 15%;
   position: absolute;
   color: aliceblue;
 }
 .location {
   position: absolute;
-  top: 78%;
-  left: 5%;
+  top: 76%;
+  left: 1%;
   color: rgb(50, 52, 57);
 ;
 }
@@ -1284,19 +1284,19 @@ hr {
   margin: 6px;
 }
 .cape{
-  font-size: 10px;
-  transform:translateY(4px);
+  font-size: 9px;
+  transform:translateY(5px);
 }
 
 .self {
   object-fit: cover;
   object-position: left top;
   border-radius: 9999px;
-  left: 10%;
-  top: 8%;
+  left: 9%;
+  top:12%;
   position: absolute;
-  height: 220px;
-  width:  220px;
+  height: 250px;
+  width:  250px;
   border: solid 1.5px #fff;
 
 
@@ -1362,7 +1362,7 @@ hr {
   .card,
   .img {
     width: 150px !important;
-    height: 150px;
+    height: 160px;
   }
 
   .prod {
@@ -1378,12 +1378,22 @@ hr {
     content: "Tab to view" !important;
   }
   .prdName {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 10px;
+    margin-bottom: 2px;
   }
   .disc {
     font-size: 0.4em !important;
     margin-bottom: 2px !important;
+  }
+  .disc5{
+    font-size:6px;
+    font-weight: none;
+    margin-bottom: 2px;
+    margin-top: none;
+  }
+  .prodLine, .prodLine-1{
+    margin-bottom: 3px;
   }
   .lang {
     height: 15px;
