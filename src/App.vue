@@ -21,11 +21,11 @@ export default{
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Cormorant:ital,wght@1,300&display=swap');
 #app,html {
   font-family: 'Archivo Narrow', sans-serif;
-font-family: 'Cormorant', serif;
+/* font-family: 'Cormorant', serif; */
 /* color: rgb(16, 16, 16) !important; */
   overflow-x: hidden;
   background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); 
-  /* background:rgb(242, 237, 237) */
+   /* background:rgb(242, 237, 237) ; */
   color: white;
 }
 html::-webkit-scrollbar{
@@ -43,7 +43,5 @@ nav a {
   color: white;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+
 </style>

@@ -147,6 +147,15 @@ hoverMouse($("h5, button"));
     font-size:13px;
   }
 }
+@media screen and (min-width: 500px)and (max-width: 600px){
+  .hover-effect{
+    width:6em ;
+    height: 6em;
+  }
+  h5{
+    font-size:13px;
+  }
+}
 
   </style>
   

@@ -139,7 +139,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: white !important;
+    color:white;
     margin-right: 10px;
   
 }
