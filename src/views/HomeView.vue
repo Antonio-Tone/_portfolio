@@ -1249,16 +1249,16 @@ hr {
 /* Styles for extra small devices (phones) */
 @media screen and (min-width: 300px) and (max-width: 450px) {
   .DPP{
-    font-size:28px;
+    font-size:30px;
   }
   .dev {
   left: 2%;
-  top: 50%;
+  top: 55%;
   position: absolute;
   color: aliceblue;
 }
 .ps {
-  top: 27%;
+  top: 37%;
   transform: translateY(180px);
   left: 8%;
   position: absolute;
@@ -1268,14 +1268,14 @@ hr {
 .des {
   transform: translateY(380px);
   left:50%;
-  top: 0%;
+  top: 15%;
   position: absolute;
   color: aliceblue;
 }
 .location {
   position: absolute;
-  top: 78%;
-  left: 5%;
+  top: 76%;
+  left: 1%;
   color: rgb(50, 52, 57);
 ;
 }
@@ -1284,19 +1284,19 @@ hr {
   margin: 6px;
 }
 .cape{
-  font-size: 10px;
-  transform:translateY(4px);
+  font-size: 9px;
+  transform:translateY(5px);
 }
 
 .self {
   object-fit: cover;
   object-position: left top;
   border-radius: 9999px;
-  left: 10%;
-  top: 8%;
+  left: 9%;
+  top:12%;
   position: absolute;
-  height: 220px;
-  width:  220px;
+  height: 250px;
+  width:  250px;
   border: solid 1.5px #fff;
 
 
