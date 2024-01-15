@@ -1362,7 +1362,7 @@ hr {
   .card,
   .img {
     width: 150px !important;
-    height: 150px;
+    height: 160px;
   }
 
   .prod {
@@ -1378,12 +1378,22 @@ hr {
     content: "Tab to view" !important;
   }
   .prdName {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 10px;
+    margin-bottom: 2px;
   }
   .disc {
     font-size: 0.4em !important;
     margin-bottom: 2px !important;
+  }
+  .disc5{
+    font-size:6px;
+    font-weight: none;
+    margin-bottom: 2px;
+    margin-top: none;
+  }
+  .prodLine, .prodLine-1{
+    margin-bottom: 3px;
   }
   .lang {
     height: 15px;
