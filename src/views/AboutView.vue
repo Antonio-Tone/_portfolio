@@ -548,6 +548,7 @@ font-size: 0.5em;
 .dis{
   font-size: 8px !important;
   margin-bottom: 2px !important;
+  margin-top: 16px;
   display: block;
   width: 160%;
   position: relative;
@@ -560,6 +561,7 @@ right: 7% !important;
 }
 .sec{
   height: 20rem;
+  margin-top: 25px;
 
 }
 .item{
