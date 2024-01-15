@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- intro quote -->
-    <div class="qoute mb-5">
-      <h1 class="text-center  mt-5 abtInt">
+    <div class="mb-5">
+      <h1 class="text-center  mt-5 quote">
       <span
         ><i class="fa-solid fa-quote-left fa-flip-vertical"></i></span
       >Celebrate your unique story, for it is the brushstroke that paints <br />
@@ -70,7 +70,7 @@
         </p>
       </div>
     </div>
-    <div class="col-12 col-md-4 intro text-center mb-5">
+    <div class="col-12 col-md-4 intro text-center mb-5 build">
       <div>
         <div>
           <h2 class="mb-5 lead">DEVELOPMENT</h2>
@@ -517,10 +517,9 @@ transform: translateY(-150px);
 
                                     /* responsiveness  styling */
 
- @media screen and (min-width: 300px)and (max-width: 450px){
+ @media screen and (min-width: 250px)and (max-width: 450px){
   .quote{
-  font-size: 1em;
-color:#646464;
+  font-size: 22px !important;
 }
 i {
   font-size: 8px;
@@ -529,32 +528,43 @@ i {
 }
 
 .download{
-  transform: translateY(-25px) translateX(-100px);
+  position: absolute !important;
+  top: 38%;
+  right:-34%;
 
+}
+.hr{
+  position: relative !important;
+  width: 85%;
 }
 
 .cv{
-  transform: translateX(20px);
-  font-size: 0.8em;
+position: relative; 
+right:6%;
+font-size: 0.5em;
 
 }
 
 .dis{
-  font-size: 7.5px !important;
-  margin-bottom: 3px;
+  font-size: 8px !important;
+  margin-bottom: 2px !important;
+  display: block;
+  width: 160%;
+  position: relative;
+right: 7% !important;
 }
 .text{
   font-size: 12.5px;
-  margin-bottom: 0;
-  margin-top: 25px !important;
+  margin-bottom: 15px !important;
+  margin-top: 22px !important;
 }
 .sec{
-  height: 30rem;
+  height: 20rem;
 
 }
 .item{
-  height: 15px !important;
-  margin-left: 5px;
+  height: 9px !important;
+  margin: 1px;
 
 }
 li{
@@ -573,21 +583,25 @@ li{
 }
 .image__overlay{
   width: 100%;
-  height: 75% !important;
+  height:90% !important;
   width: 100% !important;
+  left: 28%;
+  transition: 1s ease-in-out;
 
+
+
+}
+.intro{
+margin-top: 3em !important;
+}
+.build{
+  height: 300px !important;
 }
 .first{
   transform: translateY(-20px);
 }
-.dis{
-  font-size: 8.4px !important;
-}
-.image__overlay{
-  transform: translateX(20px);
-  transition: 1s ease-in-out;
-  height:80%;
-}
+
+
 .image{
   height: 125%;
 }
@@ -600,7 +614,7 @@ li{
 }
 .style{
   transform: translateY(-180px);
-  font-size: small;
+  font-size: 10px !important;
 
 }
 
@@ -612,17 +626,17 @@ li{
 
 .image-2 , .overlay-2{
   border-radius: 30px;
-height: 270px;
+height: 400px !important;
 width: 130px;
 transform: translateX(5px) translateY(10px);
 }
 .soft{
   /* transform: translateX(80px) !important; */
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .last{
-  font-size: 6px;
+  font-size: 8px !important;
   margin-bottom: 13px !important;
 }
 
@@ -630,8 +644,7 @@ transform: translateX(5px) translateY(10px);
   /* contact page */
 
 .connect {
-  font-size: 2.5rem;
-  margin-left: px !important;
+  font-size: 3rem !important;
 }
 .heading > .profile {
   height: 55px;
@@ -640,18 +653,26 @@ transform: translateX(5px) translateY(10px);
 
 }
 .heading {
-  transform: translateX(-40px) translateY(200px);
+  position: relative;
+  left:76%;
+  top: 12%;
+
 }
 .HR {
-  transform: translateX(40px) translateY(300px);
+position: relative;
+left:2%;
+transform: translateY(320px) !important;
   width: 75% !important;
 }
 .switch{
-  transform: translateY(275px) translateX(-105px);
+position: absolute;
+transform: translateX(-142px) translateY(295px);
 
 }
 .info {
-  transform: translateY(300px) translateX(10px);
+position: relative;
+left: 90%;
+transform:translateX(-275px) translateY(380px) !important ;
   margin-right: 1rem;
   border: 1px solid white;
   padding: 7px;
@@ -662,12 +683,12 @@ transform: translateX(5px) translateY(10px);
 
 .general{
   transform: translateX(20px) translateY(180px);
-  font-size: 0.5em;
+  font-size: 0.7em;
 
 }
 .socials{
   transform: translateX(-20px) translateY(180px);
-  font-size: 0.5em;
+  font-size: 0.7em;
 
 }
  }

@@ -138,7 +138,7 @@ hoverMouse($("h5, button"));
   }
 }
 
-@media screen and (min-width: 300px)and (max-width: 450px){
+@media screen and (max-width: 450px){
   .hover-effect{
     width:5em ;
     height: 5em;
