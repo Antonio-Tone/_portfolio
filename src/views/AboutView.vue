@@ -609,7 +609,7 @@ margin-top: 3em !important;
 }
 
 .styling{
-  font-size: small;
+  font-size: 10px !important;
   transform: translateY(20px);
 
 
