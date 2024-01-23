@@ -23,14 +23,14 @@
           <div class="">
             <img
               class="self"
-              src="https://i.postimg.cc/9F2T8wLq/C12-C1-Antonio-Torre-2-min.jpg"
+              src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
               alt=""
             />
           </div>
           <div class="location d-flex justify-content-center">
             <img
                         class="pin"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
                         alt=""
                       />
             <p class="cape">Cape Town, South Africa</p>
@@ -53,15 +53,15 @@
     <!--introduction -->
 
     <div class="row intro">
-      <div class="col-6 text-center d-flex justify-content-start intro-1">
-        <div class="head">
-          Welcome to my digital playground, where pixels meet purpose and
+      <div class="col-6 text-center d-flex justify-content-start intro-1 text_effect">
+        <div class="text_overlay"></div>
+        <p class="head">Welcome to my digital playground, where pixels meet purpose and
           creativity knows no bounds. Explore the digital tapestry of my work,
           where innovation, design, and passion converge to craft extraordinary
-          experiences.
-        </div>
+          experiences.</p>
       </div>
-      <div class="col-6 text-center d-flex justify-content-center intro-2">
+      <div class="col-6 text-center d-flex justify-content-center intro-2 text_effect">
+        <div class="text_overlay"></div>
         <p class="sub">
           In the world of web design, my passion for design,<br />
           code, and interaction sets me apart and fuels my <br />
@@ -92,7 +92,7 @@
             <div class="card">
               <img
                 class="img"
-                src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png"
+                src="https://i.ibb.co/MNxG9bc/Screenshot-2023-10-30-144708.png"
                 alt=""
               />
               <div class="textBox">
@@ -102,7 +102,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -111,7 +111,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -133,8 +133,8 @@
             </p>
             <div class="d-flex justify-content-center">
               <ul>
-                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/YyJG396/icons8-bootstrap-48-1.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/SnkmsbK/icons8-css-48.png" alt=""></il>
               </ul>
             </div>
           </div>
@@ -146,7 +146,7 @@
             <div class="card">
               <img
                 class="img"
-                src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png"
+                src="https://i.ibb.co/zNKTvWN/Screenshot-2023-10-30-150020.png"
                 alt=""
               />
               <div class="textBox">
@@ -156,7 +156,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -165,7 +165,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -185,9 +185,9 @@
             </p>
             <div class="d-flex justify-content-center">
               <ul>
-                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/YyJG396/icons8-bootstrap-48-1.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/SnkmsbK/icons8-css-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/HqmcxCK/icons8-js-48.png" alt=""></il>
               </ul>
             </div>
           </div>
@@ -199,7 +199,7 @@
             <div class="card">
               <img
                 class="img"
-                src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png  "
+                src="https://i.ibb.co/0cYsDzy/Screenshot-2023-10-30-150857.png"
                 alt=""
               />
               <div class="textBox">
@@ -209,7 +209,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -218,7 +218,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -240,9 +240,9 @@
             </p>
             <div class="d-flex justify-content-center">
               <ul>
-                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/FB8C8Hr/icons8-api-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/94D9cMB/icons8-nodejs-48-1.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/YBm6X1N/icons8-mysql-24.png" alt=""></il>
               </ul>
             </div>
 
@@ -254,7 +254,7 @@
             <div class="card">
               <img
                 class="img"
-                src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png"
+                src="https://i.ibb.co/mR9f1W9/Screenshot-2023-10-30-151253.png"
                 alt=""
               />
               <div class="textBox">
@@ -264,7 +264,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -273,7 +273,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -287,9 +287,9 @@
             <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immedia screen andte results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
             <div class="d-flex justify-content-center">
               <ul>
-                <il><img class="lang" src="https://i.postimg.cc/d3Fm1gn0/icons8-bootstrap-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/wxffjjLy/icons8-css-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/YyJG396/icons8-bootstrap-48-1.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/SnkmsbK/icons8-css-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/HqmcxCK/icons8-js-48.png" alt=""></il>
               </ul>
             </div>
           </div>
@@ -300,7 +300,7 @@
             <div class="card">
               <img
                 class="img"
-                src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png"
+                src="https://i.ibb.co/Js0XVDf/Screenshot-2023-10-30-151739.png"
                 alt=""
               />
               <div class="textBox">
@@ -310,7 +310,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -319,7 +319,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
                         alt=""
                       /></button
                   ></a>
@@ -343,10 +343,10 @@
             </p>
             <div class="d-flex justify-content-center">
               <ul>
-                <il><img class="lang" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""></il>
-                <il><img class="lang" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/HqmcxCK/icons8-js-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/FB8C8Hr/icons8-api-48.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/YBm6X1N/icons8-mysql-24.png" alt=""></il>
+                <il><img class="lang" src="https://i.ibb.co/94D9cMB/icons8-nodejs-48-1.png" alt=""></il>
               </ul>
             </div>
           </div>
@@ -363,7 +363,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/PfcVqj5K/Screenshot-2023-11-08-130937.png"
+                  src="https://i.ibb.co/VN5GnRf/Screenshot-2023-11-08-130937.png"
                   alt="picture"
                 />
               </div>
@@ -382,7 +382,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/VL53dhfv/C12-Luke-Evertson-1.jpg"
+                  src="https://i.ibb.co/1732hhr/C12-Luke-Evertson-1.jpg"
                   alt="picture"
                 />
               </div>
@@ -401,7 +401,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/dVNRDW0s/C12-Taahirah-Ismail-1.jpg"
+                  src="https://i.ibb.co/P9mRfj0/C12-Taahirah-Ismail-1.jpg"
                   alt="picture"
                 />
               </div>
@@ -421,7 +421,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/7P5FLcY6/C12-Asiphe-Ndimlana-1.jpg"
+                  src="https://i.ibb.co/7bBN0xC/C12-Asiphe-Ndimlana-1.jpg"
                   alt="picture"
                 />
               </div>
@@ -442,7 +442,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/DyHztfG2/IMG-9863-1.jpg"
+                  src="https://i.ibb.co/GF0JgVX/IMG-9863-1.jpg"
                   alt="picture"
                 />
               </div>
@@ -464,7 +464,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/7YYT7gdf/Screenshot-2023-05-11-111514.png"
+                  src="https://i.ibb.co/b2mpXYK/Screenshot-2024-01-23-094052.png"
                   alt="picture"
                 />
               </div>
@@ -484,7 +484,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/d0K2cczD/C12-Ayesha-Galant-Class1-1.jpg"
+                  src="https://i.ibb.co/WWrMcvj/C12-Ayesha-Galant-Class1-1.jpg"
                   alt="picture"
                 />
               </div>
@@ -505,7 +505,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/mk1J6c6M/Screenshot-2023-07-05-161952.png"
+                  src="https://i.ibb.co/dLW0kTV/Screenshot-2024-01-23-094836.png"
                   alt="picture"
                 />
               </div>
@@ -526,7 +526,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/rpZQXwLc/C12-Laiquah-Cotie-2.jpg"
+                  src="https://i.ibb.co/P9mRfj0/C12-Taahirah-Ismail-1.jpg"
                   alt="picture"
                 />
               </div>
@@ -546,7 +546,7 @@
               <div class="d-flex justify-content-center">
                 <img
                   class="profile"
-                  src="https://i.postimg.cc/3R6GxMds/Screenshot-2023-10-04-154441.png"
+                  src="https://i.ibb.co/xjgWbwS/Screenshot-2023-10-04-154441-1.png"
                   alt="picture"
                 />
               </div>
@@ -571,7 +571,7 @@
       <div class="d-flex justify-content-center heading">
         <img
           class="profile"
-          src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png"
+          src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
           alt=""
         />
         <h1 class="connect">
@@ -627,6 +627,7 @@ export default {
       tl: gsap.timeline(),
       visibleElement: 1,
       lenis: null,
+     
     };
   },
   mounted() {
@@ -671,17 +672,7 @@ export default {
     initialize() {
       this.setInitialStates();
       this.header();
-    },
-    setInitialStates() {
-      gsap.set(" .dev span", {
-        opacity: 0,
-      });
-      gsap.set(".skill .ps span", {
-        opacity: 0,
-      });
-      gsap.set(".skill .des span", {
-        opacity: 0,
-      });
+      this.createTextAnimation();
     },
     header() {
       const tl = gsap.timeline({
@@ -703,6 +694,53 @@ export default {
         opacity: 1,
         ease: "expo.out",
         stagger: 0.04,
+      });
+    },
+     createTextAnimation(){
+      console.log("i am running!")
+      this.texts = [...document.querySelectorAll(".text.effect")];
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".intro",
+    start: "top center",
+    end:"bottom top+=10%",
+    scrub: true,
+    pin:true, 
+  }
+}
+
+);
+
+    this.texts.forEach((text, index) => {
+      const overlay = text.querySelector(".text.overlay");
+      const content = text.querySelector(".text_effect p");
+
+      
+
+      tl.to(overlay,{
+        scaleX:0
+      }).to(content,{
+        y:0,
+        opacity:1,
+        ease:"expo.out",
+        duration:2,
+        delay:()=> index * 0.1,
+
+      },0)
+    })
+
+     },
+
+    setInitialStates() {
+      gsap.set(" .dev span", {
+        opacity: 0,
+      });
+      gsap.set(".skill .ps span", {
+        opacity: 0,
+      });
+      gsap.set(".skill .des span", {
+        opacity: 0,
       });
     },
 
@@ -1050,7 +1088,6 @@ hr {
   justify-content: center;
   gap: 15px;
   transition: 0.2s ease-in-out;
-  /* z-index: 2; */
 }
 
 .textBox > .text {
@@ -1096,9 +1133,7 @@ hr {
   }
 }
 
-/* .card:hover {
-  transform: scale(1.09);
-} */
+
 
 .contact {
   background: rgb(28, 29, 32);
@@ -1106,6 +1141,8 @@ hr {
 }
 .heading {
   transform: translateX(-350px) translateY(120px);
+  font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Cormorant', serif;
 }
 .connect {
   font-size: 5rem;
