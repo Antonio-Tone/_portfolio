@@ -354,8 +354,8 @@
       </div>
     </div>
     <!-- testimonials -->
-
-    <section class="holder mx-auto">
+     <carousel/>
+    <!-- <section class="holder mx-auto">
       <div class="horizontal_item container">
         <div class="row row-1">
           <div class="flex-col">
@@ -564,7 +564,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- contact section -->
 
     <section class="contact">
@@ -618,9 +618,11 @@
 <script>
 import { gsap } from "gsap";
 import magnetic from "../components/magButtonComp.vue";
+import carousel from "../components/carouselComp.vue";
 export default {
   components: {
     magnetic,
+    carousel
   },
   data() {
     return {
@@ -744,42 +746,7 @@ const tl = gsap.timeline({
       });
     },
 
-    handleScroll() {
-      const container = this.$el.querySelector(".holder");
-      const row2 = this.$el.querySelector(".row-1");
-      const itemsRow1 = document.querySelectorAll(".row-1 .flex-col");
-      const itemsRow2 = document.querySelectorAll(".row-2 .flex-col");
-      const cardMargin = 200; // Adjust this value based on your actual card margin
-      const totalWidth =
-        (itemsRow1.length + itemsRow2.length) * (500 + cardMargin);
-
-      // Get the scroll position
-      const scrollPosition = window.scrollY;
-
-      // Define the trigger positions for your animations
-      const triggerPositionRow1 = container.offsetTop - window.innerHeight / 2;
-      const triggerPositionRow2 = row2.offsetTop - window.innerHeight / 2;
-
-      // Check if the scroll position has reached the trigger position for Row 1
-      if (scrollPosition > triggerPositionRow1) {
-        itemsRow1.forEach((item, index) => {
-          const offset = (index - itemsRow1.length / 2) * (-650 + cardMargin);
-          const progress =
-            (scrollPosition - triggerPositionRow1 - offset) / totalWidth;
-          item.style.transform = `translateX(${progress * 200}%)`;
-        });
-      }
-
-      // Check if the scroll position has reached the trigger position for Row 2
-      if (scrollPosition > triggerPositionRow2) {
-        itemsRow2.forEach((item, index) => {
-          const offset = (index + 1) * 300;
-          const progress =
-            (scrollPosition - triggerPositionRow2 - offset) / totalWidth;
-          item.style.transform = `translateX(${progress * -200}%)`;
-        });
-      }
-    },
+   
   },
 };
 </script>

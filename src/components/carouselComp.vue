@@ -1,97 +1,79 @@
 <template>
-    <div>
-      <div class="gallery">
-        <div class="gallery-container">
-          <img class="gallery-item gallery-item-1  img" src="https://i.postimg.cc/sXvSnZ7v/Screenshot-2023-10-30-151739.png" data-index="1">
-          <img class="gallery-item gallery-item-2" src="https://i.postimg.cc/k5NgFMBL/Screenshot-2023-10-30-151253.png" data-index="2">
-          <img class="gallery-item gallery-item-3" src="https://i.postimg.cc/q7FCSvkq/Screenshot-2023-10-30-150857.png" data-index="3">
-          <img class="gallery-item gallery-item-4" src="https://i.postimg.cc/Qt65mdvf/Screenshot-2023-10-30-150020.png" data-index="4">
-          <img class="gallery-item gallery-item-5" src="https://i.postimg.cc/BbZ7zbhk/Screenshot-2023-10-30-144708.png" data-index="5">
+  <div>
+    <div class="gallery">
+      <div class="gallery-container">
+        <div
+          v-for="index in 5"
+          :key="index"
+          class="gallery-item"
+          :class="'gallery-item-' + index"
+          :style="{
+            transform: 'translateX(' + ((index - visibleElement + 5) % 5 - 2) * 100 + '%)',
+            zIndex: index === visibleElement ? 2 : 1,
+            opacity: index === visibleElement ? 1 : 0.5,
+            // filter: index === visibleElement ? 'none' : 'blur(5px)',
+          }"
+        >
+          <!-- Replace this block with your card content -->
+          <div class="card">
+            <h3>Card {{ index }}</h3>
+            <p>Card content goes here...</p>
+          </div>
         </div>
-        <span class="gallery-controls">
-          <button class="previous"><img class="ctrl" src="https://i.postimg.cc/zXcxLj4y/icons8-double-left-96.png " alt=""></button>
-          <button class="next"><img class="ctrl" src="https://i.postimg.cc/Ssn09sD4/icons8-double-right-96.png" alt=""></button>
-        </span>
       </div>
-      
+      <span class="gallery-controls">
+        <button class="previous" @click="updateActiveClass('previous')">
+          <img class="ctrl" src="https://i.postimg.cc/zXcxLj4y/icons8-double-left-96.png" alt="" />
+        </button>
+        <button class="next" @click="updateActiveClass('next')">
+          <img class="ctrl" src="https://i.postimg.cc/Ssn09sD4/icons8-double-right-96.png" alt="" />
+        </button>
+      </span>
     </div>
-  </template>
-   <script>
-   export default {
-    data() {
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
     return {
-      visibleElement: 1,
-      isHidden: true,
+      visibleElement: 3, // Set the initial visible card to card 3
     };
   },
-     mounted() {
-       const galleryContainer = document.querySelector('.gallery-container');
-       const galleryControlsContainer = document.querySelector('.gallery-controls');
-       const galleryControls = ["previous", "next"];
-       const galleryItems = document.querySelectorAll('.gallery-item');
-   
-       class Carousel {
-         constructor(container, items, controls) {
-           this.carouselContainer = container;
-           this.carouselControls = controls;
-           this.carouselArray = [...items];
-         }
-   
-         updateGallery() {
-           this.carouselArray.forEach(el => {
-             el.classList.remove("gallery-item-1");
-             el.classList.remove("gallery-item-2");
-             el.classList.remove("gallery-item-3");
-             el.classList.remove("gallery-item-4");
-             el.classList.remove("gallery-item-5");
-           });
-           this.carouselArray.slice(0, 5).forEach((el, i) => {
-             el.classList.add(`gallery-item-${i + 1}`);
-           });
-         }
-   
-         setCurrentState(duration) {
-           if (duration.classList.contains('gallery-controls-previous')) {
-             this.carouselArray.push(this.carouselArray.shift());
-           } else {
-             this.carouselArray.unshift(this.carouselArray.pop());
-           }
-           this.updateGallery();
-         }
-   
-         setControls() {
-           const buttons = galleryControlsContainer.querySelectorAll('button');
-   
-           buttons.forEach((button, index) => {
-             if (index < this.carouselControls.length) {
-               button.classList.add(`gallery-controls-${this.carouselControls[index]}`);
-             }
-           });
-         }
-   
-         useControls() {
-           const triggers = [...galleryControlsContainer.childNodes];
-           triggers.forEach(control => {
-             control.addEventListener('click', e => {
-               e.preventDefault();
-               this.setCurrentState(control);
-             });
-           });
-         }
-       }
-   
-       const prodCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
-       prodCarousel.setControls();
-       prodCarousel.useControls();
-     },
-     methods:{
-      show(elementNumber) {
-      this.visibleElement = elementNumber;
+  methods: {
+    updateActiveClass(direction) {
+      // Logic to update the active class in a loop with smooth transitions
+      const totalCards = 5;
+      if (direction === 'previous') {
+        this.visibleElement = (this.visibleElement - 1 + totalCards) % totalCards || totalCards;
+      } else {
+        this.visibleElement = (this.visibleElement + 1) % (totalCards + 1) || 1;
+      }
     },
-     }
-   }
-   </script> 
-  <style scoped>
+  },
+};
+</script>
+
+<style scoped>
+/* Add your styling for cards and other elements here */
+.gallery-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  flex: 0 0 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  transform: translateZ(50px); /* Adjust the depth of the 3D effect */
+}
 .links {
   height: 30px;
 }
@@ -184,35 +166,46 @@
      background-size: contain;
     }
     .gallery-item-1{
-      left:-2%;
+      box-shadow: -2px 5px 33px 6px rgba(0,0,0.35);
+
+      left:30%;
       opacity: .4 ;
       transform: translateX(-50%);
     }
+    .gallery-item-1, .gallery-item-5{
+height: 350px;
+width: 300px;
+
+    }
     .gallery-item-2, .gallery-item-4{
-      height: 280px;
+      height: 400px;
       opacity: 0.8;
-      width: 400px;
+      width: 320px;
       z-index:1 ;
     }
     .gallery-item-2{
-  left:22%;
+  box-shadow: -2px 5px 33px 6px rgba(0,0,0.35);
+
+  left:28%;
   transform: translateX(-50%);
     }
     .gallery-item-3{
     box-shadow: -2px 5px 33px 6px rgba(0,0,0.35);
-    height: 300px;
+    height: 450px;
+    width:350px;
     opacity: 1;
-    left:50%;
+    left:28%;
     transform: translateX(-50%);
-    width:430px;
-    z-index: 2;
+    z-index: 30 !important;
     }
     .gallery-item-4{
-  left: 80%;
+      box-shadow: -2px 5px 33px 6px rgba(0,0,0.35);
+  left: 30%;
    transform: translateX(-50%);
     }
     .gallery-item-5{
-      left: 102%;
+      box-shadow: -2px 5px 33px 6px rgba(0,0,0.35);
+      left: 30%;
       opacity: .4;
       transform: translateX(-50%);
   
