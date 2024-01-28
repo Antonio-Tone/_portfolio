@@ -111,11 +111,11 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
-=======
                         src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
+                        alt=""
+                      /></button
                   ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -156,11 +156,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
-=======
                         src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
->>>>>>> 0c32479579be90a4ee50881c24d0148aa6d49624
                         alt=""
                       /></button
                   ></a>
@@ -169,11 +165,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
-=======
                         src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
->>>>>>> 0c32479579be90a4ee50881c24d0148aa6d49624
                         alt=""
                       /></button
                   ></a>
@@ -217,11 +209,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
-=======
                         src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
->>>>>>> 0c32479579be90a4ee50881c24d0148aa6d49624
                         alt=""
                       /></button
                   ></a>
@@ -230,11 +218,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
-=======
                         src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
->>>>>>> 0c32479579be90a4ee50881c24d0148aa6d49624
                         alt=""
                       /></button
                   ></a>
@@ -280,11 +264,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
-=======
                         src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
->>>>>>> 0c32479579be90a4ee50881c24d0148aa6d49624
                         alt=""
                       /></button
                   ></a>
@@ -330,11 +310,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
-=======
                         src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
->>>>>>> 0c32479579be90a4ee50881c24d0148aa6d49624
                         alt=""
                       /></button
                   ></a>
@@ -343,11 +319,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-<<<<<<< HEAD
-                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
-=======
                         src="https://i.ibb.co/mHD1Fds/output-onlinegiftools-3.gif"
->>>>>>> 0c32479579be90a4ee50881c24d0148aa6d49624
                         alt=""
                       /></button
                   ></a>
