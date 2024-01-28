@@ -127,6 +127,7 @@ nav{
     position:fixed;
     z-index: 999 !important;
     background-color: transparent !important;
+    border-bottom:none !important;
     top: 0 !important;
     min-width: 100%;
 }
