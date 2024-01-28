@@ -30,7 +30,7 @@
           <div class="location d-flex justify-content-center">
             <img
                         class="pin"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
                         alt=""
                       />
             <p class="cape">Cape Town, South Africa</p>
@@ -102,7 +102,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
                         alt=""
                       /></button
                   ></a>
@@ -111,7 +111,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
                         alt=""
                       /></button
                   ></a>
@@ -156,7 +156,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
                         alt=""
                       /></button
                   ></a>
@@ -165,7 +165,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
                         alt=""
                       /></button
                   ></a>
@@ -209,7 +209,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
                         alt=""
                       /></button
                   ></a>
@@ -218,7 +218,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
                         alt=""
                       /></button
                   ></a>
@@ -264,7 +264,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
                         alt=""
                       /></button
                   ></a>
@@ -273,7 +273,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
                         alt=""
                       /></button
                   ></a>
@@ -310,7 +310,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/W3qHrzWP/output-onlinegiftools.gif"
+                        src="https://i.ibb.co/t40MThq/output-onlinegiftools.gif"
                         alt=""
                       /></button
                   ></a>
@@ -319,7 +319,7 @@
                     ><button class="toggle linkBg">
                       <img
                         class="links"
-                        src="https://i.postimg.cc/d1SJQh7P/output-onlinegiftools-1.gif"
+                        src="https://i.ibb.co/m92dtd2/output-onlinegiftools-1.gif"
                         alt=""
                       /></button
                   ></a>
