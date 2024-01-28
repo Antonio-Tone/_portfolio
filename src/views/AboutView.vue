@@ -28,21 +28,21 @@
       <p class="d-flex justify-content-center text mt-5">Technologies I use:</p>
       <div class="tech">
         <ul class="list d-flex justify-content-center">
-        <li><img class="item" src="https://i.postimg.cc/dQ850VNh/icons8-vuejs-48.png" alt=""><br>Vue 3</li>
-        <li><img class="item" src="https://i.postimg.cc/FzjrrNQC/icons8-js-48.png" alt=""><br>JavaScript</li>
-        <li><img class="item" src="https://i.postimg.cc/c4fQtnm6/icons8-api-48.png" alt=""><br>Restful API</li>
+        <li><img class="item" src="https://i.ibb.co/9YjZCSq/icons8-vuejs-48.png" alt=""><br>Vue 3</li>
+        <li><img class="item" src="https://i.ibb.co/HqmcxCK/icons8-js-48.png" alt=""><br>JavaScript</li>
+        <li><img class="item" src="https://i.ibb.co/FB8C8Hr/icons8-api-48.png" alt=""><br>Restful API</li>
         </ul>
         <ul class="list d-flex justify-content-center">
-        <li><img class="item" src="https://i.postimg.cc/Jn9RL9wY/icons8-nodejs-48-1.png" alt=""><br>Nodejs</li>
-        <li><img class="item" src="https://i.postimg.cc/DwBFZWkX/icons8-mysql-24.png" alt=""><br>MYSQL</li>
-        <li><img class="item" src="https://i.postimg.cc/ydprXQ9k/tweenmax-png-cf27916e926fbb328ff214f66b4c8429-removebg-preview.png" alt=""><br>GSAP</li>
+        <li><img class="item" src="https://i.ibb.co/94D9cMB/icons8-nodejs-48-1.png" alt=""><br>Nodejs</li>
+        <li><img class="item" src="https://i.ibb.co/YBm6X1N/icons8-mysql-24.png" alt=""><br>MYSQL</li>
+        <li><img class="item" src="https://i.ibb.co/JsftGwk/tweenmax-png-cf27916e926fbb328ff214f66b4c8429-removebg-preview.png" alt=""><br>GSAP</li>
       </ul>
       </div>
     </div>
   </div>
   <div class="col-6 sec">
     <div class="image__overlay">
-    <img class="image" src="https://i.postimg.cc/FR6pwSJS/IMG-1478.jpg" alt="">
+    <img class="image" src="https://i.ibb.co/jvQNWV4/IMG-1478.jpg" alt="">
   </div>
 </div>
 </div>
@@ -108,12 +108,12 @@
 
 <div class="wrapper">
   <div class="row w-100 mb-5">
-    <div class="col-6 d-flex justify-content-center">
+    <div class="col-6 d-flex justify-content-center cap">
       <div class="overlay-2">
-        <img class="image-2" src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png" alt="">
+        <img class="image-2" src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg" alt="">
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-6 cap_2">
       <h2 class="soft">Soft Skills:</h2>
 <div class="underline">
   <hr class="mb-3">
@@ -136,7 +136,7 @@
       <div class="d-flex justify-content-center heading">
         <img
           class="profile"
-          src="https://i.postimg.cc/y6cxh6tZ/T02-LW4-RMXJQ-U051-ZHJ00-N9-edefadf5b7cb-512.png"
+          src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
           alt=""
         />
         <h1 class="connect">
@@ -197,16 +197,15 @@ export default {
     this.overlay2();
 
    },
+  //  Setting the initial states
    setInitialStates(){
+  
     gsap.set('.image__overlay img', {
         opacity: 0,
         scale: 1.08
       });
       gsap.set("image__overlay",{
-        // yPercent:-12
       }),
-
-      // pre-settings second image
 
     gsap.set('.overlay-2 .image-2', {
         opacity: 0,
@@ -237,7 +236,6 @@ this.layers.forEach(layer => {
 this.images.forEach(image => {
   tl.to(image,{
     ease:'linear',
-    // yPercent:-15,
     scale:1,
     opacity: 0.5,
 
@@ -340,9 +338,27 @@ margin-top: 10em !important;
   overflow: hidden;
   margin-bottom: 900px;
 }
+
+.lead{
+font-size: 40px;
+}
+.styling, .style{
+font-size: 17px;
+}
 .image-2 , .overlay-2{
   border-radius: 30px;
+  height: 530px;
+  width: 80%;
 
+}
+.cap{
+  width: 45% !important;
+}
+.last{
+ font-size:19px;
+}
+.soft{
+  font-size: 40px;
 }
 /* capable settings */
 .capable-hr{
@@ -546,7 +562,7 @@ font-size: 0.5em;
 }
 
 .dis{
-  font-size: 8px !important;
+  font-size: 10px !important;
   margin-bottom: 2px !important;
   margin-top: 16px;
   display: block;
@@ -554,6 +570,10 @@ font-size: 0.5em;
   position: relative;
 right: 7% !important;
 }
+.lead{
+  font-size: 20px;
+}
+
 .text{
   font-size: 12.5px;
   margin-bottom: 15px !important;
@@ -628,14 +648,18 @@ margin-top: 3em !important;
 
 .image-2 , .overlay-2{
   border-radius: 30px;
-height: 400px !important;
+height: 420px !important;
 width: 130px;
-transform: translateX(5px) translateY(10px);
+transform: translateX(10px) translateY(5px);
+}
+.cap_2{
+  transform: translateX(22px);
 }
 .soft{
   /* transform: translateX(80px) !important; */
-  font-size: 12px;
+  font-size: 17px;
 }
+
 
 .last{
   font-size: 8px !important;
@@ -649,9 +673,9 @@ transform: translateX(5px) translateY(10px);
   font-size: 3rem !important;
 }
 .heading > .profile {
-  height: 55px;
-  width: 55px;
-  transform: translateY(45px) translateX(80px);
+  height: 50px !important;
+  width: 50px !important;
+  transform: translateY(55px) translateX(80px);
 
 }
 .heading {
