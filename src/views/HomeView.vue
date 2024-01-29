@@ -619,6 +619,7 @@
 import { gsap } from "gsap";
 import magnetic from "../components/magButtonComp.vue";
 import carousel from "../components/carouselComp.vue";
+
 export default {
   components: {
     magnetic,
