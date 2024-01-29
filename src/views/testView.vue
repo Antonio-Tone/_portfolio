@@ -1,15 +1,15 @@
-<template>
+<template >
     <div>
-   <carousel/>
+        <carousel/>
+        <h1>about</h1>
     </div>
 </template>
 <script>
-import carousel from "../components/carouselComp.vue";
+import carousel from '../components/carouselComp.vue';
 export default {
     components:{
-        carousel,
+        carousel
     }
-    
 }
 </script>
 <style>

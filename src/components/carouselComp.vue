@@ -1,35 +1,120 @@
 <template>
-  <div class="carousel">
-    <a class="carousel-item" href="#one!"
-      ><img src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
-    /></a>
-    <a class="carousel-item" href="#two!"
-      ><img src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
-    /></a>
-    <a class="carousel-item" href="#three!"
-      ><img src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
-    /></a>
-    <a class="carousel-item" href="#four!"
-      ><img src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
-    /></a>
-    <a class="carousel-item" href="#five!"
-      ><img src="https://i.ibb.co/FWgpbjp/C12-C1-Antonio-Torre-1.jpg"
-    /></a>
+  <div>
+    <div class="carousel">
+      <swiper
+    :effect="'coverflow'"
+    :grabCursor="true"
+    :centeredSlides="true"
+    :slidesPerView="'auto'"
+    :coverflowEffect="{
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    }"
+    :pagination="true"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide>
+      <div class="">
+        <img
+        src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        <p>magic</p>
+      </div>
+      </swiper-slide>
+
+        <swiper-slide>
+          <img
+        src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      
+      </swiper-slide>
+        <swiper-slide>
+          <img
+        src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide>
+        <swiper-slide>
+          <img
+        src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide>
+        <swiper-slide>
+          <img
+        src="https://swiperjs.com/demos/images/nature-5.jpg" /></swiper-slide
+        >
+        <swiper-slide>
+          <img
+        src="https://swiperjs.com/demos/images/nature-6.jpg" /></swiper-slide>
+        <swiper-slide>
+          <img
+        src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide>
+        <swiper-slide>
+          <img
+        src="https://swiperjs.com/demos/images/nature-8.jpg" /></swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
+        </swiper-slide>
+  </swiper>
+  </div>
   </div>
 </template>
 <script>
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min.js";
-$(document).ready(function () {
-  $(".carousel").carousel({
-    padding: 200,
-  });
-  autoplay();
-  function autoplay() {
-    $(".carousel").carousel("next");
-    setTimeout(autoplay, 4500);
-  }
-});
-export default {};
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+
+  import 'swiper/css/effect-coverflow';
+  import 'swiper/css/pagination';
+
+
+  // import required modules
+  import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+  export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [EffectCoverflow, Pagination],
+      };
+    },
+  };
 </script>
-<style></style>
+<style scoped>
+  #app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+</style>

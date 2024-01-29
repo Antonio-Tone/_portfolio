@@ -354,7 +354,6 @@
       </div>
     </div>
     <!-- testimonials -->
-     <carousel/>
     <!-- <section class="holder mx-auto">
       <div class="horizontal_item container">
         <div class="row row-1">
@@ -565,6 +564,7 @@
         </div>
       </div>
     </section> -->
+   
     <!-- contact section -->
 
     <section class="contact">
