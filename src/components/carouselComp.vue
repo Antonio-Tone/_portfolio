@@ -6,6 +6,7 @@
     :grabCursor="true"
     :centeredSlides="true"
     :slidesPerView="'auto'"
+    :loop="true"
     :coverflowEffect="{
       rotate: 50,
       stretch: 0,
@@ -13,6 +14,12 @@
       modifier: 1,
       slideShadows: true,
     }"
+    :navigation="{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }"
+
+      :parallax:= 'true'
     :pagination="true"
     :modules="modules"
     class="mySwiper"
@@ -52,6 +59,9 @@
         <swiper-slide>
           <img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
         </swiper-slide>
+        <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
+
   </swiper>
   </div>
   </div>
