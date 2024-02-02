@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="heading text-center animate__animated animate__fadeInLeft">
-    <h1>We Would Love Your Feedback!</h1>
+    <h1>I Would Love Your Feedback!</h1>
   </div>
 
   <div class="form container-fluid">

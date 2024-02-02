@@ -24,13 +24,13 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+            "Antonio is one determined ,dedicated team member to have on
+                  any team, he gets the job done and always to lend a hand to
+                  make sure the whole team are on the same page."</p
          >
          <div class="imgBx">
            <img
-         src="https://swiperjs.com/demos/images/nature-10.jpg" />
+         src="https://i.ibb.co/VN5GnRf/Screenshot-2023-11-08-130937.png" />
  
          </div>
           <div class="details">
@@ -38,7 +38,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+            Tara Snell <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -50,13 +50,13 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+            "Antonio is a very fun person to work with and has a great
+                  sense of humour.He Is hardworking and disciplined.He could be
+                  a role model for many."</p
          >
          <div class="imgBx">
            <img
-           src="https://images.unsplash.com/photo-1477085547885-8ee2d26e4efa?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTY5Nw&ixlib=rb-1.2.1&q=85">
+           src="https://i.ibb.co/1732hhr/C12-Luke-Evertson-1.jpg">
  
          </div>
           <div class="details">
@@ -64,7 +64,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+            Luke Evertson <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -75,13 +75,13 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+                 "Antonio's hard work and
+                  dedication always shine through in whatever he does.He appreciates every opportunity he is given and
+                  takes nothing for granted."</p
          >
          <div class="imgBx">
            <img
-           src="https://images.unsplash.com/photo-1496335659881-42cabe4a5f2c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTcxNw&ixlib=rb-1.2.1&q=85">
+           src="https://i.ibb.co/P9mRfj0/C12-Taahirah-Ismail-1.jpg">
  
          </div>
           <div class="details">
@@ -89,7 +89,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+            Taahirah Ismail <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -99,13 +99,13 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+            "Antonio is very independent. Whenever he struggles with
+                  something he would rather first try and figure it out himself
+                  before asking for help. It is always a pleasure to work with him"</p
          >
          <div class="imgBx">
            <img
-           src="https://images.unsplash.com/photo-1617339847756-976edbc411e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTczNw&ixlib=rb-1.2.1&q=85"
+           src="https://i.ibb.co/7bBN0xC/C12-Asiphe-Ndimlana-1.jpg"
   />
  
          </div>
@@ -114,7 +114,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+            Asiphe Ndimlana <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -124,13 +124,13 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+                  "From the moment I first met him I was
+                  impressed. His dedication to excellence and drive to achieve
+                  was evident in every interaction I had with him."</p
          >
          <div class="imgBx">
            <img
-           src="https://images.unsplash.com/photo-1482498081626-c0d36d9c5ab9?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTc2NA&ixlib=rb-1.2.1&q=85"
+           src="https://i.ibb.co/GF0JgVX/IMG-9863-1.jpg"
   />
  
          </div>
@@ -139,7 +139,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+            Ethan Oliver <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -150,13 +150,14 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+            " Antonio is a very hardworking individual.He has improved a
+                  lot in both his coding aswell as in his problem solving
+                  skills. He is an extremely nice person to work with as he is
+                  very friendly"</p
          >
          <div class="imgBx">
            <img
-           src="https://images.unsplash.com/photo-1473707669572-40d832255b5e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzA4MTc4MA&ixlib=rb-1.2.1&q=85"
+           src="https://i.ibb.co/b2mpXYK/Screenshot-2024-01-23-094052.png"
   />
  
          </div>
@@ -165,7 +166,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+            Deno Rautenbach <br/><span>Assistant lecturer</span>
           </h2>
           </div>
         </div>
@@ -174,14 +175,14 @@
           <div class="card">
         <div class="layer"></div>
          <div class="content">
-           <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+           <p class="caption autotype her">
+            "Working alongside Antonio on several IT ventures has been an
+                  absolute pleasure. His precision-oriented approach coupled
+                  with his knack for troubleshooting is highly commendable."</p
          >
          <div class="imgBx">
            <img
-         src="https://swiperjs.com/demos/images/nature-4.jpg" />
+         src="https://i.ibb.co/WWrMcvj/C12-Ayesha-Galant-Class1-1.jpg" />
  
          </div>
           <div class="details">
@@ -189,7 +190,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+          Ayesha Galant <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -201,13 +202,13 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+            "Antonio is an exceptionally hard worker and always making
+                  time to assist anyone who is in need. Also goes the extra-mile
+                  when doing anything that has to be done."</p
          >
          <div class="imgBx">
            <img
-         src="https://swiperjs.com/demos/images/nature-5.jpg" />
+         src="https://i.ibb.co/dLW0kTV/Screenshot-2024-01-23-094836.png" />
  
          </div>
           <div class="details">
@@ -215,7 +216,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+            Maxwill Isaacs <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -227,13 +228,13 @@
         <div class="layer"></div>
          <div class="content">
            <p class="caption autotype">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-           the 1500s, when an unknown printer took a galley of type and
-           scrambled it to make a type specimen book.</p
+            "Antonio is an exceptional professional, with deep expertise,
+                  dedication, and strong problem-solving skills.His work ethic,
+                   and collaborative nature make him a remarkable team player".</p
          >
          <div class="imgBx">
            <img
-         src="https://swiperjs.com/demos/images/nature-6.jpg" />
+         src="https://i.ibb.co/xjgWbwS/Screenshot-2023-10-04-154441-1.png" />
  
          </div>
           <div class="details">
@@ -241,7 +242,7 @@
             class="title"
            
           >
-            Bernadette Newman <br/><span>Colleague</span>
+          Ganiefah Majiet <br/><span>Colleague</span>
           </h2>
           </div>
         </div>
@@ -345,7 +346,7 @@
   left: 0;
   width:100%;
   height:100%;
-  background: linear-gradient(#03a9f4,#e91ee3);
+  background:linear-gradient(#03A9F4,#8ACD50);
   z-index: 1;
   top:calc(100% - 2px);
   transition:0.5s;
@@ -358,22 +359,30 @@
   z-index: 2;
 }
 .caption{
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
   margin-bottom: 20px;
   color:white;
 }
+.her{
+  font-size: 14px !important;
+}
 .details > h2{
-  font-size: 18px;
+  font-size: 20px !important;
   color: white;
 }
 .details > h2 > span{
-  color:#03a9f4;
-  font-size: 14px;
+  color:rgb(82, 204, 82);
+  font-size: 15px;
   transition: 0.5s;
 }
 .testimonials .card:hover .content .details h2 span{
   color:white;
+}
+.imgBx, .details{
+  position: relative;
+  /* top:5% ; */
+  transform: translateY(18px) !important;
 }
 
 .swiper-button-prev {
