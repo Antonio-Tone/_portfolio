@@ -387,13 +387,13 @@
       <div class="row footer">
         <div class="col-6 general">
           <div class="">
-            <div class=""><span>Version:</span></div>
-            <div class="">2023© Edition</div>
+            <div><span class="final">Version:</span></div>
+            <div class="">2024© Edition</div>
           </div>
         </div>
         <div class="col-6 socials">
           <div class="">
-            <div class=""><span>Socials:</span></div>
+            <div><span class="final">Socials:</span></div>
             <div class="wrapper d-flex justify-content-center p-0">
               <a
                 href="https://www.linkedin.com/in/antonio-tone-220925281"
@@ -697,18 +697,14 @@ hr {
   left: 48%;
 }
 .toggle {
+  filter: drop-shadow(4px 9px 5px black);
+
   margin: 5px;
   padding: 5px;
   width: 100px;
   border-radius: 30px;
   color: aliceblue;
-  background: radial-gradient(
-    circle at 24.1% 68.8%,
-    rgb(50, 50, 50) 0%,
-    rgb(0, 0, 0) 99.4%
-  );
-
-  transition: 1s ease-in-out;
+  background-color: #80c047;
   border: none !important;
 }
 .AS {
@@ -723,8 +719,11 @@ hr {
 }
 
 .prdName {
-  color: rgb(16, 16, 16) !important;
-  margin-bottom: 0 !important;
+  background-image: radial-gradient(circle at 24.1% 68.8%,#8ACD50 0,#8ACD50 99.4%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+   margin-bottom: 0 !important;
 }
 .prodLine {
   width: 50% !important;
@@ -910,7 +909,6 @@ font-family: 'Cormorant', serif;
 .connect {
   font-size: 5rem;
   margin-left: 10px !important;
-  color:white;
 }
 .heading > .profile {
   height: 75px;
@@ -920,6 +918,10 @@ font-family: 'Cormorant', serif;
 }
 .shift {
   margin-left: 90px;
+  background-image: radial-gradient(circle at 24.1% 68.8%,#6bab32 0,#6bc71b 99.4%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
 }
 
 .hr {
@@ -927,7 +929,10 @@ font-family: 'Cormorant', serif;
   width: 65% !important;
 }
 .switch {
-  transform: translateY(160px) translateX(-290px);
+  position: relative;
+  top:98% ;
+  right:250% ;
+  /* transform: translateY(145px) translateX(-290px); */
   z-index: 3;
 }
 .info {
@@ -940,18 +945,22 @@ font-family: 'Cormorant', serif;
   color:white;
 }
 .info:hover {
-  background-color: #14ae5c;
+  background-color: #80c047;
   cursor: pointer !important;
 }
 .footer {
   transform: translateY(300px) !important;
+}
+.final{
+  color:#80c047;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .general {
   transform: translateX(150px);
   display: flex;
   flex-direction: column;
   align-items: start;
-  color:white;
 
 }
 .socials {
@@ -960,7 +969,6 @@ font-family: 'Cormorant', serif;
   flex-direction: column;
   align-items: end;
   justify-content: end;
-  color:white;
 
 }
 .link {
@@ -974,7 +982,7 @@ font-family: 'Cormorant', serif;
 .link:hover {
   border-right: 1px solid white;
   border-left: 1px solid white;
-  background-color: lightblue;
+  background-color: #80c047;
 }
 
 @keyframes animate {
@@ -1744,8 +1752,7 @@ font-family: 'Cormorant', serif;
     width: 200vw;
     transform: translateX(-12%);
   }
-  .test {
-  }
+  
   /* contact page */
 
   .connect {

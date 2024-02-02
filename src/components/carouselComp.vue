@@ -346,7 +346,7 @@
   left: 0;
   width:100%;
   height:100%;
-  background: linear-gradient(#03a9f4,#e91ee3);
+  background:linear-gradient(#03A9F4,#8ACD50);
   z-index: 1;
   top:calc(100% - 2px);
   transition:0.5s;
@@ -372,7 +372,7 @@
   color: white;
 }
 .details > h2 > span{
-  color:#03a9f4;
+  color:rgb(82, 204, 82);
   font-size: 15px;
   transition: 0.5s;
 }
