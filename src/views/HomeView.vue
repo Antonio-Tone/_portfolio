@@ -356,7 +356,7 @@
     <!-- testimonials -->
 
    <div class="testimonials">
-    <div class="tst mb-5"><h2>Testimonials:</h2></div>
+    <div class="tst mb-5"><h2>Endorsements:</h2></div>
     <carousel class="mt-5 mb-5"/>
 
    </div>

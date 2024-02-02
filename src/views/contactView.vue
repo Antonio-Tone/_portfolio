@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <div class="heading text-center animate__animated animate__fadeInLeft">
-    <h1>I Would Love Your Feedback!</h1>
+    <div class="heading text-center">
+    <h1>Looking Forward To Hear From You!</h1>
   </div>
 
   <div class="form container-fluid">
@@ -91,6 +91,10 @@ export default {};
 }
 .heading {
   margin-bottom: 20px;
+  color:#4e851e;
+  filter: drop-shadow(4px 9px 5px black);
+
+
 }
 
 .form {
@@ -135,8 +139,8 @@ button {
 
 button:hover {
   color: #eeebdd;
-  background: #0bc863;
-  box-shadow: 0 0 30px 5px #0bc863;
+  background: #8ACD50;
+  box-shadow: 0 0 30px 5px #8ACD50;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;

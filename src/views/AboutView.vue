@@ -261,13 +261,13 @@
       <div class="row footer">
         <div class="col-6 general">
           <div class="">
-            <div class=""><span>Version:</span></div>
-            <div class="">2023© Edition</div>
+            <div><span class="final">Version:</span></div>
+            <div>2024© Edition</div>
           </div>
         </div>
         <div class="col-6 socials">
           <div class="">
-            <div class=""><span>Socials:</span></div>
+            <div class=""><span class="final">Socials:</span></div>
             <div class="wrapper d-flex justify-content-center p-0">
               <a
                 href="https://www.linkedin.com/in/antonio-tone-220925281"
@@ -388,9 +388,9 @@ i {
 }
 .download {
   position: absolute;
-  /* transform: translateY(-35px) translateX(-160px); */
-  top:31%;
-  right:19%;
+  transform: translateY(-55px) translateX(-160px);
+  /* top:31%;
+  right:19%; */
   z-index: 3;
 }
 .cv {
@@ -433,6 +433,8 @@ i {
 
 .lead {
   font-size: 40px;
+ filter: drop-shadow(4px 9px 5px black);
+ color:#80c047;
 }
 .styling,
 .style {
@@ -450,8 +452,14 @@ i {
 .last {
   font-size: 19px;
 }
+.final{
+  color:#80c047;
+}
 .soft {
   font-size: 40px;
+    color:#80c047;
+  filter: drop-shadow(4px 9px 5px black);
+
 }
 /* capable settings */
 .capable-hr {
@@ -478,6 +486,8 @@ i {
 .text {
   font-size: 22px;
   color:#80c047;
+    filter: drop-shadow(4px 9px 5px black);
+
 }
 .list {
   list-style: none;
@@ -510,6 +520,8 @@ i {
 }
 .shift {
   margin-left: 90px;
+  color:#80c047;
+
 }
 
 .HR {
@@ -530,7 +542,7 @@ i {
   color: white;
 }
 .info:hover {
-  background-color: #0bc863;
+  background-color: #4e851e;
   cursor: pointer !important;
 }
 .footer {
@@ -562,7 +574,7 @@ i {
 .link:hover {
   border-right: 1px solid white;
   border-left: 1px solid white;
-  background-color: lightblue;
+  background-color: #4e851e;
 }
 @keyframes outerglow {
   0% {

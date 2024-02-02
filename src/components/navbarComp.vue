@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="">
+        <nav>
             <ul class="d-flex justify-content-center nav">
                 <li class="copyR mx-start">©Code by Antonio Tone</li>   
                 <li class="ms-auto"> <router-link class=" link" to="/" >Home</router-link></li>
@@ -147,9 +147,12 @@ a{
 ul{
     margin-top: 3px;
 }
+.link{
+  transition: 0.5s;
+}
 
 .link:focus{
-   color: #6190E8 !important;
+  border-block: 1px solid #4e851e;
 }
 
 @media screen and (min-width: 300px) and (max-width:380px){
