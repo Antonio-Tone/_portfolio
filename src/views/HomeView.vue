@@ -353,10 +353,13 @@
         </div>
       </div>
     </div>
-    <slider/>
     <!-- testimonials -->
-    <carousel/>
-   
+
+   <div class="testimonials">
+    <div class="tst mb-5"><h2>Testimonials:</h2></div>
+    <carousel class="mt-5 mb-5"/>
+
+   </div>
     <!-- contact section -->
 
     <section class="contact">
