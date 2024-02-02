@@ -33,7 +33,7 @@
                         src="https://i.ibb.co/4TdQ7rR/output-onlinegiftools-3.gif"
                         alt=""
                       />
-            <p class="cape">Cape Town, South Africa</p>
+            <p class="cape">Northern Suburbs, Cape Town</p>
           </div>
           <div class="Name d-flex justify-content-center">
             <h2 class="AT">Antonio Tone</h2>
