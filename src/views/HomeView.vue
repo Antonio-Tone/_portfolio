@@ -800,7 +800,11 @@ hr {
   height: 30px;
 }
 .linkBg {
-  background-color: transparent !important;
+  background-color: #313131 !important;
+  transition:0.5s ease-in-out;
+}
+.linkBg:hover{
+  background-color:#1ce278 !important;
 }
 
 .card {
