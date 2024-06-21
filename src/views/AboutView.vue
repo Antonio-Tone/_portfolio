@@ -880,7 +880,7 @@ i {
     height: 800px
   }
   .intro{
-    height: 450px
+    height: 450.1px
 
   }
 
