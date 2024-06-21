@@ -1,10 +1,10 @@
 <template>
-  <div class="main">
+  <div class="holder">
     <div class="heading text-center">
     <h1>Looking Forward To Hear From You!</h1>
   </div>
 
-  <div class="form container-fluid">
+  <div class="form container mt-5">
     <div class="text">
       <p>Required fields are marked with *</p>
     </div>
@@ -84,7 +84,7 @@ export default {};
 </script>
 
 <style scoped>
-.main{
+.holder{
   min-height: 100vh;
   background: rgb(28, 29, 32);
 
@@ -93,11 +93,13 @@ export default {};
   margin-bottom: 20px;
   color:#4e851e;
   filter: drop-shadow(4px 9px 5px black);
+  transform: translateY(30px)
 
 
 }
 
 .form {
+  height: 100% !important;
   width: 50%;
   margin-bottom: 20px;
 }
@@ -121,7 +123,6 @@ textarea {
 }
 .submit,
 .reset {
-  margin: auto;
 }
 
 button {
@@ -146,21 +147,21 @@ button:hover {
   transition: all 0.2s ease-out;
 }
 
-@media only screen and (max-width: 300px) {
-  .names {
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 350px) {
+  .form{
+    width:100% !important;
   }
+ 
 
   input {
-    width: 100px;
+    width: 100%;
   }
   .formButtons {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   justify-content: center;
   }
   button {
-    margin: 10px;
+    margin: 8px
   }
   
   button:hover {
@@ -171,8 +172,6 @@ button:hover {
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
-  button {
-    margin: 10px;
-  }
+ 
 }
 </style>

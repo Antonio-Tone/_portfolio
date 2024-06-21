@@ -16,7 +16,7 @@
       <p class="d-flex justify-content-end w-75 cv">download CV below:</p>
       <div class="d-flex justify-content-center mt-5">
         <hr class="hr" />
-        <a href="\files\CV of Antonio Tone.pdf" download
+        <a href="\files\_Antonio tone CV.pdf" download
           ><magnetic class="download" buttonText="CV"
         /></a>
       </div>
@@ -25,63 +25,88 @@
 
     <div class="container">
       <div class="row mt-5 intro">
-        <div class="col-6 first text-center">
+        <div class="col-6 first">
+          <h3 class="WAI">Who am I?</h3>
           <p class="dis">
-            Hey there, I'm all about web development and problem-solving. I
-            thrive on challenges that push my skills to new heights. My goal? To
+            I am passionate about web development and problem-solving, thriving
+            on challenges that push my skills to new heights. My goal is to
             transition from being an aspiring web developer to a full-fledged
-            software engineer. Join me on this coding journey as I tackle
-            challenges and grow in this ever-evolving tech landscape.
+            software engineer. I'm on a coding journey, tackling challenges and
+            growing in this ever-evolving tech landscape. As an aspiring
+            software developer, I love problem-solving and thrive on challenges
+            that elevate my skills. Fueled by an insatiable curiosity for
+            technology, I'm constantly driven to explore new realms of
+            knowledge.
           </p>
           <div class="">
-            <p class="d-flex justify-content-center text mt-5">
-              Technologies I use:
-            </p>
+            <p class="text mt-2">Technologies I use:</p>
             <div class="tech">
-              <ul class="list d-flex justify-content-center">
-                <li>
+              <ul class="list d-flex justify-content-start">
+                <li class="under">
                   <img
-                    class="item"
+                    class="symbol"
                     src="https://i.ibb.co/9YjZCSq/icons8-vuejs-48.png"
                     alt=""
-                  /><br />Vue 3
+                  /><br />
+                  <p class="techname">Vue 3</p>
                 </li>
-                <li>
+                <li class="under">
                   <img
-                    class="item"
+                    class="symbol"
+                    src="https://i.ibb.co/W55yk4B/icons8-react-js-40.png"
+                    alt=""
+                  /><br />
+                  <p class="techname">Reactjs</p>
+                </li>
+                <li class="under">
+                  <img
+                    class="symbol"
                     src="https://i.ibb.co/HqmcxCK/icons8-js-48.png"
                     alt=""
-                  /><br />JavaScript
+                  /><br />
+                  <p class="techname">JavaScript</p>
                 </li>
-                <li>
+                <li class="under">
                   <img
-                    class="item"
-                    src="https://i.ibb.co/FB8C8Hr/icons8-api-48.png"
+                    class="symbol"
+                    src="https://i.ibb.co/F5S7B28/icons8-python-48.png"
                     alt=""
-                  /><br />Restful API
+                  /><br />
+                  <p class="techname">Python</p>
                 </li>
               </ul>
-              <ul class="list d-flex justify-content-center">
-                <li>
+              <ul class="list d-flex justify-content-start">
+                <li class="under">
                   <img
-                    class="item"
+                    class="symbol"
                     src="https://i.ibb.co/94D9cMB/icons8-nodejs-48-1.png"
                     alt=""
-                  /><br />Nodejs
+                  /><br />
+                  <p class="techname">Nodejs</p>
                 </li>
-                <li>
+                <li class="under">
                   <img
-                    class="item"
+                    class="symbol"
                     src="https://i.ibb.co/YBm6X1N/icons8-mysql-24.png"
                     alt=""
-                  /><br />MYSQL
+                  /><br />
+                  <p class="techname">MYSQL</p>
                 </li>
-                <li>
+                <li class="under">
                   <img
-                    class="item"
+                    class="symbol"
                     src="https://i.ibb.co/JsftGwk/tweenmax-png-cf27916e926fbb328ff214f66b4c8429-removebg-preview.png"
                     alt=""
-                  /><br />GSAP
+                  /><br />
+                  <p class="techname">GSAP</p>
+                </li>
+                <li class="under">
+                  <img
+                    class="symbol"
+                    src="https://i.ibb.co/FB8C8Hr/icons8-api-48.png"
+                    alt=""
+                  /><br />
+                  <p class="techname">Restful API</p>
                 </li>
               </ul>
             </div>
@@ -98,6 +123,8 @@
         </div>
       </div>
     </div>
+    <!-- work section -->
+    <work />
     <!-- skills section -->
 
     <div class="flex-container p-4">
@@ -117,7 +144,7 @@
             >
               <i
                 class="fa-solid fa-pen-nib fa-beat-fade tool"
-                style="color: grey"
+                style="color: "
               ></i>
             </div>
           </div>
@@ -143,7 +170,7 @@
             >
               <i
                 class="fa-solid fa-computer fa-beat-fade tool"
-                style="color: grey"
+                style="color: "
               ></i>
             </div>
           </div>
@@ -168,10 +195,7 @@
             class="animated animate__bounceInRight"
             style="animation-delay: 2s"
           >
-            <i
-              class="fa-solid fa-globe fa-beat-fade tool"
-              style="color: grey"
-            ></i>
+            <i class="fa-solid fa-globe fa-beat-fade tool" style="color: "></i>
           </div>
           <div class="holder">
             <div class="vl"></div>
@@ -285,9 +309,11 @@
   </div>
 </template>
 <script>
+import work from "../components/workComp.vue";
 import magnetic from "../components/magButtonComp.vue";
 export default {
   components: {
+    work,
     magnetic,
   },
   mounted() {
@@ -395,14 +421,26 @@ i {
 }
 .cv {
   transform: translateX(100px) translateY(-20px);
- 
 }
 
 .intro {
   margin-top: 10em !important;
 }
+.WAI {
+  font-family: "Archivo Narrow", sans-serif;
+  /* font-family: "Cormorant", serif; */
+  margin-left: 20px;
+  font-size: 35px;
+  color: #80c047;
+  filter: drop-shadow(4px 9px 5px black);
+}
 .first {
   width: 40%;
+  transform: translateY(-70px) translateX(-30px);
+  /* display: flex;
+  flex-direction: column;
+  /* align-items: center!important; */
+  /* justify-content: start;  */
 }
 .dis {
   font-size: larger;
@@ -433,8 +471,8 @@ i {
 
 .lead {
   font-size: 40px;
- filter: drop-shadow(4px 9px 5px black);
- color:#80c047;
+  filter: drop-shadow(4px 9px 5px black);
+  color: #80c047;
 }
 .styling,
 .style {
@@ -452,14 +490,13 @@ i {
 .last {
   font-size: 19px;
 }
-.final{
-  color:#80c047;
+.final {
+  color: #80c047;
 }
 .soft {
   font-size: 40px;
-    color:#80c047;
+  color: #80c047;
   filter: drop-shadow(4px 9px 5px black);
-
 }
 /* capable settings */
 .capable-hr {
@@ -484,18 +521,30 @@ i {
   transform: translateY(50px);
 }
 .text {
-  font-size: 22px;
-  color:#80c047;
-    filter: drop-shadow(4px 9px 5px black);
-
+  font-size: 30px;
+  color: #80c047;
+  filter: drop-shadow(4px 9px 5px black);
+  margin-left: 15px;
 }
 .list {
   list-style: none;
 }
-.item {
+.symbol {
   height: 50px !important;
-  margin: 25px;
+  margin: 12px;
   filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-20px) !important;
+  font-size: 12px;
+}
+
+.under {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
 }
 
 /* contact styling */
@@ -520,8 +569,7 @@ i {
 }
 .shift {
   margin-left: 90px;
-  color:#80c047;
-
+  color: #80c047;
 }
 
 .HR {
@@ -652,66 +700,74 @@ i {
   }
 }
 
+
+
+
+
+
 /* responsiveness  styling */
 
-@media screen and (min-width: 250px) and (max-width: 450px) {
-  .quote {
-    font-size: 22px !important;
+@media screen and (max-width: 349px) {
+  .intro > .first{
+    height: 450px;
   }
-  i {
-    font-size: 8px;
-
-    transform: translateY(-3px) !important;
+  .sec{
+    height: 800px
   }
+  .intro{
+    height: 450px
 
+  }
   .download {
-    position: absolute !important;
-    top: 38%;
-    right: -34%;
+    transform: translateY(-35px) translateX(-130px);
   }
-  .hr {
-    position: relative !important;
-    width: 85%;
+
+
+  .first{
+    transform: translateY(-50px) !important;
+  }
+  .WAI {
+    font-size: 18px;
+  }
+  .text {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .list{
+    transform: translateX(-20px) ;
+    margin-bottom: 0 !important;
+    height: 50px;
+  }
+ 
+  .symbol {
+  height: 20px !important;
+  margin: 1px;
+  filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-10px) !important;
+  font-size: 7px;
+}
+  .quote {
+    font-size: 1.5em;
   }
 
   .cv {
-    position: relative;
-    right: 6%;
-    font-size: 0.5em;
+    transform: translateX(15px);
   }
 
   .dis {
     font-size: 10px !important;
-    margin-bottom: 2px !important;
-    margin-top: 16px;
-    display: block;
-    width: 160%;
-    position: relative;
-    right: 7% !important;
-  }
-  .lead {
-    font-size: 20px;
-  }
+    width: 150%;
 
-  .text {
-    font-size: 12.5px;
-    margin-bottom: 15px !important;
-    margin-top: 22px !important;
-  }
-  .sec {
-    height: 20rem;
-    margin-top: 25px;
   }
   .item {
-    height: 9px !important;
-    margin: 1px;
+    height: 30px !important;
+    margin-left: 5px;
   }
   li {
     font-size: 8px;
-    transform: translateX(-5px);
-  }
-  .tool {
-    font-size: 15px !important;
+    transform: translateX(-10px);
   }
 
   .image {
@@ -720,21 +776,332 @@ i {
   }
   .image__overlay {
     width: 100%;
-    height: 90% !important;
-    width: 100% !important;
-    left: 28%;
-    transition: 1s ease-in-out;
-  }
-  .intro {
-    margin-top: 3em !important;
-  }
-  .build {
-    height: 300px !important;
+    height: 50% !important;
   }
   .first {
     transform: translateY(-20px);
   }
+  .dis {
+    font-size: small;
+  }
+  .image__overlay {
+    transform: translateX(40px);
+    transition: 1s ease-in-out;
+    height: 80%;
+  }
+  .image {
+    height: 125%;
+  }
 
+  .styling {
+    font-size: 10px !important;
+    transform: translateY(20px);
+  }
+  .style {
+    transform: translateY(-180px);
+    font-size: 10px !important;
+  }
+
+  .capable-hr {
+    width: 38%;
+  }
+
+  .image-2,
+  .overlay-2 {
+    border-radius: 30px;
+    height: 420px !important;
+    width: 130px;
+    transform: translateX(10px) translateY(5px);
+  }
+  .cap_2 {
+    transform: translateX(22px);
+  }
+  .soft {
+    /* transform: translateX(80px) !important; */
+    font-size: 17px;
+  }
+
+  .last {
+    font-size: 8px !important;
+    margin-bottom: 13px !important;
+  }
+
+  /* contact page */
+
+  .connect {
+    font-size: 3rem !important;
+  }
+  .heading > .profile {
+    height: 50px !important;
+    width: 50px !important;
+    transform: translateY(55px) translateX(80px);
+  }
+  .heading {
+    position: relative;
+    left: 76%;
+    top: 12%;
+  }
+  .HR {
+    position: relative;
+    left: 2%;
+    transform: translateY(320px) !important;
+    width: 75% !important;
+  }
+  .switch {
+    position: absolute;
+    transform: translateX(-142px) translateY(295px);
+  }
+  .info {
+    position: relative;
+    left: 90%;
+    transform: translateX(-275px) translateY(380px) !important ;
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 30px;
+    transition: 2s ease-in-out;
+    font-size: 0.7em;
+  }
+
+  .general {
+    transform: translateX(20px) translateY(180px);
+    font-size: 0.7em;
+  }
+  .socials {
+    transform: translateX(-20px) translateY(180px);
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 449px) {
+  .intro > .first{
+    height: 450px;
+  }
+  .sec{
+    height: 800px
+  }
+  .intro{
+    height: 450px
+
+  }
+
+
+  .first{
+    transform: translateY(-50px) !important;
+  }
+  .WAI {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 17px;
+    margin-left: 15px;
+  }
+  .list{
+    transform: translateX(-20px) ;
+    margin-bottom: 0 !important;
+    height: 60px;
+  }
+ 
+  .symbol {
+  height: 23px !important;
+  margin: 1px;
+  filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-10px) !important;
+  font-size: 7px;
+}
+  .quote {
+    font-size: 1.5em;
+  }
+
+  .cv {
+    transform: translateX(20px);
+  }
+
+  .dis {
+    font-size: 10px !important;
+    width: 150%;
+
+  }
+  .item {
+    height: 30px !important;
+    margin-left: 5px;
+  }
+  li {
+    font-size: 8px;
+    transform: translateX(-10px);
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .image__overlay {
+    width: 100%;
+    height: 50% !important;
+  }
+  .first {
+    transform: translateY(-20px);
+  }
+  .dis {
+    font-size: small;
+  }
+  .image__overlay {
+    transform: translateX(40px);
+    transition: 1s ease-in-out;
+    height: 80%;
+  }
+  .image {
+    height: 125%;
+  }
+
+  .styling {
+    font-size: 10px !important;
+    transform: translateY(20px);
+  }
+  .style {
+    transform: translateY(-180px);
+    font-size: 10px !important;
+  }
+
+  .capable-hr {
+    width: 38%;
+  }
+
+  .image-2,
+  .overlay-2 {
+    border-radius: 30px;
+    height: 420px !important;
+    width: 130px;
+    transform: translateX(10px) translateY(5px);
+  }
+  .cap_2 {
+    transform: translateX(22px);
+  }
+  .soft {
+    /* transform: translateX(80px) !important; */
+    font-size: 17px;
+  }
+
+  .last {
+    font-size: 8px !important;
+    margin-bottom: 13px !important;
+  }
+
+  /* contact page */
+
+  .connect {
+    font-size: 3rem !important;
+  }
+  .heading > .profile {
+    height: 50px !important;
+    width: 50px !important;
+    transform: translateY(55px) translateX(80px);
+  }
+  .heading {
+    position: relative;
+    left: 76%;
+    top: 12%;
+  }
+  .HR {
+    position: relative;
+    left: 2%;
+    transform: translateY(320px) !important;
+    width: 75% !important;
+  }
+  .switch {
+    position: absolute;
+    transform: translateX(-142px) translateY(295px);
+  }
+  .info {
+    position: relative;
+    left: 90%;
+    transform: translateX(-275px) translateY(380px) !important ;
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 30px;
+    transition: 2s ease-in-out;
+    font-size: 0.7em;
+  }
+
+  .general {
+    transform: translateX(20px) translateY(180px);
+    font-size: 0.7em;
+  }
+  .socials {
+    transform: translateX(-20px) translateY(180px);
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 499px) {
+
+  .first{
+    transform: translateY(-50px) !important;
+  }
+  .WAI {
+    font-size: 25px;
+  }
+  .text {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .list{
+    transform: translateX(-20px) ;
+    margin-bottom: 0 !important;
+    height: 80px;
+  }
+ 
+  .symbol {
+  height: 33px !important;
+  margin: 1px;
+  filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-10px) !important;
+  font-size: 8px;
+}
+  .quote {
+    font-size: 1.5em;
+  }
+
+  .cv {
+    transform: translateX(20px);
+  }
+
+  .dis {
+    font-size: 12.5px !important;
+    width: 120%;
+
+  }
+  .item {
+    height: 30px !important;
+    margin-left: 5px;
+  }
+  li {
+    font-size: 8px;
+    transform: translateX(-10px);
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .image__overlay {
+    width: 100%;
+    height: 65% !important;
+  }
+  .first {
+    transform: translateY(-20px);
+  }
+  .dis {
+    font-size: small;
+  }
+  .image__overlay {
+    transform: translateX(40px);
+    transition: 1s ease-in-out;
+    height: 80%;
+  }
   .image {
     height: 125%;
   }
@@ -820,6 +1187,34 @@ i {
 }
 
 @media screen and (min-width: 500px) and (max-width: 576px) {
+  .intro{
+    height: 550px;
+  }
+  .first{
+    transform: translateY(-50px) !important;
+  }
+  .WAI {
+    font-size: 25px;
+  }
+  .text {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .list{
+    transform: translateX(-20px) ;
+    margin-bottom: 0 !important;
+    height: 80px;
+  }
+ 
+  .symbol {
+  height: 33px !important;
+  margin: 5px;
+  filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-20px) !important;
+  font-size: 10px;
+}
   .quote {
     font-size: 1.5em;
   }
@@ -830,6 +1225,8 @@ i {
 
   .dis {
     font-size: 12.5px !important;
+    width: 120%;
+
   }
   .item {
     height: 30px !important;
@@ -930,7 +1327,170 @@ i {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 768px) {
+@media screen and (min-width: 575.9px) and (max-width: 749px) {
+  .first{
+    transform: translateY(-50px) !important;
+  }
+  .WAI {
+    font-size: 25px;
+  }
+  .text {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .list{
+    transform: translateX(-20px) ;
+    margin-bottom: 0 !important;
+    height: 80px;
+  }
+ 
+  .symbol {
+  height: 33px !important;
+  margin: 5px;
+  filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-20px) !important;
+  font-size: 10px;
+}
+  .under {
+  }
+  .quote {
+    font-size: 1.5em;
+  }
+
+  .cv {
+    transform: translateX(20px);
+  }
+
+  .dis {
+    font-size: 13.5px !important;
+    width: 120%;
+  }
+  .item {
+    height: 30px !important;
+    margin-left: 5px;
+  }
+  li {
+    font-size: 8px;
+    transform: translateX(-10px);
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .image__overlay {
+    width: 100%;
+    height: 65% !important;
+  }
+  .first {
+    transform: translateY(-20px);
+  }
+  .dis {
+    font-size: small;
+  }
+  .image__overlay {
+    transform: translateX(40px);
+    transition: 1s ease-in-out;
+    height: 80%;
+  }
+  .image {
+    height: 125%;
+  }
+
+  .styling {
+    font-size: small;
+    transform: translateY(20px);
+  }
+  .style {
+    transform: translateY(-180px);
+    font-size: small;
+  }
+
+  .capable-hr {
+    width: 38%;
+  }
+
+  .image-2,
+  .overlay-2 {
+    border-radius: 30px;
+    height: 400px;
+    width: 280px;
+    transform: translateY(20px);
+  }
+  .soft {
+    transform: translateX(80px) !important;
+  }
+
+  .last {
+    font-size: 11px;
+    margin-bottom: 13px !important;
+  }
+
+  /* contact page */
+  .connect {
+    font-size: 3.5rem;
+    margin-left: px !important;
+  }
+  .heading > .profile {
+    height: 55px;
+    width: 55px;
+    transform: translateY(60px) translateX(75px);
+  }
+  .heading {
+    transform: translateX(-150px) translateY(200px);
+  }
+  .HR {
+    transform: translateX(20px) translateY(300px);
+    width: 75% !important;
+  }
+  .switch {
+    transform: translateY(260px) translateX(-150px);
+  }
+  .info {
+    transform: translateY(220px) translateX(-140px);
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 30px;
+    transition: 2s ease-in-out;
+    font-size: 0.7em;
+  }
+
+  .general {
+    transform: translateX(30px) translateY(100px);
+  }
+  .socials {
+    transform: translateX(-30px) translateY(100px);
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 992px) {
+  .first{
+    transform: translateY(-70px);
+  }
+  .WAI {
+    font-size: 28px;
+  }
+  .text {
+    font-size: 26px;
+    margin-left: 15px;
+  }
+  .list{
+    transform: translateX(-25px)
+  }
+ 
+  .symbol {
+  height: 33px !important;
+  margin: 10px;
+  filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-20px) !important;
+  font-size: 13px;
+}
+  .under {
+  }
   .quote {
     font-size: 2em;
   }
@@ -940,7 +1500,7 @@ i {
   }
 
   .dis {
-    font-size: medium;
+    font-size: 14.5px !important;
   }
   .item {
     height: 40px !important;
@@ -954,9 +1514,7 @@ i {
     width: 100%;
     height: 80%;
   }
-  .first {
-    transform: translateY(-20px);
-  }
+
   .dis {
     font-size: small;
   }
@@ -1027,9 +1585,39 @@ i {
 }
 
 /* Styles for large devices (desktops) */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+  .first{
+    transform: translateY(-70px) translateX(4px);
+  }
+  .WAI {
+    font-size: 28px;
+  }
+  .text {
+    font-size: 26px;
+    margin-left: 15px;
+  }
+  .list {
+  }
+  .item {
+    margin: 6px;
+    filter: drop-shadow(0px 20px 12px black);
+  }
+  .symbol {
+  height: 35px !important;
+  margin: 10px;
+  filter: drop-shadow(0px 20px 12px black);
+}
+.techname {
+  transform: translateY(-20px) !important;
+  font-size: 13px;
+}
+  .under {
+  }
   .quote {
     font-size: 2.5em;
+  }
+  .download {
+    transform: translateY(-43px) translateX(-160px);
   }
   .cv {
     transform: translateX(60px);
@@ -1097,6 +1685,24 @@ i {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .WAI {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+  .list {
+  }
+  .item {
+    height: 75px !important;
+
+    margin: 15px;
+    filter: drop-shadow(0px 20px 12px black);
+  }
+  .under {
+    margin-left: 5px;
+  }
   .quote {
     font-size: 2.7em;
   }

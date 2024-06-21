@@ -136,10 +136,19 @@ hoverMouse($("h5, button"));
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (min-width:300px) and (max-width: 350px){
   .hover-effect{
-    width:5em ;
-    height: 5em;
+    width:6.5em ;
+    height: 6.5em;
+  }
+  h5{
+    font-size:13px;
+  }
+}
+@media screen and (min-width:350px) and (max-width: 450px){
+  .hover-effect{
+    width:6.5em ;
+    height: 6.5em;
   }
   h5{
     font-size:13px;
@@ -147,8 +156,18 @@ hoverMouse($("h5, button"));
 }
 @media screen and (min-width: 500px)and (max-width: 600px){
   .hover-effect{
-    width:6em ;
-    height: 6em;
+    width:7em ;
+    height: 7em;
+  }
+  h5{
+    font-size:13px;
+  }
+}
+
+@media screen and(min-width:768px) and (max-width: 992px){
+    .hover-effect{
+    width:7.5em ;
+    height: 7.5em;
   }
   h5{
     font-size:13px;

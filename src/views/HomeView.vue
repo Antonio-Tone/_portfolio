@@ -283,7 +283,7 @@
           </div>
           <div class="col-6 work">
             <h2 class="prdName">My BMI Calculator Journey</h2>
-              <hr class="prodLine">
+              <hr class="prodLine"> z
             <p class="text-center disc">I had a blast creating a BMI calculator with JavaScript. It showed me that coding is not only fun but also incredibly powerful. I loved being creative, solving problems, and seeing immedia screen andte results. This project was just the beginning, and I'm excited to explore more in the coding world!</p>
             <div class="d-flex justify-content-center">
               <ul>
@@ -1059,7 +1059,7 @@ font-family: 'Cormorant', serif;
 /* responsiveness  styling */
 
 /* Styles for extra small devices (phones) */
-@media screen and (min-width: 300px) and (max-width: 450px) {
+@media screen and (min-width: 200px) and (max-width: 450px) {
   .DPP{
     font-size:30px;
   }
@@ -1159,16 +1159,16 @@ font-family: 'Cormorant', serif;
   }
   .btn {
     left: 43% !important;
-    bottom: -40% !important;
+    bottom: -60% !important;
   }
 
   /* projects responsiveness */
 
   .toggle {
-    margin: 3px;
-    padding: 7px;
-    width: 52px;
-    font-size: 8.5px;
+    margin: 4px;
+    padding: 5px;
+    width: 69px;
+    font-size: 10px;
   }
 
   .card,
@@ -1187,7 +1187,7 @@ font-family: 'Cormorant', serif;
     transform: translateX(20px) translateY(-10px);
   }
   .options:before {
-    content: "Tab to view" !important;
+    content: "Tap to view" !important;
   }
   .prdName {
     font-size: 1em;
@@ -1241,13 +1241,12 @@ font-family: 'Cormorant', serif;
   /* contact page */
 
   .connect {
-    font-size: 2.5rem;
-    margin-left: px !important;
+    font-size: 3rem;
   }
   .heading > .profile {
     height: 55px;
     width: 55px;
-    transform: translateY(45px) translateX(80px);
+    transform: translateY(55px) translateX(80px);
   }
   .heading {
     transform: translateX(-40px) translateY(200px);
@@ -1257,7 +1256,7 @@ font-family: 'Cormorant', serif;
     width: 75% !important;
   }
   .switch {
-    transform: translateY(275px) translateX(-105px);
+    transform: translateY(165px) translateX(170px);
   }
   .info {
     transform: translateY(300px) translateX(10px);
@@ -1270,12 +1269,12 @@ font-family: 'Cormorant', serif;
   }
 
   .general {
-    transform: translateX(20px) translateY(180px);
-    font-size: 0.5em;
+    transform: translateX(20px) translateY(155px);
+    font-size: 0.7em;
   }
   .socials {
-    transform: translateX(-20px) translateY(180px);
-    font-size: 0.5em;
+    transform: translateX(-20px) translateY(150px);
+    font-size: 0.7em;
   }
 }
 
@@ -1374,10 +1373,10 @@ font-family: 'Cormorant', serif;
   /* projects responsiveness */
 
   .toggle {
-    margin: 5px;
-    padding: 3px;
-    width: 50px;
-    font-size: 8px;
+    margin: 4px;
+    padding: 5.5px;
+    width: 77px;
+    font-size: 11px;
   }
 
   .card,
